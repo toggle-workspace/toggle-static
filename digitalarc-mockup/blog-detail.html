@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Strategy &amp; Layouts — DigitalArc Blog</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l1.5 5.5L14 7l-5.5 1.5L7 14l-1.5-5.5L0 7l5.5-1.5z"/></svg>
+      DigitalArc
+    </a>
+    <ul class="navbar__nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Project</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="navbar__controls">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☾</button>
+      <button class="navbar__hamburger" id="navHamburger" aria-label="Open menu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══ MOBILE NAV DRAWER ══════════════════════════════════════ -->
+<div class="nav-drawer" id="navDrawer" aria-hidden="true">
+  <div class="nav-drawer__overlay" id="navOverlay"></div>
+  <div class="nav-drawer__panel">
+    <button class="nav-drawer__close" id="navClose" aria-label="Close menu">&#x2715;</button>
+    <nav class="nav-drawer__nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Project</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<div class="blog-detail-header">
+  <div class="blog-detail-main">
+    <h1 class="page-header__heading" style="font-size:clamp(26px,3.5vw,52px);">Digital Strategy &amp; Layouts</h1>
+    <p class="blog-detail-subtitle">We build scalable design systems that keep your website consistent, fast, and optimized for growth across every page and device.</p>
+  </div>
+  <div class="blog-detail-actions">
+    <a href="blog.html" class="btn btn--outline">&larr;&nbsp; Back</a>
+  </div>
+</div>
+
+<div class="blog-article">
+  <div class="blog-author">
+    <div class="blog-author__left">
+      <div class="blog-author__avatar"><img src="https://picsum.photos/seed/author1/80/80" alt="Jecklin Rose" /></div>
+      <p class="blog-author__name">Jecklin Rose</p>
+    </div>
+    <p class="blog-author__date">Feb 09, 2025</p>
+  </div>
+
+  <div class="blog-hero-img">
+    <img src="https://picsum.photos/seed/blog2/1200/600" alt="Digital Strategy" loading="lazy" />
+  </div>
+
+  <div class="blog-content">
+    <h2>Adding Content to the Canvas</h2>
+    <p>Content architecture defines how your information is organized, stored, and displayed across your website. A well-planned CMS structure allows you to create content once and reuse it efficiently across multiple pages.</p>
+    <p>Depending on your project, collections may include text fields, rich content areas, images, slugs, or metadata. These fields can be edited, reordered, or expanded as your content needs grow.</p>
+
+    <h2>Creating Pages with CMS Content</h2>
+    <p>Once your CMS structure is ready, you can connect it to the canvas using dynamic stacks. This enables real-time content updates without redesigning layouts, ensuring both editors and designers work seamlessly together. Depending on your project, collections may include text fields, rich content areas, images, slugs, or metadata.</p>
+
+    <h2>Optimizing Content for Reusability</h2>
+    <p>Reusable content structures help maintain clarity and consistency across your site. By designing components that work across different pages, you can repurpose the same content without duplicating effort.</p>
+    <p>This not only improves efficiency but also ensures that updates made in one place are reflected everywhere, keeping your website accurate and up to date.</p>
+    <p>A scalable page structure allows your website to grow without constant redesign. Index and detail pages dynamically pull content from your CMS, making it easy to add new entries while preserving layout integrity.</p>
+
+    <h2>Why it works:</h2>
+    <ul>
+      <li>Encourages vulnerability — sharing unfinished work without fear</li>
+      <li>Cross-pollinates ideas between teams — a designer might spark a developer's solution</li>
+      <li>Builds visibility — everyone knows what each teammate is exploring</li>
+    </ul>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer__main">
+    <div class="footer__logo"><svg width="12" height="12" viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l1.5 5.5L14 7l-5.5 1.5L7 14l-1.5-5.5L0 7l5.5-1.5z"/></svg> DigitalArc</div>
+    <nav class="footer__nav">
+      <a href="index.html">Home</a><a href="services.html">Services</a><a href="projects.html">Project</a><a href="about.html">About</a><a href="blog.html" class="active">Blog</a><a href="contact.html">Contact</a>
+    </nav>
+  </div>
+  <div class="footer__sub">Designed by WrapPixel</div>
+</footer>
+<button class="scroll-top" id="scrollTop">&#8593;</button>
+<script src="main.js"></script>
+</body>
+</html>

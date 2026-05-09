@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — DigitalArc</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l1.5 5.5L14 7l-5.5 1.5L7 14l-1.5-5.5L0 7l5.5-1.5z"/></svg>
+      DigitalArc
+    </a>
+    <ul class="navbar__nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="projects.html">Project</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="navbar__controls">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☾</button>
+      <button class="navbar__hamburger" id="navHamburger" aria-label="Open menu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══ MOBILE NAV DRAWER ══════════════════════════════════════ -->
+<div class="nav-drawer" id="navDrawer" aria-hidden="true">
+  <div class="nav-drawer__overlay" id="navOverlay"></div>
+  <div class="nav-drawer__panel">
+    <button class="nav-drawer__close" id="navClose" aria-label="Close menu">&#x2715;</button>
+    <nav class="nav-drawer__nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Project</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<!-- ═══ PAGE HERO (same grid-line pattern) ═════════════════════ -->
+<section class="about-page-hero">
+  <div class="about-page-hero__content">
+    <h1 class="about-page-hero__heading">Services</h1>
+  </div>
+  <div class="hero-grid-bg" aria-hidden="true">
+    <div></div><div></div><div></div><div></div><div></div>
+  </div>
+</section>
+
+<!-- ═══ SERVICES LIST ══════════════════════════════════════════ -->
+<section class="services-list-outer">
+  <div class="services-list-inner">
+
+    <!-- (01) App Design -->
+    <div class="svc-item">
+      <div class="svc-item__header">
+        <span class="svc-item__num">(01)</span>
+        <h3 class="svc-item__name">App Design</h3>
+      </div>
+      <div class="svc-item__img">
+        <img src="https://picsum.photos/seed/app1/600/300" alt="App Design" loading="lazy" />
+      </div>
+      <div class="svc-item__footer">
+        <p class="svc-item__desc">Intuitive mobile app design focused on usability, performance, and seamless user journeys across iOS and Android platforms.</p>
+        <button class="svc-item__arrow-btn" aria-label="App Design">&rarr;</button>
+      </div>
+    </div>
+
+    <!-- (02) Web Design -->
+    <div class="svc-item">
+      <div class="svc-item__header">
+        <span class="svc-item__num">(02)</span>
+        <h3 class="svc-item__name">Web Design</h3>
+      </div>
+      <div class="svc-item__img">
+        <img src="https://picsum.photos/seed/web1/600/300" alt="Web Design" loading="lazy" />
+      </div>
+      <div class="svc-item__footer">
+        <p class="svc-item__desc">Modern dark-mode web design delivering sleek visuals, responsive layouts, and conversion-focused interfaces.</p>
+        <button class="svc-item__arrow-btn" aria-label="Web Design">&rarr;</button>
+      </div>
+    </div>
+
+    <!-- (03) Product Design -->
+    <div class="svc-item">
+      <div class="svc-item__header">
+        <span class="svc-item__num">(03)</span>
+        <h3 class="svc-item__name">Product Design</h3>
+      </div>
+      <div class="svc-item__img">
+        <img src="https://picsum.photos/seed/prod1/600/300" alt="Product Design" loading="lazy" />
+      </div>
+      <div class="svc-item__footer">
+        <p class="svc-item__desc">End-to-end product design combining UX research, wireframing, prototyping, and scalable design systems.</p>
+        <button class="svc-item__arrow-btn" aria-label="Product Design">&rarr;</button>
+      </div>
+    </div>
+
+    <!-- (04) Brand Design -->
+    <div class="svc-item">
+      <div class="svc-item__header">
+        <span class="svc-item__num">(04)</span>
+        <h3 class="svc-item__name">Brand Design</h3>
+      </div>
+      <div class="svc-item__img">
+        <img src="https://picsum.photos/seed/brand1/600/300" alt="Brand Design" loading="lazy" />
+      </div>
+      <div class="svc-item__footer">
+        <p class="svc-item__desc">Strategic brand identity design including logo systems, typography, color palettes, and visual storytelling.</p>
+        <button class="svc-item__arrow-btn" aria-label="Brand Design">&#8599;</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ DARK REGION: TESTIMONIALS + CTA ════════════════════════ -->
+<div class="dark-region">
+
+  <section class="section-spacer section-spacer--dark"></section>
+
+  <!-- TESTIMONIALS -->
+  <section>
+    <div class="dark-section-header">
+      <div class="dark-section-label">
+        <span class="section-label-dot"></span>
+        What People Saying
+      </div>
+      <h2 class="section-title section-title--dark">Testimonials.</h2>
+    </div>
+    <div class="testimonials-logos">
+      <div class="testimonial-logo-col"><span>afterpay&#8645;</span></div>
+      <div class="testimonial-logo-col"><span>&#9737; Basecamp</span></div>
+      <div class="testimonial-logo-col"><span>splunk&gt;</span></div>
+      <div class="testimonial-logo-col"><span>&#8801; ghost</span></div>
+    </div>
+    <div class="testimonials-body">
+      <div class="testimonial-item active">
+        <div class="testimonial-content">
+          <blockquote class="testimonial-quote">
+            "Their attention to detail and creative vision truly exceeded our expectations. The team delivered a refined, modern website that not only looks premium but also performs better than ever."
+          </blockquote>
+          <div>
+            <p class="testimonial-author">@Steve Harrington</p>
+            <div class="testimonial-nav">
+              <button class="arrow-btn" id="testimonialPrev" aria-label="Previous">&larr;</button>
+              <button class="arrow-btn" id="testimonialNext" aria-label="Next">&rarr;</button>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-portrait">
+          <img src="https://picsum.photos/seed/testi1/400/500" alt="Testimonial" loading="lazy" />
+        </div>
+      </div>
+      <div class="testimonial-item">
+        <div class="testimonial-content">
+          <blockquote class="testimonial-quote">
+            "DigitalArc's team brought our brand to life in ways we never imagined. Every detail was considered and every decision was intentional."
+          </blockquote>
+          <div>
+            <p class="testimonial-author">@Sarah Chen</p>
+          </div>
+        </div>
+        <div class="testimonial-portrait">
+          <img src="https://picsum.photos/seed/testi2/400/500" alt="Testimonial" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-spacer section-spacer--dark"></section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2 class="cta-title">
+      A Creative Video
+      <div class="cta-img-embed"><img src="https://picsum.photos/seed/cta1/120/80" alt="" /></div>
+      Production Studio
+    </h2>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn btn--dark">Get Started</a>
+      <button class="arrow-btn">&rarr;</button>
+    </div>
+  </section>
+
+</div><!-- end dark-region -->
+
+<!-- ═══ FOOTER ═════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer__main">
+    <div class="footer__logo">
+      <svg width="12" height="12" viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l1.5 5.5L14 7l-5.5 1.5L7 14l-1.5-5.5L0 7l5.5-1.5z"/></svg>
+      DigitalArc
+    </div>
+    <nav class="footer__nav">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="projects.html">Project</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+  <div class="footer__sub">Designed by WrapPixel</div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">&#8593;</button>
+<script src="main.js"></script>
+</body>
+</html>
