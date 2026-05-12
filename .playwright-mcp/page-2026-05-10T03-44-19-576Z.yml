@@ -1,0 +1,153 @@
+- generic [active] [ref=e1]:
+  - banner:
+    - navigation [ref=e2]:
+      - generic [ref=e4]:
+        - list [ref=e7]:
+          - listitem [ref=e8]:
+            - button "Our Work" [ref=e9] [cursor=pointer]:
+              - generic [ref=e10]: Our Work
+          - listitem [ref=e11]:
+            - button "Services" [ref=e12] [cursor=pointer]:
+              - generic [ref=e13]: Services
+          - listitem [ref=e14]:
+            - button "About" [ref=e15] [cursor=pointer]:
+              - generic [ref=e16]: About
+          - listitem [ref=e17]:
+            - button "FAQ" [ref=e18] [cursor=pointer]:
+              - generic [ref=e19]: FAQ
+        - link "home" [ref=e21] [cursor=pointer]:
+          - /url: /
+          - text: Toggle Solutions
+        - button "Book a Consultation" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: Book a Consultation
+  - main [ref=e26]:
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - heading "Connect with our Marketing Expert" [level=1] [ref=e31]
+        - paragraph [ref=e32]: Fill the form and we will connect you within 24 hours to schedule a call. No sales pitches, no pressure.
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - paragraph [ref=e36]: Email
+            - link "marketing@toggle.com" [ref=e37] [cursor=pointer]:
+              - /url: mailto:marketing@toggle.com
+          - generic [ref=e38]:
+            - paragraph [ref=e39]: Phone (Sales)
+            - link "+60 12-568 8681" [ref=e40] [cursor=pointer]:
+              - /url: tel:+60125688681
+          - generic [ref=e41]:
+            - paragraph [ref=e42]: Legal / General
+            - link "hello@togglesolutions.com" [ref=e43] [cursor=pointer]:
+              - /url: mailto:hello@togglesolutions.com
+          - generic [ref=e44]:
+            - paragraph [ref=e45]: What to expect
+            - list [ref=e46]:
+              - listitem [ref=e47]: ✓ Free No Obligation Consultation Call
+              - listitem [ref=e48]: ✓ No Sales Pitches & No Pressure
+              - listitem [ref=e49]: ✓ Simple Pricing
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - generic [ref=e53]:
+              - generic [ref=e54]:
+                - text: Name
+                - generic [ref=e55]: "*"
+              - textbox "Name *" [ref=e56]:
+                - /placeholder: Your name
+            - generic [ref=e57]:
+              - generic [ref=e58]:
+                - text: Email
+                - generic [ref=e59]: "*"
+              - textbox "Email *" [ref=e60]:
+                - /placeholder: you@company.com
+          - generic [ref=e61]:
+            - generic [ref=e62]:
+              - generic [ref=e63]:
+                - text: Contact Number
+                - generic [ref=e64]: "*"
+              - textbox "Contact Number *" [ref=e65]:
+                - /placeholder: +60 12-345 6789
+            - generic [ref=e66]:
+              - generic [ref=e67]: Website URL
+              - textbox "Website URL" [ref=e68]:
+                - /placeholder: https://yourcompany.com
+          - generic [ref=e69]:
+            - generic [ref=e70]:
+              - text: How can we help?
+              - generic [ref=e71]: "*"
+            - textbox "How can we help? *" [ref=e72]:
+              - /placeholder: Tell us about your business and goals...
+          - button "Book a Consultation" [ref=e73] [cursor=pointer]
+  - button "Scroll to top": ↑
+  - contentinfo [ref=e74]:
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - generic [ref=e77]:
+          - link "Toggle Solutions" [ref=e78] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e79]: A strategic growth partner for ambitious brands. We combine high-end design with data-driven performance.
+          - generic [ref=e80]:
+            - link "LinkedIn" [ref=e81] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/toggle-solutions
+            - link "Instagram" [ref=e82] [cursor=pointer]:
+              - /url: https://www.instagram.com/toggle.solutions/
+        - generic [ref=e83]:
+          - heading "Services" [level=3] [ref=e84]
+          - list [ref=e85]:
+            - listitem [ref=e86]:
+              - link "Performance Marketing" [ref=e87] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e88]:
+              - link "Content Strategy & Marketing" [ref=e89] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e90]:
+              - link "Branding" [ref=e91] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e92]:
+              - link "Web Development" [ref=e93] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e94]:
+              - link "Email Marketing" [ref=e95] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e96]:
+              - link "Reporting & Analytics" [ref=e97] [cursor=pointer]:
+                - /url: /services
+        - generic [ref=e98]:
+          - heading "Company" [level=3] [ref=e99]
+          - list [ref=e100]:
+            - listitem [ref=e101]:
+              - link "About" [ref=e102] [cursor=pointer]:
+                - /url: /#about
+            - listitem [ref=e103]:
+              - link "Our Work" [ref=e104] [cursor=pointer]:
+                - /url: /work
+            - listitem [ref=e105]:
+              - link "FAQ" [ref=e106] [cursor=pointer]:
+                - /url: /#faq
+            - listitem [ref=e107]:
+              - link "Contact" [ref=e108] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e109]:
+          - heading "Case Studies" [level=3] [ref=e110]
+          - list [ref=e111]:
+            - listitem [ref=e112]:
+              - link "UNITAR" [ref=e113] [cursor=pointer]:
+                - /url: /work
+            - listitem [ref=e114]:
+              - link "CIMB Bank" [ref=e115] [cursor=pointer]:
+                - /url: /work
+            - listitem [ref=e116]:
+              - link "Kith & Kin" [ref=e117] [cursor=pointer]:
+                - /url: /work
+            - listitem [ref=e118]:
+              - link "Kualesa" [ref=e119] [cursor=pointer]:
+                - /url: /work
+            - listitem [ref=e120]:
+              - link "Singlife" [ref=e121] [cursor=pointer]:
+                - /url: /work
+      - generic [ref=e122]:
+        - paragraph [ref=e123]: © Toggle Solutions. All rights reserved.
+        - generic [ref=e124]:
+          - link "Terms & Conditions" [ref=e125] [cursor=pointer]:
+            - /url: /terms
+          - link "Privacy Policy" [ref=e126] [cursor=pointer]:
+            - /url: /privacy
