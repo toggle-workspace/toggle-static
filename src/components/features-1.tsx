@@ -26,7 +26,10 @@ export default function Features() {
                 conversion data.
               </p>
             </div>
-            <div aria-hidden className="flex h-44 flex-col justify-between pt-8">
+            <div
+              aria-hidden
+              className="flex h-44 flex-col justify-between pt-8"
+            >
               <div className="relative flex h-10 items-center gap-12 px-6">
                 <div className="bg-border absolute inset-0 my-auto h-px"></div>
                 <div className="bg-card shadow-black/6.5 ring-border relative flex h-8 items-center rounded-full px-3 shadow-sm ring">

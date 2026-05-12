@@ -1,7 +1,10 @@
-import { Card } from "@/components/ui/card";
 import CallToAction from "@/components/call-to-action";
 import { PageHeader } from "@/components/ui/page-header";
 import { Spacer } from "@/components/ui/grid";
+import {
+  ProjectCard,
+  ProjectCardGrid,
+} from "@/components/ui/project-card";
 
 const caseStudies = [
   {
@@ -174,64 +177,28 @@ export default function WorkPage() {
       </section>
       <Spacer />
 
-      <section className="bg-background @container pb-24">
-        <div className="mx-auto max-w-2xl px-6">
-          <div className="grid gap-6">
-            {caseStudies.map((study) => (
-              <Card
-                key={study.slug}
-                id={study.slug}
-                variant="outline"
-                className="p-6 md:p-8 scroll-mt-24"
-              >
-                <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
-                  <div>
-                    <p className="text-muted-foreground text-xs mb-1">
-                      {study.industry} · {study.location}
-                    </p>
-                    <h2 className="text-foreground font-serif text-2xl font-medium">
-                      {study.client}
-                    </h2>
-                    <p className="text-muted-foreground text-sm italic mt-0.5">
-                      {study.headline}
-                    </p>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {study.services.map((svc) => (
-                      <span
-                        key={svc}
-                        className="bg-muted text-muted-foreground rounded-full px-3 py-0.5 text-xs"
-                      >
-                        {svc}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="space-y-3 text-sm">
-                  <p className="text-muted-foreground">{study.challenge}</p>
-                  <p className="text-foreground">{study.result}</p>
-                </div>
-
-                {study.metrics.length > 0 && (
-                  <div className="mt-6 flex flex-wrap gap-6 border-t pt-4">
-                    {study.metrics.map((m) => (
-                      <div key={m.label}>
-                        <p className="text-foreground font-serif text-2xl font-medium">
-                          {m.value}
-                        </p>
-                        <p className="text-muted-foreground text-xs mt-0.5">
-                          {m.label}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ProjectCardGrid>
+        {caseStudies.map((study) => (
+          <ProjectCard
+            key={study.slug}
+            logo={
+              <div className="space-y-1">
+                <p className="text-muted-foreground font-mono text-xs uppercase">
+                  {study.industry} · {study.location}
+                </p>
+                <p className="text-foreground font-semibold">{study.client}</p>
+              </div>
+            }
+            quotePrefix={study.headline}
+            quoteHighlight={study.result}
+            href={`/work/${study.slug}`}
+            stats={study.metrics.map((m) => ({
+              value: m.value,
+              description: m.label,
+            }))}
+          />
+        ))}
+      </ProjectCardGrid>
 
       <CallToAction />
     </>

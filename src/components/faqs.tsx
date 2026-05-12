@@ -73,7 +73,7 @@ export default function FAQs() {
             Can&apos;t find what you&apos;re looking for? Contact our{" "}
             <Link
               href="/contact"
-              className="text-primary font-medium hover:underline"
+              className="text-primary font-medium underline underline-offset-2"
             >
               customer support team
             </Link>
