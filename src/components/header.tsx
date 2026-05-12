@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import React from "react";
 import { cn } from "@/lib/utils";
 import { useScroll, useMotionValueEvent } from "motion/react";
-import { GridRow, Spacer } from "@/components/ui/grid";
+import { GridRow } from "@/components/ui/grid";
 
 const menuItems = [
   { name: "Our Work", href: "/work" },

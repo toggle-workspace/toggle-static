@@ -1,5 +1,7 @@
 import { Card } from "@/components/ui/card";
 import CallToAction from "@/components/call-to-action";
+import { PageHeader } from "@/components/ui/page-header";
+import { Spacer } from "@/components/ui/grid";
 
 const caseStudies = [
   {
@@ -163,18 +165,14 @@ const caseStudies = [
 export default function WorkPage() {
   return (
     <>
-      <section className="bg-background pt-44 pb-16">
-        <div className="mx-auto max-w-2xl px-6">
-          <p className="text-muted-foreground text-sm mb-3">Our Work</p>
-          <h1 className="font-serif text-5xl font-medium sm:text-6xl text-balance">
-            Real results for real businesses.
-          </h1>
-          <p className="text-muted-foreground mt-6 max-w-xl text-balance">
-            Here's how we've helped brands grow across Malaysia and Southeast
-            Asia.
-          </p>
-        </div>
+      <section>
+        <PageHeader
+          title="Real results for real businesses."
+          subtitle="our work"
+          description="Here's how we've helped brands grow across Malaysia and Southeast Asia."
+        />
       </section>
+      <Spacer />
 
       <section className="bg-background @container pb-24">
         <div className="mx-auto max-w-2xl px-6">

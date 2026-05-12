@@ -1,6 +1,8 @@
 import CallToAction from "@/components/call-to-action";
 import Features from "@/components/features-1";
 import { Card } from "@/components/ui/card";
+import { PageHeader } from "@/components/ui/page-header";
+import { Spacer } from "@/components/ui/grid";
 
 const allServices = [
   {
@@ -92,18 +94,15 @@ const allServices = [
 export default function ServicesPage() {
   return (
     <>
-      <section className="bg-background pt-44 pb-16">
-        <div className="mx-auto max-w-2xl px-6">
-          <p className="text-muted-foreground text-sm mb-3">What We Offer</p>
-          <h1 className="font-serif text-5xl font-medium sm:text-6xl text-balance">
-            Full Stack Digital Solutions
-          </h1>
-          <p className="text-muted-foreground mt-6 max-w-xl text-balance">
-            From brand awareness to final scale, we cover it all. Explore our
-            range of services built to grow your business at every stage.
-          </p>
-        </div>
+      <section>
+        <PageHeader
+          title="Full Stack Digital Solutions"
+          subtitle="What We Offer"
+          description="From brand awareness to final scale, we cover it all. Explore our
+            range of services built to grow your business at every stage."
+        />
       </section>
+      <Spacer />
 
       <Features />
 

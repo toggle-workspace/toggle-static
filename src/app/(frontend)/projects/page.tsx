@@ -2,6 +2,7 @@ export const dynamic = "force-dynamic";
 
 import { getPayload } from "payload";
 import config from "@payload-config";
+import { PageHeader } from "@/components/ui/page-header";
 
 async function getData() {
   const payload = await getPayload({ config });
@@ -16,5 +17,12 @@ async function getData() {
 export default async function ProjectsPage() {
   const projects = await getData();
 
-  return <>Test</>;
+  return (
+    <>
+      <PageHeader
+        title="Full Stack Digital Solutions"
+        description="From brand awareness to final scale, we cover it all. Explore our range of services built to grow your business at every stage."
+      />
+    </>
+  );
 }

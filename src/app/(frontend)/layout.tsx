@@ -4,6 +4,7 @@ import { ThemeScript } from "@/components/ui/ThemeScript";
 import { Header } from "@/components/header";
 import { ScrollToTop } from "@/components/ui/ScrollToTop";
 import Footer from "@/components/footer";
+import { GridRow } from "@/components/ui/grid";
 import "../../styles/globals.css";
 
 const geistMono = Geist_Mono({
@@ -43,7 +44,9 @@ export default function RootLayout({
       </head>
       <body className="font-body">
         <Header />
-        <main>{children}</main>
+        <main className="bg-zinc-950/10">
+          <GridRow plain>{children}</GridRow>
+        </main>
         <ScrollToTop />
         <Footer />
       </body>
