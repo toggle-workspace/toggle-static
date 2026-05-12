@@ -10,7 +10,6 @@ const menuItems = [
   { name: "Our Work", href: "/work" },
   { name: "Services", href: "/services" },
   { name: "About", href: "/about" },
-  { name: "FAQ", href: "/#faq" },
 ];
 
 export const Header = () => {
@@ -132,7 +131,7 @@ export const Header = () => {
                     className="cursor-pointer inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 shadow-md shadow-black/15 border-[0.5px] border-transparent bg-primary ring-1 ring-(--ring-color) [--ring-color:color-mix(in_oklab,var(--color-foreground)15%,var(--color-primary))] text-primary-foreground hover:bg-primary/90 h-8 rounded-md px-3 text-xs"
                     href="/contact"
                   >
-                    <span>Get Started</span>
+                    <span>Book a Consultation</span>
                   </Link>
                 </div>
               </div>
