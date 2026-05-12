@@ -5,33 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
-function SideCol({ wide }: { wide?: boolean }) {
-  return (
-    <div
-      className="grid"
-      style={{ gridTemplateColumns: "repeat(1, minmax(0, 1fr))" }}
-    >
-      <div aria-hidden="true" className={`p-[0.5px]${wide ? " w-full" : ""}`}>
-        <div className="bg-card/90 h-full w-2 rounded md:w-6 lg:w-full" />
-      </div>
-    </div>
-  );
-}
-
-function GridRow({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] bg-zinc-950/10">
-      <SideCol wide />
-      <div className="max-w-276 lg:min-w-276 mx-auto w-full">
-        <div className="**:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded grid *:p-[0.5px] md:**:data-[slot=content]:py-0">
-          {children}
-        </div>
-      </div>
-      <SideCol />
-    </div>
-  );
-}
+import { GridRow } from "@/components/ui/grid";
 
 const faqGroups = [
   {

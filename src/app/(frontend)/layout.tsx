@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, DM_Sans } from "next/font/google";
 import { ThemeScript } from "@/components/ui/ThemeScript";
-import { HeroHeader } from "@/components/header";
+import { Header } from "@/components/header";
 import { ScrollToTop } from "@/components/ui/ScrollToTop";
 import Footer from "@/components/footer";
 import "../../styles/globals.css";
@@ -42,7 +42,7 @@ export default function RootLayout({
         <ThemeScript />
       </head>
       <body className="font-body">
-        <HeroHeader />
+        <Header />
         <main>{children}</main>
         <ScrollToTop />
         <Footer />

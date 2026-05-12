@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import React from "react";
 import { cn } from "@/lib/utils";
 import { useScroll, useMotionValueEvent } from "motion/react";
+import { GridRow, Spacer } from "@/components/ui/grid";
 
 const menuItems = [
   { name: "Our Work", href: "/work" },
@@ -12,70 +13,7 @@ const menuItems = [
   { name: "FAQ", href: "/#faq" },
 ];
 
-function SideCol({ wide }: { wide?: boolean }) {
-  return (
-    <div
-      className="grid"
-      style={{ gridTemplateColumns: "repeat(1, minmax(0, 1fr))" }}
-    >
-      <div aria-hidden="true" className={`p-[0.5px]${wide ? " w-full" : ""}`}>
-        <div className="bg-card/90 h-full w-2 rounded md:w-6 lg:w-full" />
-      </div>
-    </div>
-  );
-}
-
-function GridRow({
-  children,
-  plain,
-}: {
-  children: React.ReactNode;
-  plain?: boolean;
-}) {
-  if (plain) {
-    return (
-      <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr]">
-        <SideCol wide />
-        <div className="max-w-276 lg:min-w-276 mx-auto w-full p-[0.5px]">
-          <div data-slot="content" className="bg-card/90 h-full rounded">
-            {children}
-          </div>
-        </div>
-        <SideCol />
-      </div>
-    );
-  }
-  return (
-    <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr]">
-      <SideCol wide />
-      <div className="max-w-276 lg:min-w-276 mx-auto w-full">
-        <div className="**:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded grid *:p-[0.5px]">
-          {children}
-        </div>
-      </div>
-      <SideCol />
-    </div>
-  );
-}
-
-function Spacer() {
-  return (
-    <div
-      aria-hidden="true"
-      className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr]"
-    >
-      <SideCol wide />
-      <div className="max-w-276 lg:min-w-276 mx-auto w-full p-[0.5px]">
-        <div data-slot="content" className="bg-card/90 h-full rounded">
-          <div className="h-6" />
-        </div>
-      </div>
-      <SideCol />
-    </div>
-  );
-}
-
-export const HeroHeader = () => {
+export const Header = () => {
   const [menuState, setMenuState] = React.useState(false);
   const [isScrolled, setIsScrolled] = React.useState(false);
   const { scrollY } = useScroll();
@@ -91,7 +29,9 @@ export const HeroHeader = () => {
       data-scrolled={isScrolled}
       className="lg:data-scrolled:pb-[0.5px] sticky inset-x-0 top-0 z-50 bg-zinc-950/10 max-lg:pb-px"
     >
-      <Spacer />
+      <GridRow plain>
+        <div className="h-6" />
+      </GridRow>
       <div
         className={cn(
           "w-full max-lg:h-14 max-lg:overflow-hidden",
