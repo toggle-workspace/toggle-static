@@ -1,76 +1,110 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
-import { GridRow } from "@/components/ui/grid";
 
-interface Stat {
-  value: React.ReactNode;
-  description: React.ReactNode;
+interface Author {
+  name: string;
+  avatar: string;
 }
 
-interface ProjectCardProps {
-  logo?: React.ReactNode;
-  quotePrefix?: string;
-  quoteHighlight: string;
-  href?: string;
-  stats?: Stat[];
+interface PostCardProps {
+  image: string;
+  imageAlt?: string;
+  date: string | Date;
+  title: string;
+  excerpt: string;
+  href: string;
+  authors: Author[];
 }
 
-export function ProjectCard({
-  logo,
-  quotePrefix,
-  quoteHighlight,
-  href = "#",
-  stats,
-}: ProjectCardProps) {
+function formatDate(date: string | Date) {
+  return new Date(date).toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  });
+}
+
+export function PostCard({
+  image,
+  imageAlt = "",
+  date,
+  title,
+  excerpt,
+  href,
+  authors,
+}: PostCardProps) {
   return (
-    <div
-      data-grid-content="true"
-      className="@4xl:p-12 group relative row-span-4 grid grid-rows-subgrid gap-12 p-8"
-    >
-      <div>{logo}</div>
-      <p className="text-3xl font-normal">
-        {quotePrefix && <span>{quotePrefix} </span>}
-        <span className="text-foreground font-semibold">{quoteHighlight}</span>
-      </p>
-      <Link
-        href={href}
-        className="text-primary before:absolute before:inset-0 flex items-center font-medium"
+    <article className="bg-card hover:bg-card/75 group relative flex flex-col space-y-4 rounded p-6 duration-200">
+      <div className="before:border-foreground/10 before:inset-ring-1 before:inset-ring-background/10 relative aspect-video overflow-hidden rounded-[10px] shadow-md shadow-black/10 before:absolute before:inset-0 before:rounded-[10px] before:border">
+        <Image
+          src={image}
+          alt={imageAlt}
+          width={6394}
+          height={4500}
+          className="h-full w-full object-cover"
+          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+        />
+      </div>
+
+      <time
+        className="text-muted-foreground block text-sm"
+        dateTime={new Date(date).toISOString()}
       >
-        Read Story
-        <ChevronRight className="ml-2 size-3 translate-y-0.5 duration-200 group-hover:translate-x-0.5" strokeWidth={3} />
-      </Link>
-      {stats && stats.length > 0 && (
-        <div className="grid grid-cols-2 gap-6">
-          {stats.map((stat, i) => (
-            <div key={i} className="space-y-2 *:block">
-              <span className="text-2xl font-semibold">{stat.value}</span>
-              <p className="text-balance text-sm">{stat.description}</p>
+        {formatDate(date)}
+      </time>
+
+      <h3 className="text-foreground font-semibold">
+        <Link href={href} className="before:absolute before:inset-0">
+          {title}
+        </Link>
+      </h3>
+
+      <p className="text-muted-foreground">{excerpt}</p>
+
+      <div className="mt-auto grid grid-cols-[1fr_auto] items-end gap-2 pt-4">
+        <div className="space-y-2">
+          {authors.map((author) => (
+            <div
+              key={author.name}
+              className="grid grid-cols-[auto_1fr] items-center gap-2"
+            >
+              <div className="ring-border-illustration bg-card aspect-square size-6 overflow-hidden rounded-md border border-transparent shadow-md shadow-black/15 ring-1">
+                <Image
+                  src={author.avatar}
+                  alt={author.name}
+                  width={46}
+                  height={46}
+                  className="size-full object-cover"
+                />
+              </div>
+              <span className="text-muted-foreground line-clamp-1 text-sm">
+                {author.name}
+              </span>
             </div>
           ))}
         </div>
-      )}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 rounded opacity-0 shadow-2xl shadow-indigo-900/15 duration-200 group-hover:opacity-100"
-      />
-    </div>
+
+        <div className="flex h-6 items-center">
+          <span
+            aria-label={`Read ${title}`}
+            className="text-primary group-hover:text-foreground flex items-center gap-1 text-sm font-medium transition-colors duration-200"
+          >
+            Read
+            <ChevronRight
+              className="size-3.5 translate-y-px duration-200 group-hover:translate-x-0.5"
+              strokeWidth={2.5}
+              aria-hidden
+            />
+          </span>
+        </div>
+      </div>
+    </article>
   );
 }
 
-export function ProjectCardGrid({ children }: { children: React.ReactNode }) {
+export function PostCardGrid({ children }: { children: React.ReactNode }) {
   return (
-    <GridRow>
-      <div className="@4xl:grid-cols-10 grid">
-        <div className="@max-4xl:hidden">
-          <div data-grid-content="true" />
-        </div>
-        <div className="@4xl:col-span-8">
-          <div className="@2xl:grid-cols-2 grid gap-px">{children}</div>
-        </div>
-        <div className="@max-4xl:hidden">
-          <div data-grid-content="true" />
-        </div>
-      </div>
-    </GridRow>
+    <div className="grid gap-px sm:grid-cols-2 lg:grid-cols-3">{children}</div>
   );
 }

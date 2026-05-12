@@ -4,7 +4,6 @@ import AboutMission from "@/components/about-mission";
 import AboutValues from "@/components/about-values";
 import AboutTeam from "@/components/about-team";
 import AboutInvestors from "@/components/about-investors";
-import AboutHiring from "@/components/about-hiring";
 
 export default function AboutPage() {
   return (
@@ -19,10 +18,6 @@ export default function AboutPage() {
       <AboutValues />
       <Spacer />
       <AboutTeam />
-      <Spacer />
-      <AboutInvestors />
-      <Spacer />
-      <AboutHiring />
     </main>
   );
 }

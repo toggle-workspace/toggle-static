@@ -1,10 +1,8 @@
+import Link from "next/link";
 import CallToAction from "@/components/call-to-action";
 import { PageHeader } from "@/components/ui/page-header";
 import { Spacer } from "@/components/ui/grid";
-import {
-  ProjectCard,
-  ProjectCardGrid,
-} from "@/components/ui/project-card";
+import BlogSection from "@/components/blog-section";
 
 const caseStudies = [
   {
@@ -175,31 +173,8 @@ export default function WorkPage() {
           description="Here's how we've helped brands grow across Malaysia and Southeast Asia."
         />
       </section>
+      <BlogSection />
       <Spacer />
-
-      <ProjectCardGrid>
-        {caseStudies.map((study) => (
-          <ProjectCard
-            key={study.slug}
-            logo={
-              <div className="space-y-1">
-                <p className="text-muted-foreground font-mono text-xs uppercase">
-                  {study.industry} · {study.location}
-                </p>
-                <p className="text-foreground font-semibold">{study.client}</p>
-              </div>
-            }
-            quotePrefix={study.headline}
-            quoteHighlight={study.result}
-            href={`/work/${study.slug}`}
-            stats={study.metrics.map((m) => ({
-              value: m.value,
-              description: m.label,
-            }))}
-          />
-        ))}
-      </ProjectCardGrid>
-
       <CallToAction />
     </>
   );
