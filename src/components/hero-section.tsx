@@ -127,7 +127,7 @@ export default function HeroSection() {
       <div className="bg-foreground/8 @container">
         {/* Label row */}
         <div className="bg-background rounded">
-          <div className="max-w-lg px-6 pb-6 pt-12">
+          <div className="max-w-lg p-6">
             <span className="text-muted-foreground font-mono text-sm uppercase">
               Performance Marketing
             </span>

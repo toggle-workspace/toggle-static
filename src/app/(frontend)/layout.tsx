@@ -42,7 +42,7 @@ export default function RootLayout({
       <head>
         <ThemeScript />
       </head>
-      <body className="font-body">
+      <body className="font-body overflow-x-clip">
         <Header />
         <main className="bg-zinc-950/10">
           <GridRow plain>{children}</GridRow>

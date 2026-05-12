@@ -20,21 +20,11 @@ const features = [
   "Priority response time",
 ];
 
-const countries = [
-  { value: "my", label: "🇲🇾 Malaysia" },
-  { value: "sg", label: "🇸🇬 Singapore" },
-  { value: "us", label: "🇺🇸 United States" },
-  { value: "gb", label: "🇬🇧 United Kingdom" },
-  { value: "au", label: "🇦🇺 Australia" },
-];
-
 const jobFunctions = [
-  { value: "marketing", label: "Marketing" },
-  { value: "sales", label: "Sales" },
-  { value: "finance", label: "Finance" },
-  { value: "education", label: "Education" },
-  { value: "legal", label: "Legal" },
-  { value: "other", label: "Other" },
+  { value: "Digital Marketing", label: "Digital Marketing" },
+  { value: "Branding", label: "Branding" },
+  { value: "Web Development", label: "Web Development" },
+  { value: "SEO", label: "SEO" },
 ];
 
 export default function ContactPage() {
@@ -151,24 +141,6 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <Label htmlFor="country" className="text-sm">
-                    Country/Region
-                  </Label>
-                  <Select name="country">
-                    <SelectTrigger id="country" className="w-full">
-                      <SelectValue placeholder="Select Country/Region" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {countries.map((c) => (
-                        <SelectItem key={c.value} value={c.value}>
-                          {c.label}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </div>
-
-                <div>
                   <Label htmlFor="website" className="text-sm">
                     Company Website
                   </Label>
@@ -219,7 +191,10 @@ export default function ContactPage() {
                 <div className="grid gap-6 sm:grid-cols-[1fr_auto]">
                   <p className="text-muted-foreground text-balance text-sm">
                     By submitting this form, you agree to our{" "}
-                    <Link href="/privacy" className="text-primary underline">
+                    <Link
+                      href="/privacy-policy"
+                      className="text-primary underline"
+                    >
                       Privacy Policy
                     </Link>
                   </p>
