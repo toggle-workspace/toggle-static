@@ -1,13 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Lightbulb,
-  Heart,
-  Users,
-  Shield,
-  Flame,
-  ArrowRight,
-} from "lucide-react";
+import { Lightbulb, Heart, Users, Shield, ArrowRight } from "lucide-react";
 
 function SideCol({ wide }: { wide?: boolean }) {
   return (
