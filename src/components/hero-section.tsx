@@ -237,9 +237,6 @@ export default function HeroSection() {
             </div>
           ))}
         </div>
-
-        {/* Bottom spacer */}
-        <div className="bg-background h-24 rounded" />
       </div>
     </section>
   );
