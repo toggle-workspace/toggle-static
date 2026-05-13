@@ -19,16 +19,15 @@ export default function HomePage() {
       />
       <FeaturesTwo />
       <Spacer />
-      <FeatureCarousel />
-      <Spacer />
       <Heading
         title="Built to Grow the Whole Business"
         description="We build a full-funnel system across ads, creative, lifecycle, and reporting so every part of your marketing works toward the same goal: sustainable, measurable growth you can scale with confidence."
       />
-      <Spacer />
       <Content />
       <Spacer />
       <Features />
+      <Spacer />
+      <FeatureCarousel />
       <Spacer />
       <FAQs />
       <Spacer />
