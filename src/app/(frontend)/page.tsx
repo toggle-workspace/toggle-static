@@ -1,6 +1,6 @@
 import HeroSection from "@/components/hero-section";
 import Content from "@/components/content-3";
-import Features from "@/components/features-1";
+import ServicesGrid from "@/components/services-grid";
 import FAQs from "@/components/faqs";
 import CallToAction from "@/components/call-to-action";
 import { Spacer } from "@/components/ui/grid";
@@ -25,7 +25,11 @@ export default function HomePage() {
       />
       <Content />
       <Spacer />
-      <Features />
+      <Heading
+        title="Full Stack Digital Solutions"
+        description="From brand awareness to final scale, we cover every channel and growth stage — built to compound over time."
+      />
+      <ServicesGrid />
       <Spacer />
       <FeatureCarousel />
       <Spacer />
