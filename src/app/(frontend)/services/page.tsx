@@ -1,8 +1,7 @@
 import CallToAction from "@/components/call-to-action";
-import Features from "@/components/features-1";
-import { Card } from "@/components/ui/card";
 import { PageHeader } from "@/components/ui/page-header";
 import { Spacer } from "@/components/ui/grid";
+import HeroSecondary from "@/components/hero-secondary";
 
 const allServices = [
   {
@@ -103,37 +102,6 @@ export default function ServicesPage() {
         />
       </section>
       <Spacer />
-
-      <Features />
-
-      <section className="bg-background @container py-12 pb-24">
-        <div className="mx-auto max-w-2xl px-6">
-          <div className="grid gap-3">
-            {allServices.map((svc) => (
-              <Card
-                key={svc.num}
-                variant="outline"
-                className="p-6 hover:border-foreground/30 transition-colors"
-              >
-                <div className="flex items-start gap-4">
-                  <span className="text-muted-foreground font-mono text-sm shrink-0 mt-0.5">
-                    ({svc.num})
-                  </span>
-                  <div className="space-y-1">
-                    <h3 className="text-foreground font-medium">{svc.name}</h3>
-                    <p className="text-muted-foreground text-sm italic">
-                      {svc.headline}
-                    </p>
-                    <p className="text-muted-foreground text-sm mt-2">
-                      {svc.description}
-                    </p>
-                  </div>
-                </div>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
       <CallToAction />
     </>
   );

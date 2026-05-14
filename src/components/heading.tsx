@@ -1,5 +1,3 @@
-import { GridRow } from "@/components/ui/grid";
-
 interface HeadingProps {
   title: string;
   description?: string;
