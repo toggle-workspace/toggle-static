@@ -7,7 +7,6 @@ import { Spacer } from "@/components/ui/grid";
 import FeatureCarousel from "@/components/feature-carousel";
 import { Heading } from "@/components/heading";
 import FeaturesTwo from "@/components/features-2";
-import CustomerLogos from "@/components/customer-logos";
 
 export default function HomePage() {
   return (

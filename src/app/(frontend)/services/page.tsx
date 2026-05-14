@@ -2,6 +2,7 @@ import CallToAction from "@/components/call-to-action";
 import { PageHeader } from "@/components/ui/page-header";
 import { Spacer } from "@/components/ui/grid";
 import HeroSecondary from "@/components/hero-secondary";
+import AboutHiring from "@/components/about-hiring";
 
 const allServices = [
   {
@@ -102,7 +103,10 @@ export default function ServicesPage() {
         />
       </section>
       <Spacer />
-      <CallToAction />
+      <AboutHiring />
+      <section>
+        <CallToAction />
+      </section>
     </>
   );
 }

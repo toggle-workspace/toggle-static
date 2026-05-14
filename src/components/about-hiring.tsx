@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { GridRow } from "@/components/ui/grid";
+import { SideCol } from "@/components/ui/grid";
 
 const jobs = [
   { title: "Performance Marketing Manager", location: "Kuala Lumpur", type: "full" },
@@ -16,22 +16,25 @@ const jobs = [
 export default function AboutHiring() {
   return (
     <section>
-      <GridRow>
-        <div className="grid grid-cols-10 gap-px">
-          <div aria-hidden="true" className="max-sm:hidden">
-            <div data-grid-content="true" />
-          </div>
-          <div className="col-span-full grid gap-px sm:col-span-8">
-            <div data-grid-content="true" className="@4xl:p-12 p-6">
-              <h2 className="text-muted-foreground text-balance font-mono">
-                We&apos;re hiring
-              </h2>
-              <p className="text-foreground mt-6 max-w-2xl text-balance text-xl font-medium">
-                Join a fast-moving team building growth systems for ambitious
-                brands. We value craft, ownership, and results.
-              </p>
+      <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] bg-border">
+        <SideCol wide />
+        <div className="max-w-276 lg:min-w-276 mx-auto w-full">
+          <div className="**:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded grid *:p-[0.5px] @4xl:grid-cols-10">
+            <div aria-hidden="true" className="@max-4xl:hidden">
+              <div data-grid-content="true" />
             </div>
-            <div className="grid gap-px">
+            <div className="@4xl:col-span-8 col-span-full grid gap-px">
+              <div>
+                <div data-grid-content="true" className="@4xl:p-12 p-6">
+                  <h2 className="text-muted-foreground text-balance font-mono">
+                    We&apos;re hiring
+                  </h2>
+                  <p className="text-foreground mt-6 max-w-2xl text-balance text-xl font-medium">
+                    Join a fast-moving team building growth systems for ambitious
+                    brands. We value craft, ownership, and results.
+                  </p>
+                </div>
+              </div>
               {jobs.map((job) => (
                 <div key={job.title}>
                   <div
@@ -60,25 +63,28 @@ export default function AboutHiring() {
                   </div>
                 </div>
               ))}
+              <div>
+                <div data-grid-content="true" className="@4xl:p-12 p-6">
+                  <p className="text-muted-foreground">
+                    Don&apos;t see a role that fits?{" "}
+                    <Link
+                      href="/contact"
+                      className="text-foreground underline underline-offset-4"
+                    >
+                      Send us a note
+                    </Link>{" "}
+                    — we&apos;re always looking for exceptional people.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div data-grid-content="true" className="@4xl:p-12 p-6">
-              <p className="text-muted-foreground">
-                Don&apos;t see a role that fits?{" "}
-                <Link
-                  href="/contact"
-                  className="text-foreground underline underline-offset-4"
-                >
-                  Send us a note
-                </Link>{" "}
-                — we&apos;re always looking for exceptional people.
-              </p>
+            <div aria-hidden="true" className="@max-4xl:hidden">
+              <div data-grid-content="true" />
             </div>
-          </div>
-          <div aria-hidden="true" className="max-sm:hidden">
-            <div data-grid-content="true" />
           </div>
         </div>
-      </GridRow>
+        <SideCol />
+      </div>
     </section>
   );
 }

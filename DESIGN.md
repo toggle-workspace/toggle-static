@@ -90,6 +90,8 @@ The vertical border strip. Used directly in every raw section row.
 <SideCol />        {/* right border — fixed narrow width (w-2 / md:w-6) */}
 ```
 
+Internally renders a `p-[0.5px]` wrapper with a `bg-card/90 h-full rounded` inner div. Width is `w-2` on mobile, `md:w-6`, and `lg:w-full` when `wide`.
+
 ---
 
 ## `Spacer`
@@ -104,15 +106,47 @@ A fixed-height `h-16` blank row. Already uses the correct `bg-border` pattern in
 
 ## `Heading`
 
-A centred section heading row. Import from `@/components/ui/heading`.
+A centred section heading row. Import from `@/components/heading` (not `@/components/ui/heading`).
 
 ```tsx
-import { Heading } from "@/components/ui/heading";
+import { Heading } from "@/components/heading";
 
 <Heading
   title="Enterprise-Grade Security"
   description="Optional supporting text." // optional
 />
+```
+
+`Heading` renders as a plain `<div>` with no grid structure of its own — it inherits side borders from the outer `GridRow plain` in `layout.tsx`. The title uses `text-4xl lg:text-5xl font-semibold text-balance`.
+
+---
+
+## `PageHeader`
+
+Used in **inner pages** (`services`, `about`, etc.) that render inside `bg-zinc-950/10`. Import from `@/components/ui/page-header`.
+
+```tsx
+import { PageHeader } from "@/components/ui/page-header";
+
+<PageHeader
+  title="Full Stack Digital Solutions"
+  subtitle="What We Offer"       // optional — renders as mono uppercase label
+  description="Supporting copy." // optional
+/>
+```
+
+`PageHeader` wraps content in `bg-zinc-950/10` → `bg-background rounded` and uses `data-grid-content="true"`. Title scale: `text-5xl lg:text-6xl font-semibold tracking-tight`. Subtitle uses `font-mono text-sm uppercase text-muted-foreground`.
+
+---
+
+## `CallToAction`
+
+Standalone CTA block, used at the end of pages. Wraps itself in `bg-zinc-950/10` so it manages its own background — do not nest it inside another grid row.
+
+```tsx
+import CallToAction from "@/components/call-to-action";
+
+<CallToAction />
 ```
 
 ---
@@ -131,13 +165,18 @@ The 0.5 px padding gap around each cell (`*:p-[0.5px]`) reveals `bg-border`, for
 
 ## Inner column layouts
 
-Use container-query grid classes on the inner wrapper:
+Use container-query grid classes on the inner wrapper. The site uses `@container` breakpoints (`@md:`, `@2xl:`, `@4xl:`, `@5xl:`) rather than viewport breakpoints for inner layouts.
 
 ```tsx
 // Two equal columns above @4xl
 <div className="@4xl:grid-cols-2 grid gap-px">
   <div data-grid-content="true" className="p-6">...</div>
   <div data-grid-content="true" className="p-6">...</div>
+</div>
+
+// Responsive service grid (1 → 2 → 3 cols)
+<div className="@md:grid-cols-2 @2xl:grid-cols-3 grid gap-px">
+  {items.map(...)}
 </div>
 
 // 10-column layout with side spacers
@@ -148,13 +187,15 @@ Use container-query grid classes on the inner wrapper:
 </div>
 ```
 
+`gap-px` is equivalent to `gap-[1px]` — combined with `*:p-[0.5px]` on the parent, this forms the visible grid lines between cells.
+
 ---
 
 ## Typical section structure
 
 ```tsx
 import { SideCol, Spacer } from "@/components/ui/grid";
-import { Heading } from "@/components/ui/heading";
+import { Heading } from "@/components/heading";
 
 export default function MySection() {
   return (
@@ -186,8 +227,8 @@ export default function MySection() {
 
 | Element | Classes |
 |---|---|
-| Page heading | `text-5xl font-semibold tracking-tight` |
-| Section heading | `text-4xl font-semibold` |
+| Page heading (`PageHeader`) | `text-5xl lg:text-6xl font-semibold tracking-tight` |
+| Section heading (`Heading`) | `text-4xl lg:text-5xl font-semibold text-balance` |
 | Feature card heading | `text-3xl font-semibold` |
 | Section label / step | `font-mono text-sm uppercase text-muted-foreground` |
 | Body / description | `text-lg text-muted-foreground text-balance` |
@@ -195,6 +236,25 @@ export default function MySection() {
 
 ---
 
+## Component inventory
+
+| Component | Import path | Purpose |
+|---|---|---|
+| `SideCol` | `@/components/ui/grid` | Vertical border strip for raw section rows |
+| `GridRow` | `@/components/ui/grid` | Convenience wrapper — safe only in standalone pages |
+| `Spacer` | `@/components/ui/grid` | 64px blank row with visible borders |
+| `Heading` | `@/components/heading` | Centred section heading (no own grid) |
+| `PageHeader` | `@/components/ui/page-header` | Inner-page hero header |
+| `CallToAction` | `@/components/call-to-action` | CTA block, manages own `bg-zinc-950/10` wrapper |
+| `HeroSection` | `@/components/hero-section` | Homepage hero with `@container` columns |
+| `FeaturesTwo` | `@/components/features-2` | Two-row feature block (hero card + stat cards) |
+| `Content` | `@/components/content-3` | Three-card feature section |
+| `ServicesGrid` | `@/components/services-grid` | 1→2→3 col service card grid |
+| `FeatureCarousel` | `@/components/feature-carousel` | Embla-based case study carousel |
+| `FAQs` | `@/components/faqs` | Two-column FAQ with accordion |
+
+---
+
 ## Dark mode
 
-Dark mode is CSS-variable-driven via `[data-theme="dark"]` on `<html>`. The `bg-card/90`, `bg-border`, and `bg-zinc-950/10` tokens adapt automatically. No `dark:` variants are needed for the grid layout itself.
+Dark mode is CSS-variable-driven via `[data-theme="dark"]` on `<html>`. The `bg-card/90`, `bg-border`, and `bg-zinc-950/10` tokens adapt automatically. No `dark:` variants are needed for the grid layout itself. Theme value is persisted in `localStorage` under the key `da-theme`.
