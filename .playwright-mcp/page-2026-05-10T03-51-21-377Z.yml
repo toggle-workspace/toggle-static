@@ -1,0 +1,120 @@
+- generic [active] [ref=e1]:
+  - banner:
+    - navigation [ref=e2]:
+      - generic [ref=e4]:
+        - list [ref=e7]:
+          - listitem [ref=e8]:
+            - button "Our Work" [ref=e9] [cursor=pointer]:
+              - generic [ref=e10]: Our Work
+          - listitem [ref=e11]:
+            - button "Services" [ref=e12] [cursor=pointer]:
+              - generic [ref=e13]: Services
+          - listitem [ref=e14]:
+            - button "About" [ref=e15] [cursor=pointer]:
+              - generic [ref=e16]: About
+          - listitem [ref=e17]:
+            - button "FAQ" [ref=e18] [cursor=pointer]:
+              - generic [ref=e19]: FAQ
+        - link "home" [ref=e21] [cursor=pointer]:
+          - /url: /
+          - text: Toggle Solutions
+        - button "Book a Consultation" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: Book a Consultation
+  - main [ref=e26]:
+    - generic [ref=e28]:
+      - paragraph [ref=e29]: Legal
+      - heading "Terms & Conditions" [level=1] [ref=e30]
+      - paragraph [ref=e31]:
+        - text: For questions, contact
+        - link "hello@togglesolutions.com" [ref=e32] [cursor=pointer]:
+          - /url: mailto:hello@togglesolutions.com
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - heading "1. Acceptance of Terms" [level=2] [ref=e35]
+          - paragraph [ref=e36]: By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
+        - generic [ref=e37]:
+          - heading "2. Use License" [level=2] [ref=e38]
+          - paragraph [ref=e39]: "Permission is granted to temporarily download one copy of the materials on Toggle Solutions' website for personal, non-commercial transitory viewing only. Under this licence you may not: modify or copy the materials; use the materials for any commercial purpose or for any public display; attempt to decompile or reverse engineer any software contained on the website; remove any copyright or other proprietary notations from the materials; or transfer the materials to another person or 'mirror' the materials on any other server."
+        - generic [ref=e40]:
+          - heading "3. Disclaimer" [level=2] [ref=e41]
+          - paragraph [ref=e42]: The materials on Toggle Solutions' website are provided on an 'as is' basis. Toggle Solutions makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
+        - generic [ref=e43]:
+          - heading "4. Limitations" [level=2] [ref=e44]
+          - paragraph [ref=e45]: In no event shall Toggle Solutions or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on Toggle Solutions' website, even if Toggle Solutions or a Toggle Solutions authorised representative has been notified orally or in writing of the possibility of such damage.
+        - generic [ref=e46]:
+          - heading "5. Revisions and Errata" [level=2] [ref=e47]
+          - paragraph [ref=e48]: The materials appearing on Toggle Solutions' website could include technical, typographical, or photographic errors. Toggle Solutions does not warrant that any of the materials on its website are accurate, complete or current. Toggle Solutions may make changes to the materials contained on its website at any time without notice.
+  - button "Scroll to top": ↑
+  - contentinfo [ref=e49]:
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - link "Toggle Solutions" [ref=e53] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e54]: A strategic growth partner for ambitious brands. We combine high-end design with data-driven performance.
+          - generic [ref=e55]:
+            - link "LinkedIn" [ref=e56] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/toggle-solutions
+            - link "Instagram" [ref=e57] [cursor=pointer]:
+              - /url: https://www.instagram.com/toggle.solutions/
+        - generic [ref=e58]:
+          - heading "Services" [level=3] [ref=e59]
+          - list [ref=e60]:
+            - listitem [ref=e61]:
+              - link "Performance Marketing" [ref=e62] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e63]:
+              - link "Content Strategy & Marketing" [ref=e64] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e65]:
+              - link "Branding" [ref=e66] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e67]:
+              - link "Web Development" [ref=e68] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e69]:
+              - link "Email Marketing" [ref=e70] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e71]:
+              - link "Reporting & Analytics" [ref=e72] [cursor=pointer]:
+                - /url: /services
+        - generic [ref=e73]:
+          - heading "Company" [level=3] [ref=e74]
+          - list [ref=e75]:
+            - listitem [ref=e76]:
+              - link "About" [ref=e77] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e78]:
+              - link "Our Work" [ref=e79] [cursor=pointer]:
+                - /url: /work
+            - listitem [ref=e80]:
+              - link "FAQ" [ref=e81] [cursor=pointer]:
+                - /url: /#faq
+            - listitem [ref=e82]:
+              - link "Contact" [ref=e83] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e84]:
+          - heading "Case Studies" [level=3] [ref=e85]
+          - list [ref=e86]:
+            - listitem [ref=e87]:
+              - link "UNITAR" [ref=e88] [cursor=pointer]:
+                - /url: /work#unitar
+            - listitem [ref=e89]:
+              - link "CIMB Bank" [ref=e90] [cursor=pointer]:
+                - /url: /work#cimb
+            - listitem [ref=e91]:
+              - link "Kith & Kin" [ref=e92] [cursor=pointer]:
+                - /url: /work#kith-and-kin
+            - listitem [ref=e93]:
+              - link "Kualesa" [ref=e94] [cursor=pointer]:
+                - /url: /work#kualesa
+            - listitem [ref=e95]:
+              - link "Singlife" [ref=e96] [cursor=pointer]:
+                - /url: /work#singlife
+      - generic [ref=e97]:
+        - paragraph [ref=e98]: © Toggle Solutions. All rights reserved.
+        - generic [ref=e99]:
+          - link "Terms & Conditions" [ref=e100] [cursor=pointer]:
+            - /url: /terms
+          - link "Privacy Policy" [ref=e101] [cursor=pointer]:
+            - /url: /privacy

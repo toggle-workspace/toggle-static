@@ -1,0 +1,212 @@
+- generic [active] [ref=e1]:
+  - banner:
+    - navigation [ref=e2]:
+      - generic [ref=e4]:
+        - list [ref=e7]:
+          - listitem [ref=e8]:
+            - button "Our Work" [ref=e9] [cursor=pointer]:
+              - generic [ref=e10]: Our Work
+          - listitem [ref=e11]:
+            - button "Services" [ref=e12] [cursor=pointer]:
+              - generic [ref=e13]: Services
+          - listitem [ref=e14]:
+            - button "About" [ref=e15] [cursor=pointer]:
+              - generic [ref=e16]: About
+          - listitem [ref=e17]:
+            - button "FAQ" [ref=e18] [cursor=pointer]:
+              - generic [ref=e19]: FAQ
+        - link "home" [ref=e21] [cursor=pointer]:
+          - /url: /
+          - text: Toggle Solutions
+        - button "Book a Consultation" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: Book a Consultation
+  - main [ref=e26]:
+    - generic [ref=e28]:
+      - paragraph [ref=e29]: What We Offer
+      - heading "Full Stack Digital Solutions" [level=1] [ref=e30]
+      - paragraph [ref=e31]: From brand awareness to final scale, we cover it all. Explore our range of services built to grow your business at every stage.
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - heading "Full Stack Digital Solutions" [level=2] [ref=e35]
+        - paragraph [ref=e36]: From brand awareness to final scale, we cover every channel and growth stage — built to compound over time.
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - generic [ref=e39]:
+            - heading "Performance Marketing" [level=3] [ref=e40]
+            - paragraph [ref=e41]: Drive growth with campaign optimization across Meta, Google, and TikTok — combining audience strategy, creative testing, and conversion data.
+          - generic [ref=e42]:
+            - generic [ref=e43]:
+              - generic [ref=e46]: Meta
+              - generic [ref=e48]: Google
+            - generic [ref=e49]:
+              - generic [ref=e52]: TikTok
+              - generic [ref=e54]: Klaviyo
+            - generic [ref=e55]:
+              - generic [ref=e58]: Shopify
+              - generic [ref=e60]: GA4
+        - generic [ref=e62]:
+          - heading "Email Marketing" [level=3] [ref=e63]
+          - paragraph [ref=e64]: Build automated flows, segmentation, and campaigns that turn one-time buyers into loyal customers and grow LTV over time.
+        - generic [ref=e72]:
+          - heading "Search Engine Optimisation" [level=3] [ref=e73]
+          - paragraph [ref=e74]: Build search visibility that compounds over time — across traditional search, AI answers, and the next generation of organic discovery.
+        - generic [ref=e108]:
+          - generic [ref=e109]:
+            - heading "Branding" [level=3] [ref=e110]
+            - paragraph [ref=e111]: Sharpen your positioning, clarify your message, and create a visual identity that holds up across every touchpoint.
+          - generic:
+            - img
+            - img
+    - generic [ref=e114]:
+      - generic [ref=e116]:
+        - generic [ref=e117]: (01)
+        - generic [ref=e118]:
+          - heading "Performance Marketing" [level=3] [ref=e119]
+          - paragraph [ref=e120]: Spend Smarter. Scale Faster.
+          - paragraph [ref=e121]: Drive growth with campaign optimization across Meta, Google, and TikTok — combining audience strategy, creative testing, and conversion data to find what works and scale it with confidence.
+      - generic [ref=e123]:
+        - generic [ref=e124]: (02)
+        - generic [ref=e125]:
+          - heading "Email Marketing" [level=3] [ref=e126]
+          - paragraph [ref=e127]: Your Most Profitable Channel, Done Right.
+          - paragraph [ref=e128]: Set up automated flows, segmentation, and campaigns that turn one-time buyers into loyal customers and reduce churn over time — compounding results from your highest-ROI channel.
+      - generic [ref=e130]:
+        - generic [ref=e131]: (03)
+        - generic [ref=e132]:
+          - heading "Branding" [level=3] [ref=e133]
+          - paragraph [ref=e134]: Stand for Something. Look the Part.
+          - paragraph [ref=e135]: Sharpen your positioning, clarify your message, and create a visual identity that holds up across every touchpoint — from ads to packaging to your website.
+      - generic [ref=e137]:
+        - generic [ref=e138]: (04)
+        - generic [ref=e139]:
+          - heading "Content Marketing" [level=3] [ref=e140]
+          - paragraph [ref=e141]: Content That Builds. Not Just Fills Space.
+          - paragraph [ref=e142]: Build a content system that drives traffic, builds trust, and supports conversion — aligned to your funnel and your audience at every stage.
+      - generic [ref=e144]:
+        - generic [ref=e145]: (05)
+        - generic [ref=e146]:
+          - heading "Web Development" [level=3] [ref=e147]
+          - paragraph [ref=e148]: Websites Built to Convert, Not Just to Impress.
+          - paragraph [ref=e149]: Design and develop websites and landing pages that load fast, communicate clearly, and turn visitors into leads or customers — with your growth goals in mind.
+      - generic [ref=e151]:
+        - generic [ref=e152]: (06)
+        - generic [ref=e153]:
+          - heading "Reporting & Analysis" [level=3] [ref=e154]
+          - paragraph [ref=e155]: Know What's Working. Know What to Do Next.
+          - paragraph [ref=e156]: Build a reporting and intelligence system tailored to your business — so you always know where growth is coming from, what's holding it back, and where to focus next.
+      - generic [ref=e158]:
+        - generic [ref=e159]: (07)
+        - generic [ref=e160]:
+          - heading "Search Engine Optimisation" [level=3] [ref=e161]
+          - paragraph [ref=e162]: Own the Search Results Your Competitors Are Chasing.
+          - paragraph [ref=e163]: Build search visibility that compounds over time — across traditional search, AI answers, and the next generation of organic discovery.
+      - generic [ref=e165]:
+        - generic [ref=e166]: (08)
+        - generic [ref=e167]:
+          - heading "Creative Production" [level=3] [ref=e168]
+          - paragraph [ref=e169]: Make Things People Actually Stop For.
+          - paragraph [ref=e170]: Produce scroll-stopping creative assets — video, photography, design, and copy — optimised for performance marketing and built to convert.
+      - generic [ref=e172]:
+        - generic [ref=e173]: (09)
+        - generic [ref=e174]:
+          - heading "Conversion Optimisation" [level=3] [ref=e175]
+          - paragraph [ref=e176]: More Traffic Isn't Always the Answer.
+          - paragraph [ref=e177]: Improve what happens after the click — structured testing programmes that remove guesswork and let data decide what works, so improvements compound over time.
+      - generic [ref=e179]:
+        - generic [ref=e180]: (10)
+        - generic [ref=e181]:
+          - heading "Out of Home" [level=3] [ref=e182]
+          - paragraph [ref=e183]: Show Up Where Screens Can't Reach.
+          - paragraph [ref=e184]: Strategic offline media that puts your brand in front of the right people, in the right places — and ties back to your broader digital growth objectives.
+      - generic [ref=e186]:
+        - generic [ref=e187]: (11)
+        - generic [ref=e188]:
+          - heading "Online Store Management" [level=3] [ref=e189]
+          - paragraph [ref=e190]: A Store That Works as Hard as Your Marketing Does.
+          - paragraph [ref=e191]: Take ownership of your e-commerce operations — optimising product listings, promotions, checkout flows, and store performance continuously.
+      - generic [ref=e193]:
+        - generic [ref=e194]: (12)
+        - generic [ref=e195]:
+          - heading "Customer Relationship Management" [level=3] [ref=e196]
+          - paragraph [ref=e197]: Turn One-Time Buyers Into Lifelong Customers.
+          - paragraph [ref=e198]: Build retention systems that grow customer lifetime value automatically — segmentation, lifecycle flows, and loyalty strategies that keep customers coming back.
+    - generic [ref=e201]:
+      - heading "Not sure which service is right for you?" [level=2] [ref=e202]
+      - paragraph [ref=e203]: Book a free consultation and our team will help you identify the best strategy for your business goals.
+      - link "Book a Free Consultation" [ref=e204] [cursor=pointer]:
+        - /url: /contact
+  - button "Scroll to top": ↑
+  - contentinfo [ref=e205]:
+    - generic [ref=e206]:
+      - generic [ref=e207]:
+        - generic [ref=e208]:
+          - link "Toggle Solutions" [ref=e209] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e210]: A strategic growth partner for ambitious brands. We combine high-end design with data-driven performance.
+          - generic [ref=e211]:
+            - link "LinkedIn" [ref=e212] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/toggle-solutions
+            - link "Instagram" [ref=e213] [cursor=pointer]:
+              - /url: https://www.instagram.com/toggle.solutions/
+        - generic [ref=e214]:
+          - heading "Services" [level=3] [ref=e215]
+          - list [ref=e216]:
+            - listitem [ref=e217]:
+              - link "Performance Marketing" [ref=e218] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e219]:
+              - link "Content Strategy & Marketing" [ref=e220] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e221]:
+              - link "Branding" [ref=e222] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e223]:
+              - link "Web Development" [ref=e224] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e225]:
+              - link "Email Marketing" [ref=e226] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e227]:
+              - link "Reporting & Analytics" [ref=e228] [cursor=pointer]:
+                - /url: /services
+        - generic [ref=e229]:
+          - heading "Company" [level=3] [ref=e230]
+          - list [ref=e231]:
+            - listitem [ref=e232]:
+              - link "About" [ref=e233] [cursor=pointer]:
+                - /url: /#about
+            - listitem [ref=e234]:
+              - link "Our Work" [ref=e235] [cursor=pointer]:
+                - /url: /work
+            - listitem [ref=e236]:
+              - link "FAQ" [ref=e237] [cursor=pointer]:
+                - /url: /#faq
+            - listitem [ref=e238]:
+              - link "Contact" [ref=e239] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e240]:
+          - heading "Case Studies" [level=3] [ref=e241]
+          - list [ref=e242]:
+            - listitem [ref=e243]:
+              - link "UNITAR" [ref=e244] [cursor=pointer]:
+                - /url: /work
+            - listitem [ref=e245]:
+              - link "CIMB Bank" [ref=e246] [cursor=pointer]:
+                - /url: /work
+            - listitem [ref=e247]:
+              - link "Kith & Kin" [ref=e248] [cursor=pointer]:
+                - /url: /work
+            - listitem [ref=e249]:
+              - link "Kualesa" [ref=e250] [cursor=pointer]:
+                - /url: /work
+            - listitem [ref=e251]:
+              - link "Singlife" [ref=e252] [cursor=pointer]:
+                - /url: /work
+      - generic [ref=e253]:
+        - paragraph [ref=e254]: © Toggle Solutions. All rights reserved.
+        - generic [ref=e255]:
+          - link "Terms & Conditions" [ref=e256] [cursor=pointer]:
+            - /url: /terms
+          - link "Privacy Policy" [ref=e257] [cursor=pointer]:
+            - /url: /privacy
+  - alert [ref=e258]
