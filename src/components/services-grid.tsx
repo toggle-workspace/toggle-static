@@ -1,4 +1,3 @@
-import { SideCol } from "@/components/ui/grid";
 import {
   TrendingUp,
   PieChart,
@@ -68,8 +67,7 @@ type ServicesGridProps = {
 export default function ServicesGrid({ services }: ServicesGridProps = {}) {
   if (services) {
     return (
-      <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] bg-border">
-        <SideCol wide />
+      <div className="bg-border">
         <div className="max-w-276 lg:min-w-276 mx-auto w-full">
           <div className="@container **:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded @md:grid-cols-2 @2xl:grid-cols-3 grid *:p-[0.5px]">
             {services.map(({ num, name, headline, description }) => (
@@ -91,14 +89,12 @@ export default function ServicesGrid({ services }: ServicesGridProps = {}) {
             ))}
           </div>
         </div>
-        <SideCol />
       </div>
     );
   }
 
   return (
-    <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] bg-border">
-      <SideCol wide />
+    <div className="bg-border">
       <div className="max-w-276 lg:min-w-276 mx-auto w-full">
         <div className="@container **:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded @md:grid-cols-2 @2xl:grid-cols-3 grid *:p-[0.5px]">
           {SERVICES.map(({ Icon, title, description }: IconService) => (
@@ -114,7 +110,6 @@ export default function ServicesGrid({ services }: ServicesGridProps = {}) {
           ))}
         </div>
       </div>
-      <SideCol />
     </div>
   );
 }
