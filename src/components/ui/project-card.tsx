@@ -4,7 +4,7 @@ import { ChevronRight } from "lucide-react";
 
 interface Author {
   name: string;
-  avatar: string;
+  avatar?: string;
 }
 
 interface PostCardProps {
@@ -69,15 +69,17 @@ export function PostCard({
               key={author.name}
               className="grid grid-cols-[auto_1fr] items-center gap-2"
             >
-              <div className="ring-border-illustration bg-card aspect-square size-6 overflow-hidden rounded-md border border-transparent shadow-md shadow-black/15 ring-1">
-                <Image
-                  src={author.avatar}
-                  alt={author.name}
-                  width={46}
-                  height={46}
-                  className="size-full object-cover"
-                />
-              </div>
+              {author.avatar && (
+                <div className="ring-border-illustration bg-card aspect-square size-6 overflow-hidden rounded-md border border-transparent shadow-md shadow-black/15 ring-1">
+                  <Image
+                    src={author.avatar}
+                    alt={author.name}
+                    width={46}
+                    height={46}
+                    className="size-full object-cover"
+                  />
+                </div>
+              )}
               <span className="text-muted-foreground line-clamp-1 text-sm">
                 {author.name}
               </span>
