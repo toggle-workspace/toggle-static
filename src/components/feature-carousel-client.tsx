@@ -41,9 +41,9 @@ export default function FeatureCarouselClient({ posts }: { posts: Post[] }) {
         <div className="lg:grid lg:grid-cols-[1fr_auto_1fr]">
           <div aria-hidden="true" className="border-y max-lg:hidden" />
           <div className="mx-auto overflow-hidden border lg:max-w-6xl">
-            <CarouselContent className="-ml-4 *:bg-card *:not-dark:bg-card/50 *:p-8 *:pt-12 md:divide-x md:*:basis-1/2 lg:-mr-4 lg:*:basis-1/3">
+            <CarouselContent className="ml-0 *:bg-card *:not-dark:bg-card/50 *:p-8 *:pt-12 md:divide-x md:*:basis-1/2 lg:*:basis-1/3">
               {posts.map((post) => (
-                <CarouselItem key={post.id}>
+                <CarouselItem key={post.id} className="h-full pl-0">
                   <PostCard
                     image={post.featuredImage?.url ?? ""}
                     imageAlt={post.featuredImage?.alt ?? post.title}
