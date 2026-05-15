@@ -1,8 +1,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import Link from "next/link";
-import { ChevronRight } from "lucide-react";
 import { caseStudies } from "@/data/case-studies";
+import { PageHeader } from "@/components/ui/page-header";
 
 export default async function CaseStudyPage({
   params,
@@ -16,58 +15,13 @@ export default async function CaseStudyPage({
   return (
     <article>
       {/* Row 1: Breadcrumb + title */}
-      <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] bg-border">
-        <div className="max-w-276 lg:min-w-276 mx-auto w-full p-[0.5px]">
-          <div
-            data-slot="content"
-            className="bg-card/90 h-full rounded p-6 lg:p-12"
-          >
-            <header className="max-w-2xl">
-              <nav aria-label="breadcrumb" data-slot="breadcrumb">
-                <ol
-                  data-slot="breadcrumb-list"
-                  className="text-muted-foreground wrap-break-words flex flex-wrap items-center gap-1.5 text-sm sm:gap-2.5"
-                >
-                  <li
-                    data-slot="breadcrumb-item"
-                    className="inline-flex items-center gap-1.5"
-                  >
-                    <Link
-                      href="/work"
-                      data-slot="breadcrumb-link"
-                      className="hover:text-foreground transition-colors"
-                    >
-                      Work
-                    </Link>
-                  </li>
-                  <li
-                    data-slot="breadcrumb-separator"
-                    role="presentation"
-                    aria-hidden="true"
-                    className="[&>svg]:size-3.5"
-                  >
-                    <ChevronRight />
-                  </li>
-                  <li
-                    data-slot="breadcrumb-item"
-                    className="inline-flex items-center gap-1.5"
-                  >
-                    <span
-                      data-slot="breadcrumb-link"
-                      className="hover:text-foreground transition-colors text-foreground"
-                    >
-                      {study.client}
-                    </span>
-                  </li>
-                </ol>
-              </nav>
-              <h1 className="text-foreground mt-6 text-balance text-3xl font-bold md:text-4xl">
-                {study.headline}
-              </h1>
-            </header>
-          </div>
-        </div>
-      </div>
+      <PageHeader
+        title={study.headline}
+        breadcrumb={[
+          { label: "Work", href: "/work" },
+          { label: study.client },
+        ]}
+      />
 
       {/* Row 2: Two-column content + sidebar */}
       <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] bg-border">
