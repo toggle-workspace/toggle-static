@@ -79,9 +79,9 @@ export default function FeatureCarousel() {
         <div className="lg:grid lg:grid-cols-[1fr_auto_1fr]">
           <div aria-hidden="true" className="border-y max-lg:hidden" />
           <div className="mx-auto overflow-hidden border lg:max-w-6xl">
-            <CarouselContent className="md:*:basis-1/2 lg:-mr-4 lg:*:basis-1/3">
+            <CarouselContent className="ml-0 md:*:basis-1/2 lg:*:basis-1/3">
               {mockPosts.map((post) => (
-                <CarouselItem key={post.id}>
+                <CarouselItem key={post.id} className="flex flex-col pl-0">
                   <PostCard
                     image={post.featuredImage.url}
                     imageAlt={post.featuredImage.alt}

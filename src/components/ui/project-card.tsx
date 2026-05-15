@@ -36,7 +36,7 @@ export function PostCard({
   authors,
 }: PostCardProps) {
   return (
-    <Card className="hover:bg-card/75 group relative flex flex-col space-y-4 rounded p-6 duration-200">
+    <Card className="hover:bg-card/75 group relative flex flex-1 flex-col space-y-4 rounded p-6 duration-200">
       <div className="before:border-foreground/10 before:inset-ring-1 before:inset-ring-background/10 relative aspect-video overflow-hidden rounded-[10px] shadow-md shadow-black/10 before:absolute before:inset-0 before:rounded-[10px] before:border">
         <Image
           src={image}
@@ -105,11 +105,5 @@ export function PostCard({
         </div>
       </CardFooter>
     </Card>
-  );
-}
-
-export function PostCardGrid({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="grid gap-px sm:grid-cols-2 lg:grid-cols-3">{children}</div>
   );
 }

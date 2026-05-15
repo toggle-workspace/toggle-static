@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { useState } from "react";
-import { PostCard, PostCardGrid } from "@/components/ui/project-card";
+import { PostCard } from "@/components/ui/project-card";
 
 export interface Author {
   name: string;
@@ -169,11 +169,11 @@ export default function BlogSection({
       {/* Post grid */}
       <div className="bg-foreground/1 rounded">
         <h2 className="sr-only">More Articles</h2>
-        <PostCardGrid>
+        <div className="grid gap-px sm:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (
             <PostCard key={post.title} {...post} />
           ))}
-        </PostCardGrid>
+        </div>
       </div>
     </div>
   );
