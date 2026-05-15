@@ -3,6 +3,7 @@ import CallToAction from "@/components/call-to-action";
 import { PageHeader } from "@/components/ui/page-header";
 import { Spacer } from "@/components/ui/grid";
 import BlogSection from "@/components/blog-section";
+import { featuredPost, posts, categories } from "@/data/blog-posts";
 import { caseStudies } from "@/data/case-studies";
 
 export default function WorkPage() {
@@ -15,7 +16,7 @@ export default function WorkPage() {
           description="Here's how we've helped brands grow across Malaysia and Southeast Asia."
         />
       </section>
-      <BlogSection />
+      <BlogSection featuredPost={featuredPost} posts={posts} categories={categories} />
       <Spacer />
       <CallToAction />
     </>

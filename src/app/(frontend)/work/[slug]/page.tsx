@@ -1,9 +1,7 @@
 import { notFound } from "next/navigation";
-import Link from "next/link";
-import { ChevronRight } from "lucide-react";
-import { Spacer } from "@/components/ui/grid";
-import CallToAction from "@/components/call-to-action";
+import Image from "next/image";
 import { caseStudies } from "@/data/case-studies";
+import { PageHeader } from "@/components/ui/page-header";
 
 export default async function CaseStudyPage({
   params,
@@ -15,105 +13,109 @@ export default async function CaseStudyPage({
   if (!study) notFound();
 
   return (
-    <>
-      <article>
-        {/* Hero row */}
-        <div className="p-6 lg:p-12 border-b border-border">
-          <div className="mx-auto max-w-2xl">
-            <nav aria-label="breadcrumb">
-              <ol className="text-muted-foreground flex flex-wrap items-center gap-1.5 text-sm sm:gap-2.5">
-                <li className="inline-flex items-center gap-1.5">
-                  <Link href="/work" className="hover:text-foreground transition-colors">
-                    Work
-                  </Link>
-                </li>
-                <li role="presentation" aria-hidden="true">
-                  <ChevronRight className="size-3.5" />
-                </li>
-                <li className="inline-flex items-center gap-1.5">
-                  <span className="text-foreground">{study.client}</span>
-                </li>
-              </ol>
-            </nav>
+    <article>
+      {/* Row 1: Breadcrumb + title */}
+      <PageHeader
+        title={study.headline}
+        breadcrumb={[
+          { label: "Work", href: "/work" },
+          { label: study.client },
+        ]}
+      />
 
-            <h1 className="text-foreground my-6 text-balance text-3xl font-bold md:text-4xl">
-              {study.headline}
-            </h1>
-
-            <p className="text-foreground text-xl">{study.overview}</p>
-          </div>
-        </div>
-
-        {/* Meta row */}
-        <div className="p-6 lg:px-12 border-b border-border">
-          <div className="mx-auto flex max-w-2xl flex-wrap gap-x-6 gap-y-4 sm:grid sm:grid-cols-3">
+      {/* Row 2: Two-column content + sidebar */}
+      <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] bg-border">
+        <div className="max-w-276 lg:min-w-276 mx-auto w-full">
+          <div className="**:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded grid *:p-[0.5px] lg:grid-cols-[auto_1fr]">
+            {/* Main content column */}
             <div>
-              <p className="text-muted-foreground mb-1 text-xs font-medium uppercase tracking-wider font-mono">
-                Industry
-              </p>
-              <p className="text-foreground text-sm">{study.industry}</p>
-            </div>
-            <div>
-              <p className="text-muted-foreground mb-1 text-xs font-medium uppercase tracking-wider font-mono">
-                Location
-              </p>
-              <p className="text-foreground text-sm">{study.location}</p>
-            </div>
-            <div>
-              <p className="text-muted-foreground mb-1 text-xs font-medium uppercase tracking-wider font-mono">
-                Services
-              </p>
-              <p className="text-foreground text-sm">{study.services.join(", ")}</p>
-            </div>
-          </div>
-        </div>
+              <div data-grid-content="true" className="max-w-3xl p-6 lg:p-12">
+                {study.image && (
+                  <div className="relative overflow-hidden rounded-xl shadow shadow-black/5">
+                    <Image
+                      src={study.image}
+                      alt={study.client}
+                      width={1200}
+                      height={675}
+                      className="aspect-[21/9] w-full object-cover"
+                      priority
+                    />
+                  </div>
+                )}
 
-        {/* Content row */}
-        <div className="p-6 lg:p-12">
-          <div className="mx-auto max-w-2xl space-y-10">
-            <div>
-              <p className="text-muted-foreground mb-3 text-xs font-medium uppercase tracking-wider font-mono">
-                The Challenge
-              </p>
-              <p className="text-muted-foreground text-base leading-relaxed">
-                {study.challenge}
-              </p>
-            </div>
-
-            <div>
-              <p className="text-muted-foreground mb-3 text-xs font-medium uppercase tracking-wider font-mono">
-                The Result
-              </p>
-              <p className="text-muted-foreground text-base leading-relaxed">
-                {study.result}
-              </p>
-            </div>
-
-            {study.metrics.length > 0 && (
-              <div className="border-t border-border pt-10">
-                <p className="text-muted-foreground mb-6 text-xs font-medium uppercase tracking-wider font-mono">
-                  Key Results
+                <p className="text-foreground my-12 text-xl md:text-2xl">
+                  {study.overview}
                 </p>
-                <div className={`grid gap-6 ${study.metrics.length === 2 ? "sm:grid-cols-2" : "sm:grid-cols-3"}`}>
-                  {study.metrics.map((metric) => (
-                    <div key={metric.label}>
-                      <p className="text-foreground text-3xl font-bold tracking-tight">
-                        {metric.value}
-                      </p>
-                      <p className="text-muted-foreground text-sm mt-1">
-                        {metric.label}
+
+                <div
+                  className="prose prose-slate dark:prose-invert max-w-none"
+                  dangerouslySetInnerHTML={{ __html: study.content }}
+                />
+              </div>
+            </div>
+
+            {/* Sidebar column */}
+            <div>
+              <div data-grid-content="true">
+                <div className="h-fit p-6 lg:sticky lg:top-20 lg:p-12">
+                  {/* Company */}
+                  <div className="mt-6">
+                    <h4 className="text-foreground mb-4 text-sm font-semibold">
+                      Company
+                    </h4>
+                    <div className="flex items-center gap-3">
+                      {study.logoUrl && (
+                        <div className="bg-card flex size-12 shrink-0 items-center justify-center overflow-hidden rounded-md p-2 shadow-md shadow-black/15">
+                          <Image
+                            src={study.logoUrl}
+                            alt={study.client}
+                            width={96}
+                            height={96}
+                            className="size-full object-contain"
+                          />
+                        </div>
+                      )}
+                      <span className="text-foreground line-clamp-1 text-sm font-semibold">
+                        {study.client}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Meta fields */}
+                  <div className="mt-6 space-y-4">
+                    <div>
+                      <h4 className="text-foreground mb-2 text-sm font-semibold">
+                        Industry
+                      </h4>
+                      <p className="text-muted-foreground text-sm">
+                        {study.industry}
                       </p>
                     </div>
-                  ))}
+                    <div>
+                      <h4 className="text-foreground mb-2 text-sm font-semibold">
+                        Location
+                      </h4>
+                      <p className="text-muted-foreground text-sm">
+                        {study.location}
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="text-foreground mb-2 text-sm font-semibold">
+                        Services
+                      </h4>
+                      <ul className="text-muted-foreground space-y-1 text-sm">
+                        {study.services.map((s) => (
+                          <li key={s}>{s}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
-            )}
+            </div>
           </div>
         </div>
-      </article>
-
-      <Spacer />
-      <CallToAction />
-    </>
+      </div>
+    </article>
   );
 }

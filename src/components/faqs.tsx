@@ -95,7 +95,7 @@ export default function FAQs() {
                   <AccordionItem
                     key={item.value}
                     value={item.value}
-                    className="border-b last:border-b-0 data-open:bg-card data-open:ring-foreground/5 group peer rounded-xl border-none px-6 py-1 data-open:border-none data-open:shadow data-open:ring-1"
+                    className="data-open:bg-card data-open:ring-foreground/5 group peer rounded-xl px-6 py-1 data-open:border-none data-open:shadow data-open:ring-1"
                   >
                     <AccordionTrigger className="cursor-pointer rounded-none text-base transition-none hover:no-underline data-open:border-transparent">
                       {item.question}

@@ -4,135 +4,36 @@ import Image from "next/image";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { useState } from "react";
-import { PostCard, PostCardGrid } from "@/components/ui/project-card";
+import { PostCard } from "@/components/ui/project-card";
 
-const BASE =
-  "https://raw.githubusercontent.com/tailark/assets/refs/heads/main/";
+export interface Author {
+  name: string;
+  avatar: string;
+}
 
-const featuredPost = {
-  image: `${BASE}blog-1_roo7z2.png`,
-  date: "2025-08-18",
-  title:
-    "Embracing Remote Work Culture: Strategies for Success in a Distributed Workforce",
-  excerpt:
-    "Explore the transformative shift towards remote work and how it has reshaped business operations globally.",
-  href: "#",
-  authors: [
-    {
-      name: "Shadcn",
-      avatar: "https://avatars.githubusercontent.com/u/124599?v=4",
-    },
-    {
-      name: "Meschac Irung",
-      avatar: "https://avatars.githubusercontent.com/u/47919550?v=4",
-    },
-  ],
-};
+export interface BlogPost {
+  image: string;
+  imageAlt?: string;
+  date: string | Date;
+  title: string;
+  excerpt: string;
+  href: string;
+  authors: Author[];
+}
 
-const posts = [
-  {
-    image: `${BASE}blog-2_cazz7h.png`,
-    date: "2025-09-10",
-    title:
-      "The Top Industries and Business Models Using AI for Fraud Prevention and Detection",
-    excerpt:
-      "Discover how various industries leverage AI tools to enhance fraud prevention and detection.",
-    href: "#",
-    authors: [
-      {
-        name: "Theo Balick",
-        avatar: "https://avatars.githubusercontent.com/u/68236786?v=4",
-      },
-      {
-        name: "Méschac Irung",
-        avatar: "https://avatars.githubusercontent.com/u/47919550?v=4",
-      },
-    ],
-  },
-  {
-    image: `${BASE}blog-4_lojema.jpg`,
-    date: "2025-10-05",
-    title: "Cutting-Edge Innovations in Data Analytics",
-    excerpt:
-      "Learn about the latest trends in data analytics and how they can drive business growth.",
-    href: "#",
-    authors: [
-      {
-        name: "Shadcn",
-        avatar: "https://avatars.githubusercontent.com/u/124599?v=4",
-      },
-      {
-        name: "Meschac Irung",
-        avatar: "https://avatars.githubusercontent.com/u/47919550?v=4",
-      },
-    ],
-  },
-  {
-    image: `${BASE}blog-5_gpo4j1.png`,
-    date: "2025-10-15",
-    title: "Advancements in Cybersecurity Technologies",
-    excerpt:
-      "Discover new technologies protecting businesses from digital threats.",
-    href: "#",
-    authors: [
-      {
-        name: "Meschac Irung",
-        avatar: "https://avatars.githubusercontent.com/u/47919550?v=4",
-      },
-    ],
-  },
-  {
-    image: `${BASE}blog-7_rlrsyt.jpg`,
-    date: "2025-11-01",
-    title: "The Role of Blockchain in Modern Finance",
-    excerpt: "Understand how blockchain is reshaping the financial landscape.",
-    href: "#",
-    authors: [
-      {
-        name: "Theo Balick",
-        avatar: "https://avatars.githubusercontent.com/u/68236786?v=4",
-      },
-    ],
-  },
-  {
-    image: `${BASE}blog-4_lojema.jpg`,
-    date: "2025-11-10",
-    title: "Sustainability in Tech: A Growing Focus",
-    excerpt: "Explore efforts towards sustainable practices in technology.",
-    href: "#",
-    authors: [
-      {
-        name: "Shadcn",
-        avatar: "https://avatars.githubusercontent.com/u/124599?v=4",
-      },
-    ],
-  },
-  {
-    image: `${BASE}blog-5_widlus.jpg`,
-    date: "2025-12-05",
-    title: "Big Data as a Strategic Asset",
-    excerpt: "See how big data analytics can unlock new opportunities.",
-    href: "#",
-    authors: [
-      {
-        name: "Bernard Ngandu",
-        avatar: "https://avatars.githubusercontent.com/u/31113941?v=4",
-      },
-    ],
-  },
-];
+export interface BlogCategory {
+  label: string;
+  disabled?: boolean;
+}
 
-const categories = [
-  { label: "all", disabled: false },
-  { label: "company", disabled: false },
-  { label: "marketing", disabled: false },
-  { label: "newsroom", disabled: false },
-  { label: "partners", disabled: true },
-  { label: "engineering", disabled: true },
-  { label: "press", disabled: true },
-];
+export interface BlogSectionProps {
+  featuredPost: BlogPost;
+  posts: BlogPost[];
+  categories?: BlogCategory[];
+  defaultCategory?: string;
+}
 
-function formatDate(date: string) {
+function formatDate(date: string | Date) {
   return new Date(date).toLocaleDateString("en-US", {
     month: "short",
     day: "numeric",
@@ -140,7 +41,7 @@ function formatDate(date: string) {
   });
 }
 
-function AuthorRow({ name, avatar }: { name: string; avatar: string }) {
+function AuthorRow({ name, avatar }: Author) {
   return (
     <div className="grid grid-cols-[auto_1fr] items-center gap-2">
       <div className="ring-border-illustration bg-card aspect-square size-6 overflow-hidden rounded border border-transparent shadow-md shadow-black/15 ring-1">
@@ -157,8 +58,23 @@ function AuthorRow({ name, avatar }: { name: string; avatar: string }) {
   );
 }
 
-export default function BlogSection() {
-  const [activeTab, setActiveTab] = useState("all");
+const DEFAULT_CATEGORIES: BlogCategory[] = [
+  { label: "all" },
+  { label: "company" },
+  { label: "marketing" },
+  { label: "newsroom" },
+  { label: "partners", disabled: true },
+  { label: "engineering", disabled: true },
+  { label: "press", disabled: true },
+];
+
+export default function BlogSection({
+  featuredPost,
+  posts,
+  categories = DEFAULT_CATEGORIES,
+  defaultCategory = "all",
+}: BlogSectionProps) {
+  const [activeTab, setActiveTab] = useState(defaultCategory);
 
   return (
     <div className="bg-foreground/9 @container">
@@ -170,7 +86,7 @@ export default function BlogSection() {
               <div className="before:border-foreground/10 before:inset-ring-1 before:inset-ring-background/10 relative aspect-auto overflow-hidden rounded-[10px] shadow-md shadow-black/10 before:absolute before:inset-0 before:rounded-[10px] before:border">
                 <Image
                   src={featuredPost.image}
-                  alt={featuredPost.title}
+                  alt={featuredPost.imageAlt ?? featuredPost.title}
                   width={6394}
                   height={4500}
                   className="h-full w-full object-cover"
@@ -182,7 +98,7 @@ export default function BlogSection() {
             <div className="bg-card flex flex-col space-y-4 rounded p-6 md:py-12">
               <time
                 className="text-muted-foreground block text-sm"
-                dateTime={featuredPost.date}
+                dateTime={String(featuredPost.date)}
               >
                 {formatDate(featuredPost.date)}
               </time>
@@ -253,11 +169,11 @@ export default function BlogSection() {
       {/* Post grid */}
       <div className="bg-foreground/1 rounded">
         <h2 className="sr-only">More Articles</h2>
-        <PostCardGrid>
+        <div className="grid gap-px sm:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (
             <PostCard key={post.title} {...post} />
           ))}
-        </PostCardGrid>
+        </div>
       </div>
     </div>
   );

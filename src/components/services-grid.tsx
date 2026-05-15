@@ -1,4 +1,3 @@
-import { SideCol } from "@/components/ui/grid";
 import {
   TrendingUp,
   PieChart,
@@ -7,6 +6,7 @@ import {
   BarChart3,
   Layers,
 } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
 const SERVICES = [
   {
@@ -47,13 +47,57 @@ const SERVICES = [
   },
 ];
 
-export default function ServicesGrid() {
+export type NumberedService = {
+  num: string;
+  name: string;
+  headline: string;
+  description: string;
+};
+
+type IconService = {
+  Icon: LucideIcon;
+  title: string;
+  description: string;
+};
+
+type ServicesGridProps = {
+  services?: NumberedService[];
+};
+
+export default function ServicesGrid({ services }: ServicesGridProps = {}) {
+  if (services) {
+    return (
+      <div className="bg-border">
+        <div className="max-w-276 lg:min-w-276 mx-auto w-full">
+          <div className="@container **:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded @md:grid-cols-2 @2xl:grid-cols-3 grid *:p-[0.5px]">
+            {services.map(({ num, name, headline, description }) => (
+              <div key={num}>
+                <div
+                  data-grid-content="true"
+                  className="flex flex-col gap-3 p-6 lg:p-12"
+                >
+                  <span className="text-muted-foreground font-mono text-xs">
+                    {num}
+                  </span>
+                  <p className="text-foreground font-semibold">{name}</p>
+                  <p className="text-foreground/80 text-sm font-medium">
+                    {headline}
+                  </p>
+                  <p className="text-muted-foreground text-sm">{description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] bg-border">
-      <SideCol wide />
+    <div className="bg-border">
       <div className="max-w-276 lg:min-w-276 mx-auto w-full">
         <div className="@container **:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded @md:grid-cols-2 @2xl:grid-cols-3 grid *:p-[0.5px]">
-          {SERVICES.map(({ Icon, title, description }) => (
+          {SERVICES.map(({ Icon, title, description }: IconService) => (
             <div key={title}>
               <div data-grid-content="true" className="space-y-2 p-6 lg:p-12">
                 <p className="text-foreground flex items-center gap-2 font-medium">
@@ -66,7 +110,6 @@ export default function ServicesGrid() {
           ))}
         </div>
       </div>
-      <SideCol />
     </div>
   );
 }
