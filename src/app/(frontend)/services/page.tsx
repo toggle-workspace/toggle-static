@@ -3,7 +3,8 @@ import { PageHeader } from "@/components/ui/page-header";
 import { Spacer } from "@/components/ui/grid";
 import { Heading } from "@/components/heading";
 import Content from "@/components/content-3";
-import ServicesGrid from "@/components/services-grid";
+import ServicesList from "@/components/services-list";
+import CustomerLogos from "@/components/customer-logos";
 
 const allServices = [
   {
@@ -105,15 +106,11 @@ export default function ServicesPage() {
       </section>
       <Spacer />
       <section>
-        <ServicesGrid services={allServices} />
+        <ServicesList />
       </section>
       <Spacer />
       <section>
-        <Heading
-          title="Built to Grow the Whole Business"
-          description="We build a full-funnel system across ads, creative, lifecycle, and reporting so every part of your marketing works toward the same goal: sustainable, measurable growth you can scale with confidence."
-        />
-        <Content />
+        <CustomerLogos />
       </section>
       <Spacer />
       <section>
