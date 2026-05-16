@@ -139,6 +139,54 @@ import { PageHeader } from "@/components/ui/page-header";
 
 ---
 
+## `SectionOverview`
+
+A reusable label + body section. Layout: centered 8/10-column grid with decorative gutters. Safe to use in any standalone page context (i.e. inside a `<main>` with `bg-zinc-950/10`).
+
+```tsx
+import { SectionOverview } from "@/components/ui/section-overview";
+
+<SectionOverview label="Spend Smarter. Scale Faster.">
+  <p className="text-foreground mt-6 text-balance text-xl font-medium lg:text-2xl">
+    Body text here.
+  </p>
+</SectionOverview>
+```
+
+| Prop | Type | Required | Description |
+|---|---|---|---|
+| `label` | `string` | Yes | Mono muted heading at top |
+| `children` | `ReactNode` | Yes | Body content — plain text or rich markup |
+
+---
+
+## `SectionItemsGrid`
+
+A reusable section heading + item grid. Items optionally include a Lucide icon. Layout matches `SectionOverview` (8/10-column centered grid with gutters).
+
+```tsx
+import { SectionItemsGrid } from "@/components/ui/section-items-grid";
+
+<SectionItemsGrid
+  heading="What's included"
+  subheading="Optional supporting line."  // optional
+  items={[
+    { title: "Paid Media", description: "...", icon: TrendingUp },
+    { title: "Creative", description: "..." },  // icon is optional
+  ]}
+  columns={2}  // optional, defaults to 2
+/>
+```
+
+| Prop | Type | Required | Description |
+|---|---|---|---|
+| `heading` | `string` | Yes | Mono muted section label |
+| `subheading` | `string` | No | Larger body text below the heading |
+| `items` | `{ title, description, icon? }[]` | Yes | Grid items |
+| `columns` | `2 \| 3` | No | Column count at `@xl` breakpoint, defaults to `2` |
+
+---
+
 ## `CallToAction`
 
 Standalone CTA block, used at the end of pages. Wraps itself in `bg-zinc-950/10` so it manages its own background — do not nest it inside another grid row.
@@ -245,6 +293,8 @@ export default function MySection() {
 | `Spacer` | `@/components/ui/grid` | 64px blank row with visible borders |
 | `Heading` | `@/components/heading` | Centred section heading (no own grid) |
 | `PageHeader` | `@/components/ui/page-header` | Inner-page hero header |
+| `SectionOverview` | `@/components/ui/section-overview` | Label + body section, 8/10-col centered layout |
+| `SectionItemsGrid` | `@/components/ui/section-items-grid` | Heading + optional-icon item grid, 8/10-col centered layout |
 | `CallToAction` | `@/components/call-to-action` | CTA block, manages own `bg-zinc-950/10` wrapper |
 | `HeroSection` | `@/components/hero-section` | Homepage hero with `@container` columns |
 | `FeaturesTwo` | `@/components/features-2` | Two-row feature block (hero card + stat cards) |

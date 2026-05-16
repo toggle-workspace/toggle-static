@@ -1,44 +1,17 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
-const SERVICES = [
-  {
-    num: "01",
-    name: "Performance Marketing",
-    description:
-      "Drive growth with campaign optimization across Meta, Google, and TikTok — combining audience strategy, creative testing, and conversion data to find what works and scale it with confidence.",
-    image: "https://picsum.photos/seed/performance-mktg/400/260",
-  },
-  {
-    num: "02",
-    name: "Branding",
-    description:
-      "Sharpen your positioning, clarify your message, and create a visual identity that holds up across every touchpoint — from ads to packaging to your website.",
-    image: "https://picsum.photos/seed/branding-id/400/260",
-  },
-  {
-    num: "03",
-    name: "Web Development",
-    description:
-      "Design and develop websites and landing pages that load fast, communicate clearly, and turn visitors into leads or customers — with your growth goals in mind.",
-    image: "https://picsum.photos/seed/web-dev/400/260",
-  },
-  {
-    num: "04",
-    name: "Search Engine Optimisation",
-    description:
-      "Build search visibility that compounds over time — across traditional search, AI answers, and the next generation of organic discovery.",
-    image: "https://picsum.photos/seed/seo-search/400/260",
-  },
-];
+import { Button } from "@/components/ui/button";
+import { SERVICES } from "@/data/services";
 
 export default function ServicesList() {
   return (
     <div className="flex flex-col gap-5">
-      {SERVICES.map(({ num, name, description, image }) => (
-        <div
+      {SERVICES.map(({ num, slug, name, description, image }) => (
+        <Link
           key={num}
+          href={`/services/${slug}`}
           className="group grid overflow-hidden border-y grid-cols-1 gap-5 p-5 lg:grid-cols-3 lg:gap-0 lg:p-0"
         >
           {/* Number + Name */}
@@ -73,11 +46,14 @@ export default function ServicesList() {
             <Button
               size="icon"
               className="h-10 w-10 rounded-full group-hover:bg-white group-hover:dark:bg-card hover:bg-white lg:h-12 lg:w-12"
+              asChild
             >
-              <ArrowRight className="size-5 transition-transform duration-300 ease-out group-hover:rotate-312 group-hover:text-card-foreground" />
+              <span>
+                <ArrowRight className="size-5 transition-transform duration-300 ease-out group-hover:rotate-312 group-hover:text-card-foreground" />
+              </span>
             </Button>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );

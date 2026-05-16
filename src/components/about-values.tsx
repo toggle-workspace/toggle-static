@@ -1,5 +1,5 @@
 import { Lightbulb, Heart, Users, Shield } from "lucide-react";
-import { GridRow } from "@/components/ui/grid";
+import { SectionItemsGrid } from "@/components/ui/section-items-grid";
 
 const coreValues = [
   {
@@ -30,44 +30,10 @@ const coreValues = [
 
 export default function AboutValues() {
   return (
-    <section>
-      <GridRow>
-        <div className="grid grid-cols-10 gap-px">
-          <div aria-hidden="true" className="max-sm:hidden">
-            <div data-grid-content="true" />
-          </div>
-          <div className="@4xl:grid-cols-2 col-span-full grid gap-px sm:col-span-8">
-            <div
-              data-grid-content="true"
-              className="@4xl:p-12 col-span-full p-6"
-            >
-              <h2 className="text-muted-foreground text-balance font-mono">
-                Core Values
-              </h2>
-              <p className="text-foreground mt-6 max-w-2xl text-balance text-xl font-medium">
-                The principles that guide every decision we make, from hiring to
-                shipping.
-              </p>
-            </div>
-            {coreValues.map((value) => (
-              <div
-                key={value.title}
-                data-grid-content="true"
-                className="@4xl:p-12 flex flex-col gap-3 p-6"
-              >
-                <value.icon className="text-muted-foreground size-5" />
-                <h3 className="text-foreground font-medium">{value.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  {value.description}
-                </p>
-              </div>
-            ))}
-          </div>
-          <div aria-hidden="true" className="max-sm:hidden">
-            <div data-grid-content="true" />
-          </div>
-        </div>
-      </GridRow>
-    </section>
+    <SectionItemsGrid
+      heading="Core Values"
+      subheading="The principles that guide every decision we make, from hiring to shipping."
+      items={coreValues}
+    />
   );
 }
