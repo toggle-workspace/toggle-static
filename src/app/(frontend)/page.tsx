@@ -1,6 +1,5 @@
 import HeroSection from "@/components/hero-section";
 import Content from "@/components/content-3";
-import ServicesGrid from "@/components/services-grid";
 import FAQs from "@/components/faqs";
 import CallToAction from "@/components/call-to-action";
 import { Spacer } from "@/components/ui/grid";
@@ -8,6 +7,7 @@ import FeatureCarousel from "@/components/feature-carousel";
 import { Heading } from "@/components/heading";
 import FeaturesTwo from "@/components/features-2";
 import CustomerLogos from "@/components/customer-logos";
+import ServicesList from "@/components/services-list";
 
 export default function HomePage() {
   return (
@@ -30,7 +30,7 @@ export default function HomePage() {
         title="Full Stack Digital Solutions"
         description="From brand awareness to final scale, we cover every channel and growth stage — built to compound over time."
       />
-      <ServicesGrid />
+      <ServicesList />
       <Spacer />
       <CustomerLogos />
       <Spacer />
