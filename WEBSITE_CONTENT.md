@@ -9,7 +9,7 @@
 
 - **Company Name:** Toggle Solutions
 - **Website:** https://toggle.solutions/
-- **Email:** marketing@toggle.com
+- **Email:** hello@toggle.com
 - **Phone:** +60 12-568 8681 (Viknesh, Sales Director)
 - **Legal Contact:** hello@togglesolutions.com
 
@@ -29,7 +29,7 @@
 **Page Title:** Toggle Solutions — Your Digital Growth Partner
 
 **Meta Description:**
-Performance marketing and growth systems for brands across Southeast Asia. Paid media, SEO, creative, and CRM under one strategy.
+Performance marketing and growth systems for brands worldwide. Paid media, SEO, creative, and CRM under one strategy.
 
 ---
 
@@ -38,16 +38,18 @@ Performance marketing and growth systems for brands across Southeast Asia. Paid 
 **Label (eyebrow):** Your Digital Growth Partner
 
 **Headline:**
-The Agency Behind 50+ Growing Brands in Southeast Asia
+The Agency Behind 50+ Growing Brands
 
 **Subheading:**
 We run paid media, creative, and lifecycle marketing as one system. Every channel points at the same goal: more revenue, less wasted spend.
 
 **CTA Buttons:**
+
 - Primary: Book a Consultation → `/contact`
 - Secondary: See Our Work → `/work`
 
 **Trust Indicators:**
+
 - 4.9/5 stars
 - Trusted by 50+ clients
 
@@ -70,6 +72,7 @@ Bruno, CIMB Bank, Clarins, CNI, ESP, Great Eastern, GuruLabs, Kith & Kin, Kuales
 Paid media, creative, SEO, email, and analytics run under one strategy here. When the channels share the same goal, each one makes the others work harder.
 
 **Checklist:**
+
 - Paid media across Meta, Google, and TikTok
 - Creative production built for performance
 - SEO, email, and lifecycle marketing
@@ -77,10 +80,11 @@ Paid media, creative, SEO, email, and analytics run under one strategy here. Whe
 **CTA:** Explore Our Services → `/services`
 
 **Stats Cards:**
-- **50+ Active Brands** — Trusted by growing brands across Southeast Asia.
+
+- **50+ Active Brands** — Trusted by growing brands across Asia, the US, Europe, and beyond.
 - **RM60M+ Managed** — Ad budget managed across Meta, Google, TikTok, and emerging platforms.
 - **4.9/5 Rating** — Rated top by clients for results, reporting, and reliability.
-- **SEA Coverage** — Deep local expertise across Malaysia, Singapore, Indonesia, and beyond.
+- **Global Reach** — We've run campaigns across Asia, the US, Europe, and the Middle East.
 
 ---
 
@@ -106,6 +110,22 @@ Results build over time. Every week we test, refine, and scale what's working, s
 **Heading:** Full Stack Digital Solutions
 **Description:** From brand awareness to revenue. We cover every channel and growth stage.
 
+### Service Detail Page Structure (`/services/[slug]`)
+
+Pages exist for: Performance Marketing, Branding, Web Development, Search Engine Optimisation.
+
+Each detail page follows this flow:
+
+1. **Header** — service name + short description (`service.description`)
+2. **Hero image**
+3. **Overview** — service headline as label, full overview paragraph (`service.headline` + `service.overview`)
+4. **Our Approach** — FeaturesThree block with 3 service-specific pillars (`service.approach`) — label, heading, body + 3 cards each with a highlighted sentence and body
+5. **What's included** — deliverables grid (`service.whatWeDo`)
+6. **FAQ** — standard FAQ accordion
+7. **CTA** — Book a Free Consultation
+
+> Services without a detail page (Email Marketing, Content Marketing, Reporting, Creative Production, CRO, OOH, Online Store, CRM) only appear on `/services` as cards. Add them to `src/data/services.ts` with an `approach` field to enable a detail page.
+
 ---
 
 ### 1. Performance Marketing
@@ -119,6 +139,7 @@ Performance marketing at Toggle is built around one goal: profitable growth. We 
 **Target Audience:** Brands that are ready to grow beyond organic and need a team that owns both strategy and execution.
 
 **Features:**
+
 - Paid social (Meta, TikTok) campaign management
 - Google Search & Shopping campaigns
 - Performance creative — ad concepts, copy, and iteration
@@ -126,7 +147,18 @@ Performance marketing at Toggle is built around one goal: profitable growth. We 
 - Conversion rate optimisation
 - Weekly reporting tied to real business metrics
 
+**Our Approach (service detail page — FeaturesThree block):**
+
+Label: Our Approach
+Heading: Built Around Revenue, Not Reports
+Body: We track every campaign back to what it drives for your business. Clicks and impressions are inputs. Revenue is the outcome.
+
+- **Creative Testing at Scale** — We test hooks, formats, and messaging systematically. The best performers scale. The rest get cut. No guessing, no gut feel.
+- **Multi-Market Expertise** — We've run campaigns across Asia, the US, Europe, and the Middle East. We know which platforms, audiences, and creative approaches convert in each market.
+- **Strategy and Execution in One Team** — The people who plan your campaigns also run them. No handoffs between strategists and buyers. Faster decisions, cleaner results.
+
 **Outcomes:**
+
 - 3–5× Average ROAS improvement within 90 days
 - 40% Reduction in customer acquisition cost
 - 2× Increase in conversion rate from testing
@@ -144,6 +176,7 @@ Email is still the highest-ROI channel in digital marketing, when it's done with
 **Target Audience:** E-commerce and DTC brands that want to grow customer lifetime value without increasing ad spend.
 
 **Features:**
+
 - Welcome, abandoned cart, post-purchase, and win-back flows
 - Newsletter strategy and copywriting
 - List segmentation and lifecycle mapping
@@ -164,13 +197,25 @@ A strong brand is the foundation every other marketing effort builds on. We work
 **Target Audience:** Growing brands that feel inconsistent, or new brands that want to launch with intention and clarity.
 
 **Features:**
+
 - Brand positioning and messaging strategy
 - Tone of voice and copywriting guidelines
 - Logo design and visual identity systems
 - Brand guidelines documentation
 - Creative direction for campaigns and content
 
+**Our Approach (service detail page — FeaturesThree block):**
+
+Label: Our Approach
+Heading: A Brand System You Can Actually Use
+Body: Most brand projects end with a PDF that never gets opened. We build identity systems that travel across every channel and hold up under pressure.
+
+- **Positioning Before Design** — We define who you are and who you're for before anything visual gets made. Every design decision builds on a clear strategy. The aesthetic follows the argument.
+- **Built for Every Market** — Your brand needs to work across channels, languages, and regions. We build identity systems that stay coherent whether they're on a billboard in Kuala Lumpur or a campaign in London.
+- **Guidelines Your Team Will Use** — Brand guidelines your designers can follow and your marketers can act on. Templates, component libraries, and documented rules that make consistent output fast.
+
 **Outcomes:**
+
 - 60% Increase in brand recall after identity refresh
 - 2× Faster content production with a design system
 - 35% Higher perceived value vs competitors
@@ -188,6 +233,7 @@ Good content does three things: it gets found, it earns trust, and it moves peop
 **Target Audience:** Brands that want to build organic visibility and a content engine that supports every other channel.
 
 **Features:**
+
 - Content strategy and editorial planning
 - SEO-optimised blog and article writing
 - Social media content planning and copywriting
@@ -208,6 +254,7 @@ Your website is the centre of your marketing system. We design and develop websi
 **Target Audience:** Brands launching, rebuilding, or looking to improve conversion rates on their existing site.
 
 **Features:**
+
 - Marketing website design and development
 - Landing page design and build (for ads and campaigns)
 - E-commerce website setup and optimisation
@@ -215,7 +262,18 @@ Your website is the centre of your marketing system. We design and develop websi
 - CRO-focused UX improvements
 - Ongoing maintenance and iteration support
 
+**Our Approach (service detail page — FeaturesThree block):**
+
+Label: Our Approach
+Heading: Conversion Is the Only Metric That Matters
+Body: Every layout decision, every CTA, every line of copy starts with one question: does this move the visitor closer to taking action?
+
+- **Conversion-First Design** — We start with your goal and build the page around it. Whether it's leads, sales, or sign-ups, the design serves the conversion. The aesthetic follows.
+- **Performance as Standard** — 90+ Lighthouse scores and fast load times on every device. Core Web Vitals are built in from day one, not patched in after the site goes live.
+- **Easy for Your Team to Update** — CMS-integrated builds your team can manage without a developer. Visual or structured editing, built around how your content team actually works.
+
 **Outcomes:**
+
 - 2.5× Average conversion rate uplift post-launch
 - 95+ Lighthouse performance scores as standard
 - 60% Faster page load times vs previous sites
@@ -233,6 +291,7 @@ Most marketing reports tell you what the numbers were. Ours tell you what they m
 **Target Audience:** Brands that want full visibility into their marketing performance and a team that turns data into decisions.
 
 **Features:**
+
 - Marketing dashboard setup (GA4, Meta, Google Ads, Klaviyo)
 - Weekly and monthly performance reporting
 - Attribution modelling and channel analysis
@@ -253,6 +312,7 @@ SEO at Toggle goes beyond page rankings. We build a search presence that perform
 **Target Audience:** Brands that want sustainable organic growth and a search presence built for where search is today and where it's heading.
 
 **Features:**
+
 - Technical SEO audit and fixes
 - Keyword research and content gap analysis
 - On-page optimisation across product and category pages
@@ -262,7 +322,18 @@ SEO at Toggle goes beyond page rankings. We build a search presence that perform
 - Generative Engine Optimisation (GEO)
 - Monthly performance tracking across traditional and AI search channels
 
+**Our Approach (service detail page — FeaturesThree block):**
+
+Label: Our Approach
+Heading: Rankings That Hold
+Body: Short-term tactics get short-term results. We build the technical foundations and content depth that keep you at the top once you get there.
+
+- **Technical Before Content** — No content strategy works on a technically broken site. We fix architecture, crawlability, and Core Web Vitals first, then build content on solid foundations.
+- **Optimised for AI Search Too** — Google is no longer the only answer engine. We structure content to appear in AI Overviews, ChatGPT answers, and conversational results across every major platform.
+- **Content That Earns Authority** — We build topical authority, not just keyword density. Every piece is mapped to intent and structured to earn trust with both readers and search engines.
+
 **Outcomes:**
+
 - 3× Organic traffic growth within 6 months
 - Top 3 rankings for primary commercial keywords
 - 50% Reduction in paid spend dependency over 12 months
@@ -280,6 +351,7 @@ Great creative is the difference between an ad that gets skipped and one that dr
 **Target Audience:** Brands that need a steady pipeline of high-quality creative assets without the overhead of an in-house production team.
 
 **Features:**
+
 - Static ad creative for Meta, Google, and TikTok
 - Short-form video and reels production
 - Motion graphics and animated ads
@@ -300,6 +372,7 @@ Getting people to your site is only half the battle. Conversion optimisation is 
 **Target Audience:** Brands with existing traffic that aren't converting at the rate they should be, and want a structured, evidence-based approach to fixing it.
 
 **Features:**
+
 - Conversion audit across landing pages and key funnels
 - A/B and multivariate testing
 - Landing page design and copy optimisation
@@ -321,6 +394,7 @@ Digital gets you clicks. OOH gets you presence. When your brand shows up in the 
 **Target Audience:** Brands looking to build mass awareness, enter new markets, or reinforce their digital presence with high-impact offline visibility.
 
 **Features:**
+
 - OOH strategy and media planning
 - Billboard, transit, and mall advertising placement
 - Digital out-of-home (DOOH) placements
@@ -342,6 +416,7 @@ Your online store is where traffic becomes revenue. But most stores are leaving 
 **Target Audience:** E-commerce brands that want their store actively managed and optimised, not just maintained.
 
 **Features:**
+
 - Shopify and e-commerce platform management
 - Product listing optimisation — copy, imagery, and categorisation
 - Promotions, bundles, and campaign setup
@@ -364,6 +439,7 @@ Acquiring a customer is just the beginning. The brands that win long-term are th
 **Target Audience:** Brands that have built a customer base and want to maximise the value of every relationship.
 
 **Features:**
+
 - CRM platform setup and management (Klaviyo, HubSpot, and more)
 - Customer lifecycle mapping and segmentation
 - Automated retention flows — win-back, re-engagement, loyalty
@@ -383,10 +459,11 @@ Acquiring a customer is just the beginning. The brands that win long-term are th
 **Headline:** Performance marketing built to last.
 
 **Body:**
-Founded in 2021, Toggle Solutions was built around one idea: growth marketing should be transparent, measurable, and built to last. Today we work with brands across Malaysia and Southeast Asia.
+Founded in 2021, Toggle Solutions was built around one idea: growth marketing should be transparent, measurable, and built to last. Today we work with brands across Asia, the US, Europe, and beyond.
 
 **Stats:**
-- 50+ brands grown across Malaysia and Southeast Asia.
+
+- 50+ brands grown across Asia, the US, Europe, and beyond.
 - 4+ years of data-driven performance marketing.
 
 ---
@@ -455,7 +532,7 @@ Our job is to make growth predictable. We build the systems and run the campaign
 
 **Page Label:** Our Work
 **Page Title:** Results across every industry.
-**Page Description:** How we've helped brands across Malaysia and Southeast Asia.
+**Page Description:** How we've helped brands around the world.
 
 ---
 
@@ -480,6 +557,7 @@ From June to September 2025, the campaign generated over 32,000 qualified leads.
 UNITAR needed to scale student acquisition without inflating costs. We ran a full-funnel campaign across TikTok, Meta, and Google, capturing 77% of total impressions in the Education category in Malaysia.
 
 **Metrics:**
+
 - 32K+ Qualified Leads from Ads
 - 77% Total Impressions Across Malaysia
 - 47% CPL Reduction Year-on-Year
@@ -504,6 +582,7 @@ Within twelve months, CIMB's organic impressions grew by 52.6% and organic click
 CIMB's product pages lacked keyword depth and their blog had content that diluted quality signals. We rebuilt their content strategy from the ground up. Organic clicks grew 34.5% within a year.
 
 **Metrics:**
+
 - 52.6% Increase in Organic Impressions
 - 34.5% Growth in Organic Clicks
 
@@ -524,6 +603,7 @@ Toggle identified significant lack of paid advertising competition around their 
 Kith & Kin had never run paid advertising before. They relied entirely on organic referrals and cold-calling. Three months of targeted Meta campaigns later: 392% more leads, RM35 CPL, and a 10% conversion rate from lead to closed deal.
 
 **Metrics:**
+
 - 392% Increase in Lead Volume
 - RM35 Cost Per Lead
 - 10% Lead-to-Deal Conversion Rate
@@ -558,6 +638,7 @@ Comprehensive on-page content optimisation built around intent alignment, author
 Singlife's core insurance keywords sat at position three. Close to the top, but far enough to lose meaningful traffic every month. We rebuilt their on-page content and organic clicks grew 23%.
 
 **Metrics:**
+
 - 23% Increase in Organic Clicks
 - #1 Ranking for Core Insurance Keywords
 
@@ -580,6 +661,7 @@ Targeted, high-impact approach focusing on metadata refresh, rewriting title tag
 Great Eastern's key insurance pages were stuck at position four. A targeted metadata refresh and content restructure moved them to position one in two months, with a 75% increase in search visibility.
 
 **Metrics:**
+
 - 16% Increase in Organic Clicks
 - 75% Increase in Search Visibility
 - Rankings improved from #4 to #1
@@ -623,11 +705,13 @@ Great Eastern's key insurance pages were stuck at position four. A targeted meta
 **Description:** Fill the form and we'll be in touch within 24 hours to schedule a call.
 
 **Trust Indicators:**
+
 - Free, no-obligation consultation call
 - No sales pitches, no pressure
 - Simple, transparent pricing
 
 **Contact Info:**
+
 - Email: marketing@togglesolutions.com
 - Phone: +60 12-568 8681
 - Office: Kuala Lumpur, Malaysia
@@ -636,6 +720,7 @@ Great Eastern's key insurance pages were stuck at position four. A targeted meta
 **Form Description:** We'll review your details before the call so we can make the most of your time.
 
 **Form Fields:**
+
 - Name (required)
 - Email (required)
 - Website URL (optional)
@@ -679,9 +764,10 @@ We focus on long-term partnerships but avoid restrictive contracts. Most engagem
 
 ## Footer
 
-**Tagline:** Performance marketing and growth systems for brands across Southeast Asia.
+**Tagline:** Performance marketing and growth systems for brands worldwide.
 
 **Services Links:**
+
 - Performance Marketing → `/services/performance-marketing`
 - Content Strategy → `/services/content-marketing`
 - Branding → `/services/branding`
@@ -689,12 +775,13 @@ We focus on long-term partnerships but avoid restrictive contracts. Most engagem
 - Email Marketing → `/services/email-marketing`
 
 **Company Links:**
+
 - About → `/about`
 - Our Work → `/work`
-- FAQ → `/#faq`
 - Contact → `/contact`
 
 **Case Studies Links:**
+
 - UNITAR → `/work/unitar`
 - CIMB Bank → `/work/cimb`
 - Kith & Kin → `/work/kith-and-kin`
@@ -702,6 +789,7 @@ We focus on long-term partnerships but avoid restrictive contracts. Most engagem
 - Singlife → `/work/singlife`
 
 **Social:**
+
 - LinkedIn → https://www.linkedin.com/company/toggle-solutions
 - Instagram → https://www.instagram.com/toggle.solutions/
 
@@ -740,25 +828,26 @@ These skills live in `.agents/skills/` and were used to rewrite this site's copy
 
 ### Skills Used
 
-| Skill | Path | When to Use |
-|---|---|---|
-| **Stop Slop** | `.agents/skills/stop-slop/SKILL.md` | Any time copy is being written or reviewed. Eliminates em dashes, binary contrasts, adverbs, jargon, passive voice, rhetorical setups, and dramatic fragmentation. Run a Stop Slop check on every piece of copy before shipping. |
-| **Ogilvy Copywriting** | `.agents/skills/ogilvy/SKILL.md` | When writing headlines, CTAs, and section intros. Applies David Ogilvy's principles: lead with the promise, be specific, include facts, avoid cleverness over clarity. |
-| **Copywriting** | `.agents/skills/copywriting/SKILL.md` | When building or restructuring page sections. Covers page structure, CTA formulas, voice/tone, benefits vs features, and headline frameworks. |
+| Skill                  | Path                                              | When to Use                                                                                                                                                                                                                                            |
+| ---------------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Toggle Copywriting** | `.agents/skills/toggle-copywriting/SKILL.md`      | **Start here for all copy work on this site.** Project-specific skill combining Stop Slop, Ogilvy, and page-level rules for Toggle Solutions. Includes approved facts, hard boundary rules (no structural changes), and output format instructions.    |
+| **Stop Slop**          | `.agents/skills/stop-slop/SKILL.md`               | Full pattern library for eliminating AI writing tells. Referenced by Toggle Copywriting.                                                                                                                                                               |
+| **Ogilvy Copywriting** | `.agents/skills/ogilvy/SKILL.md`                  | Deeper theory on positioning, promises, and headline construction. Referenced by Toggle Copywriting for headlines and CTAs.                                                                                                                             |
+| **Copywriting**        | `.agents/skills/copywriting/SKILL.md`             | General page structure frameworks and CTA formulas. Referenced by Toggle Copywriting for page-level structure.                                                                                                                                         |
 
 ### Stop Slop Quick Reference (Most Common Violations)
 
-| Pattern | Fix |
-|---|---|
-| Em dash ` — ` | Use a period or comma instead. No exceptions. |
-| `"not X, but Y"` / `"stop X and start Y"` | State Y directly. Drop the negation. |
-| `"ambitious"`, `"best-in-class"`, `"double down"` | Replace with plain language. |
-| `"compounds"`, `"compounding growth"` | Say what actually happens: "grows", "builds over time". |
-| `"While every business is different..."` | Cut the hedge. State the claim directly. |
-| `"Your wins are our wins"` | Say what this means in practice. |
-| `"No smoke and mirrors"` | Delete. State what you do, not what you don't do. |
-| Three-item staccato fragments | Write full sentences. |
-| `"eliminate the friction between X and Y"` | Say what you actually do instead. |
+| Pattern                                           | Fix                                                     |
+| ------------------------------------------------- | ------------------------------------------------------- |
+| Em dash `—`                                       | Use a period or comma instead. No exceptions.           |
+| `"not X, but Y"` / `"stop X and start Y"`         | State Y directly. Drop the negation.                    |
+| `"ambitious"`, `"best-in-class"`, `"double down"` | Replace with plain language.                            |
+| `"compounds"`, `"compounding growth"`             | Say what actually happens: "grows", "builds over time". |
+| `"While every business is different..."`          | Cut the hedge. State the claim directly.                |
+| `"Your wins are our wins"`                        | Say what this means in practice.                        |
+| `"No smoke and mirrors"`                          | Delete. State what you do, not what you don't do.       |
+| Three-item staccato fragments                     | Write full sentences.                                   |
+| `"eliminate the friction between X and Y"`        | Say what you actually do instead.                       |
 
 ### Stop Slop Checklist Before Any Copy Ships
 
