@@ -1,5 +1,4 @@
 import { SideCol } from "@/components/ui/grid";
-import { ChevronLeft } from "lucide-react";
 
 export default function PrivacyPage() {
   return (
@@ -14,13 +13,6 @@ export default function PrivacyPage() {
               className="bg-card/90 h-full rounded p-6 lg:p-12 @3xl:p-12"
             >
               <div className="max-w-2xl">
-                <a
-                  href="/"
-                  className="text-muted-foreground hover:text-foreground mb-6 inline-flex items-center gap-1 text-sm transition-colors"
-                >
-                  <ChevronLeft className="size-4" />
-                  All Legal Documents
-                </a>
                 <h1 className="text-foreground text-balance text-6xl font-semibold uppercase tracking-tight sm:text-8xl sm:font-bold">
                   Privacy Policy
                 </h1>
