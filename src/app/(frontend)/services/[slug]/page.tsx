@@ -6,8 +6,9 @@ import { GridRow, Spacer } from "@/components/ui/grid";
 import { SectionOverview } from "@/components/ui/section-overview";
 import { SectionItemsGrid } from "@/components/ui/section-items-grid";
 import CallToAction from "@/components/call-to-action";
-import FeatureCarousel from "@/components/feature-carousel";
+import FAQ2 from "@/components/faq-2";
 import { SERVICES } from "@/data/services";
+import FeaturesThree from "@/components/features-3";
 
 export async function generateMetadata({
   params,
@@ -66,22 +67,14 @@ export default async function ServicePage({
           {service.overview}
         </p>
       </SectionOverview>
-
       <Spacer />
-
+      <FeaturesThree />
+      <Spacer />
       {/* What's included */}
-      <SectionItemsGrid
-        heading="What's included"
-        items={service.whatWeDo}
-      />
-
+      <SectionItemsGrid heading="What's included" items={service.whatWeDo} />
       <Spacer />
-
-      {/* Related case studies */}
-      <FeatureCarousel />
-
+      <FAQ2 />
       <Spacer />
-
       <section>
         <CallToAction />
       </section>
