@@ -233,18 +233,57 @@ const FEATURES = [
   },
 ];
 
-export default function FeaturesThree() {
+export type ApproachCard = {
+  title: string;
+  highlightText: string;
+  bodyText: string;
+};
+
+export type ServiceApproach = {
+  label: string;
+  heading: string;
+  body: string;
+  cards: [ApproachCard, ApproachCard, ApproachCard];
+};
+
+const ILLUSTRATIONS = [
+  AIWritingIllustration,
+  GlobalInfraIllustration,
+  SmartPlanningIllustration,
+] as const;
+
+const ICONS = [Sparkles, Globe, ListChecks] as const;
+
+export default function FeaturesThree({ approach }: { approach?: ServiceApproach }) {
+  const panelLabel = approach?.label ?? "Platform";
+  const panelHeading = approach?.heading ?? "Even More Built In";
+  const panelBody =
+    approach?.body ??
+    "Everything you need to run high-performance campaigns, without the extra overhead or third-party tools.";
+
+  const cards = approach
+    ? approach.cards.map((card, i) => ({
+        Icon: ICONS[i],
+        title: card.title,
+        description: (
+          <>
+            <span className="text-foreground">{card.highlightText}</span>{" "}
+            {card.bodyText}
+          </>
+        ),
+        Illustration: ILLUSTRATIONS[i],
+      }))
+    : FEATURES;
+
   return (
     <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] bg-border">
       <SideCol wide />
       <div className="max-w-276 lg:min-w-276 mx-auto w-full">
         <div className="**:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded grid *:p-[0.5px] @2xl:grid-cols-5 @5xl:grid-cols-10">
-          {/* Left spacer — hidden below @2xl, row 2 between @2xl and @5xl, row 1 at @5xl */}
           <div aria-hidden="true" className="@max-2xl:hidden @max-5xl:row-start-2">
             <div data-grid-content="true" />
           </div>
 
-          {/* Heading panel — full width below @5xl, 4-col at @5xl */}
           <div className="@5xl:col-span-4 col-span-full">
             <div
               data-grid-content="true"
@@ -252,22 +291,20 @@ export default function FeaturesThree() {
             >
               <div className="space-y-4">
                 <p className="text-muted-foreground font-mono text-sm uppercase tracking-wide">
-                  Platform
+                  {panelLabel}
                 </p>
                 <h2 className="text-foreground text-3xl font-semibold">
-                  Even More Built In
+                  {panelHeading}
                 </h2>
                 <p className="text-muted-foreground text-balance">
-                  Everything you need to run high-performance campaigns, without
-                  the extra overhead or third-party tools.
+                  {panelBody}
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Cards container — 3-col span at @2xl, 4-col at @5xl */}
           <div className="@2xl:col-span-3 @5xl:col-span-4 grid gap-px">
-            {FEATURES.map(({ Icon, title, description, Illustration }) => (
+            {cards.map(({ Icon, title, description, Illustration }) => (
               <div
                 key={title}
                 data-slot="feature-card"
@@ -297,7 +334,6 @@ export default function FeaturesThree() {
             ))}
           </div>
 
-          {/* Right spacer — hidden below @2xl */}
           <div aria-hidden="true" className="@max-2xl:hidden">
             <div data-grid-content="true" />
           </div>
