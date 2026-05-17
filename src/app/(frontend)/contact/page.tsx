@@ -60,7 +60,7 @@ export default function ContactPage() {
             {/* Left col */}
             <div data-grid-content="true" className="@4xl:p-12 p-6">
               <h1 className="text-foreground text-balance text-5xl font-semibold tracking-tight">
-                Connect with our marketing experts.
+                Talk to a growth strategist.
               </h1>
               <p className="text-muted-foreground mt-6 text-balance text-lg">
                 Fill the form and we'll be in touch within 24 hours to

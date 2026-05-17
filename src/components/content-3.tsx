@@ -148,7 +148,7 @@ export default function Content() {
                   <span className="text-foreground">
                     Campaigns go live fast.
                   </span>{" "}
-                  We build and launch across your highest-priority channels —
+                  We build and launch across your highest-priority channels,
                   without the slow agency handoffs.
                 </p>
               </div>
@@ -221,10 +221,10 @@ export default function Content() {
                   className="text-muted-foreground text-xl font-medium"
                 >
                   <span className="text-foreground">
-                    Results compound over time.
+                    Results build over time.
                   </span>{" "}
-                  Every week we test, refine, and double down on what works —
-                  so performance improves the longer we work together.
+                  Every week we test, refine, and scale what&apos;s working, so
+                  performance improves the longer we work together.
                 </p>
               </div>
 

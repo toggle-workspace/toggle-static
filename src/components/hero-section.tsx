@@ -140,12 +140,12 @@ export default function HeroSection() {
           <div className="col-span-3">
             <div className="bg-background flex h-full flex-col justify-center rounded px-8 py-16">
               <h1 className="text-balance text-5xl font-semibold lg:text-6xl">
-                The Growth Partner Behind 50+ Brands in Southeast Asia
+                The Agency Behind 50+ Growing Brands in Southeast Asia
               </h1>
               <p className="text-muted-foreground mx-auto mb-8 mt-6 text-balance text-lg">
-                We combine paid media, creative, and lifecycle marketing into
-                one system — so every channel works toward the same goal:
-                revenue that compounds.
+                We run paid media, creative, and lifecycle marketing as one
+                system. Every channel points at the same goal: more revenue,
+                less wasted spend.
               </p>
               <div className="flex gap-3 max-lg:justify-center">
                 <Link

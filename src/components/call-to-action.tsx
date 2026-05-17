@@ -6,11 +6,11 @@ export default function CallToAction() {
       <div className="@3xl:p-20 @lg:p-8 relative overflow-hidden p-6 bg-background rounded">
         <div className="mx-auto max-w-xl text-center">
           <h2 className="text-foreground text-balance text-4xl font-semibold lg:text-5xl">
-            Ready to Scale Your Business?
+            Book a Free Consultation
           </h2>
           <p className="text-foreground mb-6 mt-4 text-balance text-lg">
-            50+ brands already growing with Toggle. Book a free consultation
-            — no pitch, no pressure.
+            50+ brands already work with Toggle. We&apos;ll review your
+            marketing and tell you what&apos;s worth doing first.
           </p>
           <Link
             href="/contact"

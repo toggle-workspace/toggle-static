@@ -28,7 +28,7 @@ function AIWritingIllustration() {
         <div className="divide-border divide-y">
           <div className="bg-primary/5 flex cursor-pointer items-center gap-2 px-3 py-2.5 transition-colors">
             <div className="flex-1 text-xs">
-              &ldquo;Grow 3× Faster — Without the Guesswork&rdquo;
+              &ldquo;3&times; Faster Growth, Backed by Data&rdquo;
             </div>
             <div className="bg-background ring-border-illustration text-muted-foreground flex items-center gap-1 rounded px-1.5 py-0.5 text-[10px] ring-1">
               <CornerDownLeft className="size-2.5" />
@@ -42,7 +42,7 @@ function AIWritingIllustration() {
           </div>
           <div className="hover:bg-foreground/3 flex cursor-pointer items-center gap-2 px-3 py-2.5 transition-colors">
             <div className="text-muted-foreground flex-1 text-xs">
-              &ldquo;Performance Meets Precision — At Scale&rdquo;
+              &ldquo;Performance at Scale, Built to Last&rdquo;
             </div>
           </div>
         </div>
@@ -258,7 +258,7 @@ export default function FeaturesThree() {
                   Even More Built In
                 </h2>
                 <p className="text-muted-foreground text-balance">
-                  Everything you need to run high-performance campaigns — without
+                  Everything you need to run high-performance campaigns, without
                   the extra overhead or third-party tools.
                 </p>
               </div>

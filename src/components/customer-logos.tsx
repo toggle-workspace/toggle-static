@@ -7,7 +7,7 @@ export default function CustomerLogos() {
           <div>
             <div data-grid-content="true" className="p-12 text-center">
               <p className="text-muted-foreground mx-auto max-w-xl text-balance md:text-lg">
-                50+ brands. Real results. Across every industry.
+                50+ brands trust Toggle with their growth.
               </p>
             </div>
           </div>

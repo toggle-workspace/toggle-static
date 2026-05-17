@@ -47,8 +47,8 @@ export default function FooterSection() {
               </svg>
             </Link>
             <p className="text-muted-foreground text-balance">
-              Performance marketing and growth systems for ambitious brands
-              across Southeast Asia.
+              Performance marketing and growth systems for brands across
+              Southeast Asia.
             </p>
           </div>
           <div className="@4xl:col-span-3 grid gap-px sm:grid-cols-3">
@@ -82,12 +82,6 @@ export default function FooterSection() {
                 >
                   <span>Web Development</span>
                 </Link>
-                <Link
-                  className="text-muted-foreground hover:text-primary block duration-150"
-                  href="/services/email-marketing"
-                >
-                  <span>Email Marketing</span>
-                </Link>
               </div>
             </div>
             <div
@@ -107,12 +101,6 @@ export default function FooterSection() {
                   href="/work"
                 >
                   <span>Our Work</span>
-                </Link>
-                <Link
-                  className="text-muted-foreground hover:text-primary block duration-150"
-                  href="/#faq"
-                >
-                  <span>FAQ</span>
                 </Link>
                 <Link
                   className="text-muted-foreground hover:text-primary block duration-150"

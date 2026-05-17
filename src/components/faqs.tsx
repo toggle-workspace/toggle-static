@@ -44,19 +44,19 @@ const faqGroups = [
         value: "services-2",
         question: "Do you do performance marketing only?",
         answer:
-          "Performance marketing is one part of what we do. Sustainable growth requires more. We build systems spanning paid media, creative strategy, SEO, CRO, content, email, lifecycle marketing, and CRM — all working under one strategy.",
+          "Performance marketing is one part of what we do. Sustainable growth needs more. We run paid media, creative strategy, SEO, CRO, content, email, lifecycle marketing, and CRM under one strategy.",
       },
       {
         value: "services-3",
         question: "What results can I expect and how fast?",
         answer:
-          "While every business is different, leads and sales can start coming in on Day 1 of campaign launch. Early performance improvements often appear within Weeks 2–4. More meaningful, compounding growth builds over Days 60–90 as we test, optimise, and scale what's working.",
+          "Leads and sales can start coming in on Day 1 of campaign launch. Early improvements often show within weeks 2–4. Stronger, sustained growth builds over days 60–90 as we test, optimise, and scale what's working.",
       },
       {
         value: "services-4",
         question: "What does pricing look like?",
         answer:
-          "Pricing is scoped to your needs and budget. Engagements are typically structured as a monthly retainer covering the services most relevant to your growth stage — whether that's campaign management, creative production, CRO, SEO, or a combination. We'll outline a clear proposal after understanding your goals.",
+          "Pricing is scoped to your needs and budget. Most engagements run as a monthly retainer covering the services most relevant to your stage, whether that's campaign management, creative production, CRO, SEO, or a combination. We'll outline a clear proposal after the first call.",
       },
       {
         value: "services-5",

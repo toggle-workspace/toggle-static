@@ -12,19 +12,19 @@ const coreValues = [
     icon: Heart,
     title: "Craft & Care",
     description:
-      "Details matter. From ad copy to landing pages, we treat every touchpoint as an opportunity to convert and delight.",
+      "Details matter. Every ad, landing page, and email is a chance to earn the click and keep the customer.",
   },
   {
     icon: Users,
     title: "True Partnership",
     description:
-      "We embed ourselves in your goals. Your wins are our wins.",
+      "We work inside your goals, not around them. If your numbers improve, ours do too.",
   },
   {
     icon: Shield,
     title: "Radical Transparency",
     description:
-      "No smoke and mirrors. We share real numbers, honest assessments, and clear reporting so you always know where you stand.",
+      "We share real numbers, honest assessments, and clear reporting. You always know where you stand.",
   },
 ];
 

@@ -18,7 +18,7 @@ const MINI_CARDS: { Icon: LucideIcon; title: string; description: string }[] = [
     Icon: Users,
     title: "50+ Active Brands",
     description:
-      "Trusted by ambitious brands across Southeast Asia.",
+      "Trusted by growing brands across Southeast Asia.",
   },
   {
     Icon: TrendingUp,
@@ -30,7 +30,7 @@ const MINI_CARDS: { Icon: LucideIcon; title: string; description: string }[] = [
     Icon: Star,
     title: "4.9/5 Rating",
     description:
-      "Rated best-in-class by clients for results, reporting, and reliability.",
+      "Rated top by clients for results, reporting, and reliability.",
   },
   {
     Icon: Globe,
@@ -167,14 +167,13 @@ export default function FeaturesTwo() {
                     className="@4xl:px-12 @4xl:pt-12 @4xl:pb-12 p-6 flex h-full flex-col space-y-6"
                   >
                     <h3 className="text-3xl font-semibold">
-                      One Growth System Across Every Channel
+                      One Strategy Across Every Channel
                     </h3>
 
                     <p className="text-muted-foreground text-balance">
-                      Paid media, creative, SEO, email, and analytics don't
-                      work in silos here — they work as one. When every channel
-                      is aligned under a single strategy, they stop competing
-                      and start compounding.
+                      Paid media, creative, SEO, email, and analytics run under
+                      one strategy here. When the channels share the same goal,
+                      each one makes the others work harder.
                     </p>
 
                     <ul className="w-full space-y-2">

@@ -16,19 +16,19 @@ export default function HomePage() {
       <Spacer />
       <Heading
         title="Trusted by 50+ Brands Across Southeast Asia"
-        description="Real results for brands across Malaysia and Southeast Asia — at every stage of growth."
+        description="Real results for brands across Malaysia and Southeast Asia, at every stage of growth."
       />
       <FeaturesTwo />
       <Spacer />
       <Heading
         title="How We Work"
-        description="Three steps. One compounding system."
+        description="Three steps. One system."
       />
       <Content />
       <Spacer />
       <Heading
         title="Full Stack Digital Solutions"
-        description="From brand awareness to revenue at scale — we cover every channel and growth stage."
+        description="From brand awareness to revenue. We cover every channel and growth stage."
       />
       <ServicesList />
       <Spacer />
