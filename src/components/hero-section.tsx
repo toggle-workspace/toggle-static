@@ -140,7 +140,7 @@ export default function HeroSection() {
           <div className="col-span-3">
             <div className="bg-background flex h-full flex-col justify-center rounded px-8 py-16">
               <h1 className="text-balance text-5xl font-semibold lg:text-6xl">
-                The Agency Behind 50+ Growing Brands in Southeast Asia
+                The Agency Behind 50+ Growing Brands
               </h1>
               <p className="text-muted-foreground mx-auto mb-8 mt-6 text-balance text-lg">
                 We run paid media, creative, and lifecycle marketing as one

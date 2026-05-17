@@ -18,7 +18,7 @@ const MINI_CARDS: { Icon: LucideIcon; title: string; description: string }[] = [
     Icon: Users,
     title: "50+ Active Brands",
     description:
-      "Trusted by growing brands across Southeast Asia.",
+      "Trusted by growing brands across Asia, the US, Europe, and beyond.",
   },
   {
     Icon: TrendingUp,
@@ -34,9 +34,9 @@ const MINI_CARDS: { Icon: LucideIcon; title: string; description: string }[] = [
   },
   {
     Icon: Globe,
-    title: "SEA Coverage",
+    title: "Global Reach",
     description:
-      "Deep local expertise across Malaysia, Singapore, Indonesia, and beyond.",
+      "We've run campaigns across Asia, the US, Europe, and the Middle East.",
   },
 ];
 

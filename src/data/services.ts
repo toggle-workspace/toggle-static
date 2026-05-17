@@ -34,7 +34,7 @@ export const SERVICES: Service[] = [
     image: "https://picsum.photos/seed/performance-mktg/400/260",
     headline: "Spend Smarter. Scale Faster.",
     overview:
-      "We manage your paid media end-to-end: audience research, creative strategy, bidding, testing, and optimisation. Every dollar is tracked to revenue. Every decision is backed by data. The longer we run, the sharper the spend gets.",
+      "Performance marketing at Toggle is built around one goal: profitable growth. We manage and optimise campaigns across Meta, Google, and TikTok combining audience strategy, creative testing, and conversion data to find what works and scale it with confidence. Every dollar is tracked to revenue. Every decision is backed by data. The longer we run, the sharper the spend gets.",
     approach: {
       label: "Our Approach",
       heading: "Built Around Revenue, Not Reports",
@@ -46,8 +46,8 @@ export const SERVICES: Service[] = [
           bodyText: "The best performers scale. The rest get cut. No guessing, no gut feel.",
         },
         {
-          title: "SEA Market Expertise",
-          highlightText: "Deep local knowledge across Malaysia, Singapore, and Indonesia.",
+          title: "Multi-Market Expertise",
+          highlightText: "We've run campaigns across Asia, the US, Europe, and the Middle East.",
           bodyText: "We know which platforms, audiences, and creative approaches convert in each market.",
         },
         {
@@ -104,7 +104,7 @@ export const SERVICES: Service[] = [
     image: "https://picsum.photos/seed/branding-id/400/260",
     headline: "Stand for Something. Look the Part.",
     overview:
-      "Your brand communicates before anyone reads a word. We build the positioning, voice, visual language, and the assets to carry it across every channel.",
+      "A strong brand is the foundation every other marketing effort builds on. We work with you to sharpen your positioning, clarify your message, and build a visual identity that holds across every channel, from your ads to your packaging to your website. We build the positioning, voice, visual language, and the assets to carry it wherever your audience is.",
     approach: {
       label: "Our Approach",
       heading: "A Brand System You Can Actually Use",
@@ -118,7 +118,7 @@ export const SERVICES: Service[] = [
         {
           title: "Built for Every Market",
           highlightText: "Your brand needs to work across channels, languages, and regions.",
-          bodyText: "We build identity systems that stay coherent whether they're on a billboard in KL or an ad in Singapore.",
+          bodyText: "We build identity systems that stay coherent whether they're on a billboard in Kuala Lumpur or a campaign in London.",
         },
         {
           title: "Guidelines Your Team Will Use",
@@ -174,7 +174,7 @@ export const SERVICES: Service[] = [
     image: "https://picsum.photos/seed/web-dev/400/260",
     headline: "Websites Built to Convert.",
     overview:
-      "We design and build marketing websites and landing pages with one priority: conversion. Every layout and line of copy is built to move visitors toward a decision, on a stack that loads fast and stays easy to update.",
+      "Your website is the centre of your marketing system. We design and develop websites and landing pages that load fast, communicate clearly, and turn visitors into leads or customers. Every build is done with your growth goals in mind, not just aesthetics.",
     approach: {
       label: "Our Approach",
       heading: "Conversion Is the Only Metric That Matters",
@@ -244,7 +244,7 @@ export const SERVICES: Service[] = [
     image: "https://picsum.photos/seed/seo-search/400/260",
     headline: "Own the Search Results Your Competitors Are Chasing.",
     overview:
-      "We build organic search visibility through technical SEO, content that earns authority, and a strategy that covers traditional search and AI-powered answers. Once it's built, traffic grows without ongoing media spend.",
+      "SEO at Toggle goes beyond page rankings. We build a search presence that performs across Google, AI-powered answer engines, and the emerging landscape of LLM-driven discovery, so your brand shows up wherever your customers are looking. Whether you're starting from scratch or recovering lost ground, we build a system designed to grow consistently.",
     approach: {
       label: "Our Approach",
       heading: "Rankings That Hold",

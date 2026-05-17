@@ -23,8 +23,8 @@ export default function AboutHero() {
             <p className="text-muted-foreground mt-6 max-w-2xl text-balance text-lg">
               Founded in 2021, Toggle Solutions was built around one idea:
               growth marketing should be transparent, measurable, and built to
-              last. Today we work with brands across Malaysia and Southeast
-              Asia.
+              last. Today we work with brands across Asia, the US, Europe, and
+              beyond.
             </p>
           </div>
           <div aria-hidden="true" className="max-sm:hidden">
@@ -51,7 +51,7 @@ export default function AboutHero() {
                   50+
                 </strong>
                 {"  "}
-                brands grown across Malaysia and Southeast Asia.
+                brands grown across Asia, the US, Europe, and beyond.
               </p>
             </div>
             <div data-grid-content="true" className="@4xl:col-span-4">
