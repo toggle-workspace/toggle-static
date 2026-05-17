@@ -18,12 +18,12 @@ export default function AboutHero() {
               About us
             </span>
             <h1 className="text-foreground mt-12 text-balance text-5xl font-semibold tracking-tight lg:text-6xl">
-              We&apos;re a performance-driven marketing agency
+              Performance marketing built to last.
             </h1>
             <p className="text-muted-foreground mt-6 max-w-2xl text-balance text-lg">
-              Founded in 2021, Toggle Solutions started with a simple belief:
+              Founded in 2021, Toggle Solutions started with one belief:
               growth marketing should be transparent, measurable, and built to
-              scale. Today, we serve ambitious brands across Malaysia and
+              scale. Today we serve ambitious brands across Malaysia and
               Southeast Asia.
             </p>
           </div>
@@ -51,7 +51,7 @@ export default function AboutHero() {
                   50+
                 </strong>
                 {"  "}
-                ambitious brands grown across all verticals.
+                ambitious brands grown across Malaysia and Southeast Asia.
               </p>
             </div>
             <div data-grid-content="true" className="@4xl:col-span-4">

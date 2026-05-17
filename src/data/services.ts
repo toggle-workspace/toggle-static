@@ -16,16 +16,16 @@ export const SERVICES: Service[] = [
     slug: "performance-marketing",
     name: "Performance Marketing",
     description:
-      "Drive growth with campaign optimization across Meta, Google, and TikTok — combining audience strategy, creative testing, and conversion data to find what works and scale it with confidence.",
+      "We run ads across Meta, Google, and TikTok — combining audience strategy, creative testing, and conversion data to find what works and scale it.",
     image: "https://picsum.photos/seed/performance-mktg/400/260",
     headline: "Spend Smarter. Scale Faster.",
     overview:
-      "We manage your paid media end-to-end — from audience research and creative strategy to bidding, testing, and optimization. Every dollar is tracked to revenue, and every decision is backed by data. The result is a growth engine that compounds as we learn what works.",
+      "We manage your paid media end-to-end: audience research, creative strategy, bidding, testing, and optimisation. Every dollar is tracked to revenue, and every decision is backed by data. The longer we run, the more efficient your spend gets.",
     whatWeDo: [
       {
         title: "Paid Social",
         description:
-          "Meta, TikTok, and LinkedIn campaigns built around your highest-value audiences — with creative and copy tested at scale.",
+          "Meta, TikTok, and LinkedIn campaigns built around your highest-value audiences, with creative and copy tested at scale.",
       },
       {
         title: "Paid Search",
@@ -35,22 +35,22 @@ export const SERVICES: Service[] = [
       {
         title: "Creative Testing",
         description:
-          "Systematic A/B and multivariate testing across hooks, formats, and messaging to find what converts — then scale it.",
+          "Systematic A/B and multivariate testing across hooks, formats, and messaging to find what converts, then scale it.",
       },
       {
         title: "Audience Strategy",
         description:
-          "Prospecting, retargeting, and lookalike structures built to acquire new customers and re-engage existing ones efficiently.",
+          "Prospecting, retargeting, and lookalike structures built to acquire new customers and re-engage existing ones.",
       },
       {
         title: "Budget Allocation",
         description:
-          "Cross-channel budget modeling that moves spend toward what's working and pulls back where performance drops.",
+          "We shift budget toward what's working and pull back where performance drops, across every channel in the mix.",
       },
       {
         title: "Attribution & Reporting",
         description:
-          "Clear weekly and monthly reporting tied to revenue — not just clicks and impressions — so you always know your real ROI.",
+          "Clear weekly and monthly reporting tied to revenue, not just clicks and impressions, so you always know your real ROI.",
       },
     ],
     outcomes: [
@@ -64,16 +64,16 @@ export const SERVICES: Service[] = [
     slug: "branding",
     name: "Branding",
     description:
-      "Sharpen your positioning, clarify your message, and create a visual identity that holds up across every touchpoint — from ads to packaging to your website.",
+      "We sharpen your positioning, clarify your message, and build a visual identity that holds up across every touchpoint — from ads to packaging.",
     image: "https://picsum.photos/seed/branding-id/400/260",
     headline: "Stand for Something. Look the Part.",
     overview:
-      "A strong brand isn't just a logo — it's a system that communicates who you are before anyone reads a word. We build the full identity: positioning, voice, visual language, and the assets to execute it consistently at scale.",
+      "Your brand communicates before anyone reads a word. We build the full identity: positioning, voice, visual language, and the assets to execute it consistently across every channel and format.",
     whatWeDo: [
       {
         title: "Brand Strategy",
         description:
-          "Defining your positioning, target audience, and competitive differentiation — the foundation everything else is built on.",
+          "We define your positioning, target audience, and competitive differentiation. Every other brand decision builds on this.",
       },
       {
         title: "Visual Identity",
@@ -88,7 +88,7 @@ export const SERVICES: Service[] = [
       {
         title: "Brand Guidelines",
         description:
-          "A comprehensive brand book that documents how to use your identity correctly across every format and channel.",
+          "A practical brand book documenting how to use your identity correctly across every format and channel.",
       },
       {
         title: "Design System",
@@ -112,16 +112,16 @@ export const SERVICES: Service[] = [
     slug: "web-development",
     name: "Web Development",
     description:
-      "Design and develop websites and landing pages that load fast, communicate clearly, and turn visitors into leads or customers — with your growth goals in mind.",
+      "We design and develop websites and landing pages that load fast, communicate clearly, and turn visitors into customers.",
     image: "https://picsum.photos/seed/web-dev/400/260",
     headline: "Websites Built to Convert, Not Just to Impress.",
     overview:
-      "We design and build marketing websites and landing pages that do more than look good — they perform. Every layout decision, copy choice, and interaction is made with conversion in mind, built on a stack that's fast, maintainable, and easy to update.",
+      "We design and build marketing websites and landing pages with one priority: conversion. Every layout and line of copy is built to move visitors toward a decision, on a stack that's fast, maintainable, and easy to update.",
     whatWeDo: [
       {
         title: "Conversion-Led Design",
         description:
-          "Every page layout is built around a clear conversion goal — with visual hierarchy, copy, and CTAs working together.",
+          "Every page layout is built around a clear conversion goal, with visual hierarchy, copy, and CTAs aligned to it.",
       },
       {
         title: "Landing Pages",
@@ -134,9 +134,9 @@ export const SERVICES: Service[] = [
           "Full website builds with scalable CMS integration, so your team can update content without touching code.",
       },
       {
-        title: "Performance Optimization",
+        title: "Performance Optimisation",
         description:
-          "Core Web Vitals optimization, image compression, and lazy loading to hit 90+ Lighthouse scores across the board.",
+          "Core Web Vitals optimisation, image compression, and lazy loading to hit 90+ Lighthouse scores across the board.",
       },
       {
         title: "Analytics Setup",
@@ -160,39 +160,39 @@ export const SERVICES: Service[] = [
     slug: "search-engine-optimisation",
     name: "Search Engine Optimisation",
     description:
-      "Build search visibility that compounds over time — across traditional search, AI answers, and the next generation of organic discovery.",
+      "We build search visibility that compounds — across Google, AI answer engines, and the next generation of organic discovery.",
     image: "https://picsum.photos/seed/seo-search/400/260",
     headline: "Own the Search Results Your Competitors Are Chasing.",
     overview:
-      "SEO that compounds. We build sustainable organic visibility through technical foundations, content that earns authority, and a strategy that tracks the changing landscape — from traditional search to AI-powered answers. The result is a channel that grows without a media budget.",
+      "We build organic search visibility through technical SEO, content that earns authority, and a strategy covering both traditional search and AI-powered answers. Once it's built, traffic grows without ongoing media spend.",
     whatWeDo: [
       {
         title: "Technical SEO",
         description:
-          "Site architecture, crawlability, Core Web Vitals, and schema markup — getting the technical foundations right so search engines can index and rank your content.",
+          "Site architecture, crawlability, Core Web Vitals, and schema markup. Getting the technical foundations right so search engines can find and rank your content.",
       },
       {
         title: "Keyword Strategy",
         description:
-          "Research and prioritization of keywords your target audience is actually searching — mapped to intent and funnel stage.",
+          "Research and prioritisation of the keywords your audience is searching, mapped to intent and funnel stage.",
       },
       {
         title: "Content Strategy",
         description:
-          "A content plan built around topical authority — so you own the conversation in your category, not just individual keywords.",
+          "A content plan built around topical authority, so you own the conversation in your category.",
       },
       {
         title: "Link Building",
         description:
-          "Ethical, white-hat link acquisition through PR, digital outreach, and content partnerships that build real domain authority.",
+          "Link acquisition through PR, digital outreach, and content partnerships that build real domain authority.",
       },
       {
         title: "Local SEO",
         description:
-          "Google Business Profile optimization and local citation building for businesses with a physical presence or local service area.",
+          "Google Business Profile optimisation and local citation building for businesses with a physical presence or local service area.",
       },
       {
-        title: "AI Search Optimization",
+        title: "AI Search Optimisation",
         description:
           "Structuring content to appear in AI Overviews, ChatGPT answers, and the next generation of conversational search results.",
       },

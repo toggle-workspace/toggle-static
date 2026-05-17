@@ -8,9 +8,9 @@ const SHIELD_PATH =
 const RANDOM_TEXT = `yUdisQi8[E}%1zYo4%s}3HK!ik6jhofy2<}EJ&lC9af0jy9ee$#@in3dImJ9Brb>dje0A<3GIsz8s53BvSRYmG8v{?Z<#DEL@<UU@CQl?HwNcrib&!uj@i]94QUktEw41MA!dLd<vKlimAEHesyWSNuAest{g&3GT<4lYmc0]mHr[r0u?fG]cJlgk5jD@N7%RhRAVYEEW[U%e7Wze1c3*%UUGZB8?r5&5t4oNe]B*v1Z%kvStj%#C>&58to21rg??MJ9V2!f@*2o*wtioGUMvM!&Y4{by*U3IE]6KO1eTbWDLFHeFO>FkONSw2wTn@HFj?u#jD<Xn@5wLZlMS7AWeGIR%?<yMQ4PW?H[yjIthYRqSp}0T0}]!}[>b{YU}6&Hu#YIiva3L@uZ$}X4zS4b9%}V%Z545e%U$[Hj&QQSXXv&]UR{[DQYRH>W{jRI>LbVnb?9{YZKCb8LD1EfTiT0Fi!i[QcRfxY&zg?htpU3se!fGl94fzJdS8N]g17u8{[!XF6?N@bglyj?>2mBB*tq!nG2lt$h5[2Z>{gv*l0Sb0#OHSG{rH*[f81!T8eOzWI9*ObBiHWEL07h5$8Ut5&}F!Ay#y4eJ5KI&<7L}2Bpd4!cjb<pR[VanjMTOIW3Ftac1HPei[GfSXu6K>GTmBA18ZBRL1h]pKcbIdmy]89!q0QnkaNtWpEe}ZWxwXG*EWV[o*jWZxhdGR8k>nG652vyfZG!s#%Ru#5vph5oLcUxp[R5tWBeAf0I!5?x8m}HqMfRu&tHFc[*##yS8*?0f<29cBxWrQma2vXmmtx{!1LD?1t&e3C@u<x]Q1qCHg<cAzDC]LysIT7O$CNK[qJD{Q<Rxen}SEv5fk1EZec7r}hXrI87anc2J>wYiz1s?vCdN*l9K9cNCkXSxi4*uaieFXi6[R}SyVYCCoSGD}G05WL*UMo[yY2h3T&KbzWMZ]dz##qSr@MdQ*AR{1N%RnoQw!31>jHUJ[5RHz40LoTiB>OEZ7#jDHjLx$bw97Kiz}wj3Et$2lQ37#uAS}Hw3qpM*eVAdTQ6<l4mi2wveH6gh9C3PpD*>FkSpMb@DUB?eeFj<h6cFL#opqFse{Ci2Uv2z5oohI<{CvO%N]M2flrGVcKNwS9p47U}RN{ump2Q3wVI$?l@$6KlK[><G66<z]Nh[fV?Jxux>PONu2J8&NwXpAQ8]bdQur!g$PLdQQnQ?pn]Jno76Vyu7JOmFiNWw1S{MK[k4xqQaMRieg7%B#YXDi}C0YIGAAYA]z7%J]2[Z4L02PWV[Uy5Be0qgJ@]%yM3?H&4vMlNcW!cbdY7Bwo5AQg2w>lDL6yh7IDuH>496y0NOoiHs0M8eXPPWifi9ot8%7qmvx?Q6}?2@]RcQNy[lSQe@f>sUd86MQsDXnR8OCZCEY[Bz$feu]fa}ZUWN20NDNVVAs{OIWr7i&87e%I4MdkMp03L9CanWph%B1?[yYuzv8NKCc&yUA!fI2*f8SUQ3Aa%TE3fe!OD`;
 
 const CHECKLIST = [
-  "Multi-Platform Ad Management",
-  "High-Fidelity Creative Production",
-  "Real-Time Analytics & Reporting",
+  "Paid media across Meta, Google, and TikTok",
+  "Creative production built for performance",
+  "SEO, email, and lifecycle marketing",
 ];
 
 const MINI_CARDS: { Icon: LucideIcon; title: string; description: string }[] = [
@@ -18,7 +18,7 @@ const MINI_CARDS: { Icon: LucideIcon; title: string; description: string }[] = [
     Icon: Users,
     title: "50+ Active Brands",
     description:
-      "Trusted by ambitious brands across Southeast Asia to drive sustainable growth.",
+      "Trusted by ambitious brands across Southeast Asia.",
   },
   {
     Icon: TrendingUp,
@@ -30,13 +30,13 @@ const MINI_CARDS: { Icon: LucideIcon; title: string; description: string }[] = [
     Icon: Star,
     title: "4.9/5 Rating",
     description:
-      "Consistently rated best-in-class by clients for creative quality and results.",
+      "Rated best-in-class by clients for results, reporting, and reliability.",
   },
   {
     Icon: Globe,
     title: "SEA Coverage",
     description:
-      "Deep local market expertise spanning Malaysia, Singapore, Indonesia, and beyond.",
+      "Deep local expertise across Malaysia, Singapore, Indonesia, and beyond.",
   },
 ];
 
@@ -167,13 +167,14 @@ export default function FeaturesTwo() {
                     className="@4xl:px-12 @4xl:pt-12 @4xl:pb-12 p-6 flex h-full flex-col space-y-6"
                   >
                     <h3 className="text-3xl font-semibold">
-                      Full-Funnel Growth Engine
+                      One Growth System Across Every Channel
                     </h3>
 
                     <p className="text-muted-foreground text-balance">
-                      We combine high-end creative production with data-driven
-                      performance to build brand systems that scale effortlessly
-                      — across every channel and every stage.
+                      Paid media, creative, SEO, email, and analytics don't
+                      work in silos here — they work as one. When every channel
+                      is aligned under a single strategy, they stop competing
+                      and start compounding.
                     </p>
 
                     <ul className="w-full space-y-2">
@@ -189,10 +190,10 @@ export default function FeaturesTwo() {
                     </ul>
 
                     <Link
-                      href="/about"
+                      href="/services"
                       className="cursor-pointer inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow-sm shadow-black/15 border border-transparent bg-background ring-1 ring-foreground/10 duration-200 hover:bg-muted/50 dark:ring-foreground/15 dark:hover:bg-muted/50 h-8 rounded-md px-3 text-xs mt-auto w-fit"
                     >
-                      Learn more
+                      Explore Our Services
                     </Link>
                   </div>
                 </div>

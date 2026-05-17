@@ -16,19 +16,19 @@ export default function HomePage() {
       <Spacer />
       <Heading
         title="Trusted by 50+ Brands Across Southeast Asia"
-        description="We deliver measurable results that help ambitious brands grow sustainably — across every channel and every stage."
+        description="Real results for brands across Malaysia and Southeast Asia — at every stage of growth."
       />
       <FeaturesTwo />
       <Spacer />
       <Heading
-        title="Built to Grow the Whole Business"
-        description="We build a full-funnel system across ads, creative, lifecycle, and reporting so every part of your marketing works toward the same goal: sustainable, measurable growth you can scale with confidence."
+        title="How We Work"
+        description="Three steps. One compounding system."
       />
       <Content />
       <Spacer />
       <Heading
         title="Full Stack Digital Solutions"
-        description="From brand awareness to final scale, we cover every channel and growth stage — built to compound over time."
+        description="From brand awareness to revenue at scale — we cover every channel and growth stage."
       />
       <ServicesList />
       <Spacer />

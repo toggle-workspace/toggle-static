@@ -6,7 +6,7 @@ const coreValues = [
     icon: Lightbulb,
     title: "Data-Driven Decisions",
     description:
-      "We challenge assumptions with evidence. Every campaign decision starts with a question: what does the data actually tell us?",
+      "We challenge assumptions with evidence. Every campaign decision starts with a question: what does the data say?",
   },
   {
     icon: Heart,
@@ -18,7 +18,7 @@ const coreValues = [
     icon: Users,
     title: "True Partnership",
     description:
-      "We embed ourselves in your goals. Your wins are our wins — we build long-term relationships, not transactional engagements.",
+      "We embed ourselves in your goals. Your wins are our wins.",
   },
   {
     icon: Shield,
@@ -32,7 +32,7 @@ export default function AboutValues() {
   return (
     <SectionItemsGrid
       heading="Core Values"
-      subheading="The principles that guide every decision we make, from hiring to shipping."
+      subheading="The principles that guide every decision we make."
       items={coreValues}
     />
   );

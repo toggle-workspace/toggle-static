@@ -15,19 +15,19 @@ const faqGroups = [
         value: "general-1",
         question: "What do I get in the Free Brand Audit?",
         answer:
-          "Our Free Brand Audit is a comprehensive review of your current marketing channels, funnel performance and growth opportunities. You'll receive a detailed roadmap including 3–5 prioritized growth levers, identification of quick wins to boost conversion rates, and recommended next steps to improve results.",
+          "Our Free Brand Audit covers your marketing channels, funnel performance, and growth opportunities. You'll get a roadmap with 3–5 prioritised growth levers, quick wins to boost conversions, and clear next steps.",
       },
       {
         value: "general-2",
         question: "How long does it take to receive the audit?",
         answer:
-          "We value speed without compromising quality. Typically, we will respond to your initial request within 24 hours and deliver the completed audit within 3–5 business days, depending on the complexity of your current setup and data availability.",
+          "We respond within 24 hours and deliver the completed audit within 3–5 business days, depending on your current setup and data availability.",
       },
       {
         value: "general-3",
         question: "Who will I work with?",
         answer:
-          "You won't be handed off to a junior team. Every client gets a dedicated team of three: a Senior Account Manager as your strategic partner and main point of contact, a Senior Performance Marketer expert in media buying and campaign optimization, and a Backup Performance Marketing Specialist to ensure coverage and support.",
+          "You won't be handed off to a junior team. Every client gets a dedicated team of three: a Senior Account Manager as your main point of contact, a Senior Performance Marketer for campaign execution, and a Backup Specialist for coverage and support. No unnecessary layers.",
       },
     ],
   },
@@ -38,19 +38,31 @@ const faqGroups = [
         value: "services-1",
         question: "What type of brands are you the best fit for?",
         answer:
-          "We've consulted and helped clients across all verticals including Education & EdTech, Healthcare, Technology, Professional services, Food & Beverage, FMCG, E-commerce, Lifestyle Brands, and many others. If you're a brand that's serious about growth, we're built to work with you regardless of industry.",
+          "We've worked across Education, Healthcare, Technology, Professional Services, F&B, FMCG, E-commerce, and Lifestyle. If you're serious about growth, we're built for you.",
       },
       {
         value: "services-2",
         question: "Do you do performance marketing only?",
         answer:
-          "Performance marketing is one part of what we do but sustainable growth requires more. We build growth systems that span Paid Media, Creative Strategy, SEO & CRO, Content, Email and Lifecycle Marketing, CRM and sales integration, and AI-powered automation — all working together under one strategy.",
+          "Performance marketing is one part of what we do. Sustainable growth requires more. We build systems spanning paid media, creative strategy, SEO, CRO, content, email, lifecycle marketing, and CRM — all working under one strategy.",
       },
       {
         value: "services-3",
         question: "What results can I expect and how fast?",
         answer:
-          "While every business is unique, our framework is designed for rapid impact. Leads and sales can start coming in immediately upon campaign launch (Day 1). Early performance improvements often become visible within Weeks 2–4. More meaningful, compounding growth typically builds over Days 60–90 as we test, optimise and scale what's working.",
+          "While every business is different, leads and sales can start coming in on Day 1 of campaign launch. Early performance improvements often appear within Weeks 2–4. More meaningful, compounding growth builds over Days 60–90 as we test, optimise, and scale what's working.",
+      },
+      {
+        value: "services-4",
+        question: "What does pricing look like?",
+        answer:
+          "Pricing is scoped to your needs and budget. Engagements are typically structured as a monthly retainer covering the services most relevant to your growth stage — whether that's campaign management, creative production, CRO, SEO, or a combination. We'll outline a clear proposal after understanding your goals.",
+      },
+      {
+        value: "services-5",
+        question: "Do you require long-term contracts?",
+        answer:
+          "We focus on long-term partnerships but avoid restrictive contracts. Most engagements run on flexible monthly agreements based on performance and results.",
       },
     ],
   },
@@ -75,7 +87,7 @@ export default function FAQs() {
               href="/contact"
               className="text-primary font-medium underline underline-offset-2"
             >
-              customer support team
+              team
             </Link>
           </p>
         </div>
@@ -120,7 +132,7 @@ export default function FAQs() {
               href="/contact"
               className="text-primary font-medium hover:underline"
             >
-              customer support team
+              team
             </Link>
           </p>
         </div>

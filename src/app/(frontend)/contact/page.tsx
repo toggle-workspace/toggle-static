@@ -14,17 +14,17 @@ import {
 import { GridRow, SideCol } from "@/components/ui/grid";
 
 const features = [
-  "24/7 support availability",
-  "Dedicated account manager",
-  "Custom integrations",
-  "Priority response time",
+  "Free, no-obligation consultation call",
+  "No sales pitches, no pressure",
+  "Simple, transparent pricing",
 ];
 
 const jobFunctions = [
-  { value: "Digital Marketing", label: "Digital Marketing" },
-  { value: "Branding", label: "Branding" },
-  { value: "Web Development", label: "Web Development" },
-  { value: "SEO", label: "SEO" },
+  { value: "Performance Marketing", label: "Performance Marketing" },
+  { value: "SEO & Content", label: "SEO & Content" },
+  { value: "Branding & Web", label: "Branding & Web" },
+  { value: "Email & CRM", label: "Email & CRM" },
+  { value: "Not sure yet", label: "Not sure yet" },
 ];
 
 export default function ContactPage() {
@@ -49,7 +49,7 @@ export default function ContactPage() {
         <GridRow plain>
           <div className="@4xl:px-12 px-6 py-3">
             <span className="text-muted-foreground font-mono text-sm uppercase">
-              Sales
+              Book a Consultation
             </span>
           </div>
         </GridRow>
@@ -60,11 +60,11 @@ export default function ContactPage() {
             {/* Left col */}
             <div data-grid-content="true" className="@4xl:p-12 p-6">
               <h1 className="text-foreground text-balance text-5xl font-semibold tracking-tight">
-                Ready to scale your business?
+                Connect with our marketing experts.
               </h1>
               <p className="text-muted-foreground mt-6 text-balance text-lg">
-                Get in touch with our sales team to discuss custom solutions for
-                your organization.
+                Fill the form and we'll be in touch within 24 hours to
+                schedule a call.
               </p>
 
               <ul className="mt-8 space-y-3">
@@ -76,15 +76,6 @@ export default function ContactPage() {
                 ))}
               </ul>
 
-              <div className="text-muted-foreground mt-8 text-sm">
-                Looking for general support?{" "}
-                <Link
-                  href="#support"
-                  className="text-primary font-medium hover:underline"
-                >
-                  Visit our help center
-                </Link>
-              </div>
 
               <div className="mt-12 space-y-6 *:space-y-2">
                 <div>
@@ -116,9 +107,10 @@ export default function ContactPage() {
 
             {/* Right col — form */}
             <div data-grid-content="true" className="@4xl:p-12 p-6">
-              <h2 className="text-foreground font-medium">Talk to our team</h2>
+              <h2 className="text-foreground font-medium">Tell us about your business.</h2>
               <p className="text-muted-foreground mb-12 mt-2 text-sm">
-                Fill out the form and we&apos;ll be in touch within 24 hours.
+                We&apos;ll review your details before the call so we can make
+                the most of your time.
               </p>
 
               <form
@@ -128,13 +120,13 @@ export default function ContactPage() {
                 <div className="grid gap-3 *:space-y-3 sm:grid-cols-2">
                   <div>
                     <Label htmlFor="name" className="text-sm">
-                      Full name
+                      Name
                     </Label>
                     <Input type="text" id="name" name="name" required />
                   </div>
                   <div>
                     <Label htmlFor="email" className="text-sm">
-                      Work Email
+                      Email
                     </Label>
                     <Input type="email" id="email" name="email" required />
                   </div>
@@ -142,7 +134,7 @@ export default function ContactPage() {
 
                 <div>
                   <Label htmlFor="website" className="text-sm">
-                    Company Website
+                    Website URL
                   </Label>
                   <div className="relative">
                     <Input
@@ -160,11 +152,11 @@ export default function ContactPage() {
 
                 <div>
                   <Label htmlFor="job" className="text-sm">
-                    Job function
+                    Services you&apos;re interested in
                   </Label>
                   <Select name="job">
                     <SelectTrigger id="job" className="w-full">
-                      <SelectValue placeholder="Select Job Function" />
+                      <SelectValue placeholder="Select a service" />
                     </SelectTrigger>
                     <SelectContent>
                       {jobFunctions.map((j) => (
@@ -178,7 +170,7 @@ export default function ContactPage() {
 
                 <div>
                   <Label htmlFor="message" className="text-sm">
-                    Message
+                    How can we help?
                   </Label>
                   <Textarea
                     id="message"
@@ -198,7 +190,7 @@ export default function ContactPage() {
                       Privacy Policy
                     </Link>
                   </p>
-                  <Button className="max-sm:row-start-1">Get in touch</Button>
+                  <Button className="max-sm:row-start-1">Book a Consultation</Button>
                 </div>
               </form>
             </div>

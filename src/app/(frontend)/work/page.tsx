@@ -12,8 +12,8 @@ export default function WorkPage() {
       <section>
         <PageHeader
           title="Real results for real businesses."
-          subtitle="our work"
-          description="Here's how we've helped brands grow across Malaysia and Southeast Asia."
+          subtitle="Our Work"
+          description="How we've helped brands grow across Malaysia and Southeast Asia."
         />
       </section>
       <BlogSection featuredPost={featuredPost} posts={posts} categories={categories} />

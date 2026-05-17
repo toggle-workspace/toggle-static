@@ -42,16 +42,17 @@ export default function Content() {
                   data-slot="feature-card-title"
                   className="text-muted-foreground flex items-center gap-2"
                 >
-                  <span className="font-mono">01.</span> Launch
+                  <span className="font-mono">01.</span> Audit
                 </h3>
                 <p
                   data-slot="feature-card-description"
                   className="text-muted-foreground text-xl font-medium"
                 >
                   <span className="text-foreground">
-                    Get started in minutes.
+                    We start by understanding your business.
                   </span>{" "}
-                  Set up your workspace and invite team members.
+                  A strategy call and marketing audit identifies gaps, quick
+                  wins, and the biggest growth levers for your brand.
                 </p>
               </div>
 
@@ -64,10 +65,10 @@ export default function Content() {
                   <div className="flex items-start justify-between px-2 pt-2">
                     <div className="space-y-1">
                       <div className="text-muted-foreground text-xs font-medium">
-                        Meeting Invitation
+                        Brand Audit Call
                       </div>
                       <div className="text-base font-semibold">
-                        Product Strategy Review
+                        Growth Strategy Review
                       </div>
                     </div>
                     <div className="bg-foreground/5 flex size-9 items-center justify-center rounded-full">
@@ -83,7 +84,7 @@ export default function Content() {
                     <div className="flex items-center gap-3 text-sm">
                       <MapPin className="text-foreground/50 size-[18px]" />
                       <span className="text-foreground decoration-primary cursor-pointer underline underline-offset-2">
-                        meet.google.com/abc-defg-hij
+                        meet.toggle.solutions
                       </span>
                     </div>
                     <div className="flex items-center gap-3 text-sm">
@@ -138,16 +139,17 @@ export default function Content() {
                   data-slot="feature-card-title"
                   className="text-muted-foreground flex items-center gap-2"
                 >
-                  <span className="font-mono">02.</span> Analyze
+                  <span className="font-mono">02.</span> Launch
                 </h3>
                 <p
                   data-slot="feature-card-description"
                   className="text-muted-foreground text-xl font-medium"
                 >
                   <span className="text-foreground">
-                    Gain actionable insights.
+                    Campaigns go live fast.
                   </span>{" "}
-                  Our AI-powered analytics engine processes your data.
+                  We build and launch across your highest-priority channels —
+                  without the slow agency handoffs.
                 </p>
               </div>
 
@@ -158,7 +160,7 @@ export default function Content() {
               >
                 <div aria-hidden="true">
                   <div className="text-muted-foreground flex items-center gap-2 text-xs">
-                    Total Balance
+                    Campaign Performance
                     <div className="flex items-center gap-1">
                       <div className="flex size-3 items-center justify-center rounded-sm bg-emerald-600">
                         <TrendingUp className="size-2 text-white" />
@@ -172,10 +174,10 @@ export default function Content() {
                   <div className="mt-0.5">
                     <div>
                       <span className="text-foreground align-baseline text-3xl font-bold">
-                        $230
+                        3.2
                       </span>
                       <span className="text-foreground/50 align-baseline text-3xl font-bold">
-                        .56
+                        x ROAS
                       </span>
                     </div>
                     <div className="text-muted-foreground mt-8 flex items-end gap-1">
@@ -212,16 +214,17 @@ export default function Content() {
                   data-slot="feature-card-title"
                   className="text-muted-foreground flex items-center gap-2"
                 >
-                  <span className="font-mono">03.</span> Plan
+                  <span className="font-mono">03.</span> Scale
                 </h3>
                 <p
                   data-slot="feature-card-description"
                   className="text-muted-foreground text-xl font-medium"
                 >
                   <span className="text-foreground">
-                    Execute with precision.
+                    Results compound over time.
                   </span>{" "}
-                  Transform insights into strategic action plans.
+                  Every week we test, refine, and double down on what works —
+                  so performance improves the longer we work together.
                 </p>
               </div>
 
@@ -232,9 +235,9 @@ export default function Content() {
               >
                 <div aria-hidden="true">
                   <div className="flex items-center gap-2">
-                    <div className="text-sm font-medium">Task Planning</div>
+                    <div className="text-sm font-medium">Growth Plan</div>
                     <div className="bg-muted text-muted-foreground ml-auto rounded-full px-2 py-0.5 text-[10px]">
-                      Auto-generated
+                      Auto-optimised
                     </div>
                   </div>
 
@@ -245,8 +248,7 @@ export default function Content() {
                         Goal
                       </div>
                       <div className="mt-1 text-xs">
-                        Build a REST API endpoint for user authentication with
-                        JWT tokens
+                        Scale top-performing campaigns and expand into new audience segments
                       </div>
                     </div>
                   </div>
@@ -255,7 +257,7 @@ export default function Content() {
                     <div className="flex items-center gap-2">
                       <CircleCheck className="size-4 shrink-0 text-green-500" />
                       <div className="flex-1 text-xs font-medium line-through opacity-50">
-                        1. Research solutions
+                        1. Audience expansion
                       </div>
                     </div>
 
@@ -269,7 +271,7 @@ export default function Content() {
                       </div>
                       <div className="flex-1">
                         <div className="text-primary text-xs font-semibold">
-                          2. Implement solution
+                          2. Creative iteration
                         </div>
                         <div className="text-primary/70 text-[10px]">
                           In progress... 12s
@@ -281,7 +283,7 @@ export default function Content() {
                       <CircleDashed className="text-muted-foreground mt-0.5 size-4 shrink-0" />
                       <div className="flex-1">
                         <div className="text-xs font-medium">
-                          3. Deliver result
+                          3. Scale top performers
                         </div>
                         <div className="text-muted-foreground text-[10px]">
                           Pending

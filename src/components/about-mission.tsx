@@ -6,11 +6,9 @@ export default function AboutMission() {
       <div className="text-muted-foreground mt-6 space-y-4 text-xl font-medium *:text-balance *:leading-relaxed">
         <p>
           <span className="text-foreground">
-            We believe great marketing is built when brands can focus on
-            what matters
+            Great marketing happens when brands can focus on their customers
           </span>{" "}
-          — serving their customers — instead of wrestling with
-          fragmented tools and inconsistent results.
+          — not on wrestling with fragmented tools and inconsistent results.
         </p>
         <p>
           <span className="text-foreground">
@@ -18,7 +16,7 @@ export default function AboutMission() {
             and growth.
           </span>{" "}
           We build systems, strategies, and campaigns that let brands
-          scale predictably — in weeks, not years.
+          scale predictably.
         </p>
       </div>
     </SectionOverview>
