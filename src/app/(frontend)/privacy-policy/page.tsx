@@ -1,59 +1,237 @@
-import { Card } from "@/components/ui/card";
-
-const sections = [
-  {
-    title: "Information We Collect",
-    body: "We collect information you provide directly to us, including your name, email address, phone number, and any other information you choose to provide when filling out our contact form or booking a consultation. Users may also visit the website anonymously. We may collect usage data automatically when you visit our site.",
-  },
-  {
-    title: "How We Use Your Information",
-    body: "We use the information we collect to personalise your experience and improve our website, improve our customer service, process your consultation requests and enquiries, send periodic emails relating to your request or other products and services we offer, and to better understand how we can serve you.",
-  },
-  {
-    title: "Protection of Your Information",
-    body: "We implement a variety of security measures to maintain the safety of your personal information. Any sensitive information transmitted is secured via SSL technology. However, no method of transmission over the internet or method of electronic storage is 100% secure.",
-  },
-  {
-    title: "Cookies",
-    body: "We use cookies to understand and save your preferences for future visits, compile aggregate data about site traffic and site interaction, and to enhance your experience on our site. You can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies via your browser settings.",
-  },
-  {
-    title: "Third Party Disclosure",
-    body: "We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information. This does not include trusted third parties who assist us in operating our website, conducting our business, or servicing you, so long as those parties agree to keep this information confidential.",
-  },
-];
+import { SideCol } from "@/components/ui/grid";
 
 export default function PrivacyPage() {
   return (
-    <section className="bg-background @container pt-44 pb-24">
-      <div className="mx-auto max-w-2xl px-6">
-        <p className="text-muted-foreground text-sm mb-3">Legal</p>
-        <h1 className="font-serif text-5xl font-medium text-balance">
-          Privacy Policy
-        </h1>
-        <p className="text-muted-foreground mt-4 text-sm">
-          For questions, contact{" "}
-          <a
-            href="mailto:hello@togglesolutions.com"
-            className="text-foreground hover:underline"
-          >
-            hello@togglesolutions.com
-          </a>
-        </p>
-
-        <div className="mt-12 space-y-4">
-          {sections.map((item, i) => (
-            <Card key={i} variant="outline" className="p-6">
-              <h2 className="text-foreground font-medium mb-2">
-                {i + 1}. {item.title}
-              </h2>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                {item.body}
-              </p>
-            </Card>
-          ))}
+    <main className="bg-zinc-950/10">
+      <section className="overflow-hidden">
+        {/* Header Row */}
+        <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr]">
+          <SideCol wide />
+          <div className="max-w-276 lg:min-w-276 mx-auto w-full p-[0.5px]">
+            <div
+              data-slot="content"
+              className="bg-card/90 h-full rounded p-6 lg:p-12 @3xl:p-12"
+            >
+              <div className="max-w-2xl">
+                <h1 className="text-foreground text-balance text-6xl font-semibold uppercase tracking-tight sm:text-8xl sm:font-bold">
+                  Privacy Policy
+                </h1>
+                <p className="text-muted-foreground mt-6">
+                  <span className="text-foreground">Effective date:</span>{" "}
+                  January 15, 2025
+                </p>
+              </div>
+            </div>
+          </div>
+          <SideCol />
         </div>
-      </div>
-    </section>
+
+        {/* Content Row */}
+        <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr]">
+          <SideCol wide />
+          <div className="max-w-276 lg:min-w-276 mx-auto w-full p-[0.5px]">
+            <div
+              data-slot="content"
+              className="bg-card/90 h-full rounded p-6 lg:p-12 @3xl:p-12"
+            >
+              <div className="max-w-3xl">
+                <h2 className="text-foreground mb-4 mt-16 scroll-mt-20 text-2xl font-semibold first:mt-0">
+                  1. Information We Collect
+                </h2>
+                <p className="text-muted-foreground mb-4 text-base leading-relaxed">
+                  We collect information you provide directly, information
+                  collected automatically when you use our services, and
+                  information from third-party sources. This includes:
+                </p>
+                <p className="text-muted-foreground mb-4 text-base leading-relaxed">
+                  <strong className="text-foreground font-semibold">
+                    Personal Information:
+                  </strong>
+                </p>
+                <ul className="text-muted-foreground mb-4 ml-6 list-disc space-y-2">
+                  <li className="leading-relaxed">Name and email address</li>
+                  <li className="leading-relaxed">
+                    Billing and payment information
+                  </li>
+                  <li className="leading-relaxed">Account credentials</li>
+                  <li className="leading-relaxed">Communication preferences</li>
+                </ul>
+                <p className="text-muted-foreground mb-4 text-base leading-relaxed">
+                  <strong className="text-foreground font-semibold">
+                    Automatically Collected Information:
+                  </strong>
+                </p>
+                <ul className="text-muted-foreground mb-4 ml-6 list-disc space-y-2">
+                  <li className="leading-relaxed">
+                    Device and browser information
+                  </li>
+                  <li className="leading-relaxed">
+                    IP address and location data
+                  </li>
+                  <li className="leading-relaxed">
+                    Usage patterns and interaction data
+                  </li>
+                  <li className="leading-relaxed">
+                    Cookies and similar tracking technologies
+                  </li>
+                </ul>
+
+                <h2 className="text-foreground mb-4 mt-16 scroll-mt-20 text-2xl font-semibold first:mt-0">
+                  2. How We Use Your Information
+                </h2>
+                <p className="text-muted-foreground mb-4 text-base leading-relaxed">
+                  We use the information we collect to:
+                </p>
+                <ul className="text-muted-foreground mb-4 ml-6 list-disc space-y-2">
+                  <li className="leading-relaxed">
+                    Provide, maintain, and improve our services
+                  </li>
+                  <li className="leading-relaxed">
+                    Process transactions and send related information
+                  </li>
+                  <li className="leading-relaxed">
+                    Send technical notices, updates, and support messages
+                  </li>
+                  <li className="leading-relaxed">
+                    Respond to your comments, questions, and requests
+                  </li>
+                  <li className="leading-relaxed">
+                    Monitor and analyze trends, usage, and activities
+                  </li>
+                  <li className="leading-relaxed">
+                    Detect, investigate, and prevent fraudulent transactions and
+                    abuse
+                  </li>
+                  <li className="leading-relaxed">
+                    Personalize and improve your experience
+                  </li>
+                </ul>
+
+                <h2 className="text-foreground mb-4 mt-16 scroll-mt-20 text-2xl font-semibold first:mt-0">
+                  3. Information Sharing
+                </h2>
+                <p className="text-muted-foreground mb-4 text-base leading-relaxed">
+                  We do not sell your personal information. We may share your
+                  information in the following circumstances:
+                </p>
+                <ul className="text-muted-foreground mb-4 ml-6 list-disc space-y-2">
+                  <li className="leading-relaxed">
+                    <strong className="text-foreground font-semibold">
+                      Service Providers:
+                    </strong>{" "}
+                    With third-party vendors who perform services on our behalf
+                  </li>
+                  <li className="leading-relaxed">
+                    <strong className="text-foreground font-semibold">
+                      Legal Requirements:
+                    </strong>{" "}
+                    When required by law or to respond to legal process
+                  </li>
+                  <li className="leading-relaxed">
+                    <strong className="text-foreground font-semibold">
+                      Business Transfers:
+                    </strong>{" "}
+                    In connection with a merger, acquisition, or sale of assets
+                  </li>
+                  <li className="leading-relaxed">
+                    <strong className="text-foreground font-semibold">
+                      Consent:
+                    </strong>{" "}
+                    With your explicit consent or at your direction
+                  </li>
+                </ul>
+
+                <h2 className="text-foreground mb-4 mt-16 scroll-mt-20 text-2xl font-semibold first:mt-0">
+                  4. Data Security
+                </h2>
+                <p className="text-muted-foreground mb-4 text-base leading-relaxed">
+                  We implement appropriate technical and organizational measures
+                  to protect your personal information against unauthorized
+                  access, alteration, disclosure, or destruction. However, no
+                  method of transmission over the Internet is 100% secure.
+                </p>
+
+                <h2 className="text-foreground mb-4 mt-16 scroll-mt-20 text-2xl font-semibold first:mt-0">
+                  5. Data Retention
+                </h2>
+                <p className="text-muted-foreground mb-4 text-base leading-relaxed">
+                  We retain your personal information for as long as necessary
+                  to fulfill the purposes for which it was collected, comply
+                  with legal obligations, resolve disputes, and enforce our
+                  agreements.
+                </p>
+
+                <h2 className="text-foreground mb-4 mt-16 scroll-mt-20 text-2xl font-semibold first:mt-0">
+                  6. Your Rights
+                </h2>
+                <p className="text-muted-foreground mb-4 text-base leading-relaxed">
+                  Depending on your location, you may have the right to:
+                </p>
+                <ul className="text-muted-foreground mb-4 ml-6 list-disc space-y-2">
+                  <li className="leading-relaxed">
+                    Access your personal information
+                  </li>
+                  <li className="leading-relaxed">Correct inaccurate data</li>
+                  <li className="leading-relaxed">
+                    Request deletion of your data
+                  </li>
+                  <li className="leading-relaxed">
+                    Object to or restrict processing
+                  </li>
+                  <li className="leading-relaxed">Data portability</li>
+                  <li className="leading-relaxed">Withdraw consent</li>
+                </ul>
+
+                <h2 className="text-foreground mb-4 mt-16 scroll-mt-20 text-2xl font-semibold first:mt-0">
+                  7. Cookies
+                </h2>
+                <p className="text-muted-foreground mb-4 text-base leading-relaxed">
+                  We use cookies and similar technologies to collect information
+                  about your browsing activities. You can manage your cookie
+                  preferences through your browser settings.
+                </p>
+
+                <h2 className="text-foreground mb-4 mt-16 scroll-mt-20 text-2xl font-semibold first:mt-0">
+                  8. Children&apos;s Privacy
+                </h2>
+                <p className="text-muted-foreground mb-4 text-base leading-relaxed">
+                  Our services are not directed to children under 16. We do not
+                  knowingly collect personal information from children under 16.
+                  If we learn that we have collected such information, we will
+                  take steps to delete it.
+                </p>
+
+                <h2 className="text-foreground mb-4 mt-16 scroll-mt-20 text-2xl font-semibold first:mt-0">
+                  9. International Transfers
+                </h2>
+                <p className="text-muted-foreground mb-4 text-base leading-relaxed">
+                  Your information may be transferred to and processed in
+                  countries other than your own. We ensure appropriate
+                  safeguards are in place for such transfers.
+                </p>
+
+                <h2 className="text-foreground mb-4 mt-16 scroll-mt-20 text-2xl font-semibold first:mt-0">
+                  10. Changes to This Policy
+                </h2>
+                <p className="text-muted-foreground mb-4 text-base leading-relaxed">
+                  We may update this Privacy Policy from time to time. We will
+                  notify you of any changes by posting the new policy on this
+                  page and updating the effective date.
+                </p>
+
+                <h2 className="text-foreground mb-4 mt-16 scroll-mt-20 text-2xl font-semibold first:mt-0">
+                  11. Contact Us
+                </h2>
+                <p className="text-muted-foreground mb-4 text-base leading-relaxed">
+                  For questions about this Privacy Policy, contact our Data
+                  Protection Officer at privacy@company.com.
+                </p>
+              </div>
+            </div>
+          </div>
+          <SideCol />
+        </div>
+      </section>
+    </main>
   );
 }
