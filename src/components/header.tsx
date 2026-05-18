@@ -6,6 +6,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import { useScroll, useMotionValueEvent } from "motion/react";
 import { GridRow } from "@/components/ui/grid";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
 const menuItems = [
   { name: "Our Work", href: "/work" },
@@ -107,9 +108,13 @@ export const Header = () => {
                     ))}
                   </div>
                 </nav>
+                <div className="px-4 pt-4 pb-2">
+                  <ThemeToggle />
+                </div>
               </div>
               <div className="z-51 max-lg:in-data-[state=active]:mt-6 in-data-[state=active]:flex relative mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent">
-                <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
+                <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit items-center">
+                  <ThemeToggle />
                   <Link
                     className="cursor-pointer inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 shadow-md shadow-black/15 border-[0.5px] border-transparent bg-primary ring-1 ring-(--ring-color) [--ring-color:color-mix(in_oklab,var(--color-foreground)15%,var(--color-primary))] text-primary-foreground hover:bg-primary/90 h-8 rounded-md px-3 text-xs"
                     href="/contact"
