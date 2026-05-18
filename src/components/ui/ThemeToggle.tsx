@@ -1,25 +1,51 @@
-'use client'
+"use client"
 
-import { useEffect, useState } from 'react'
+import { useTheme } from "next-themes"
+import { Sun, Moon, Monitor, Check } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+
+const themes = [
+  { value: "light", label: "Light", icon: Sun },
+  { value: "dark", label: "Dark", icon: Moon },
+  { value: "system", label: "System", icon: Monitor },
+] as const
 
 export function ThemeToggle() {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light')
+  const { theme, setTheme, resolvedTheme } = useTheme()
 
-  useEffect(() => {
-    const saved = (localStorage.getItem('da-theme') || 'light') as 'light' | 'dark'
-    setTheme(saved)
-  }, [])
-
-  function toggle() {
-    const next: 'light' | 'dark' = theme === 'dark' ? 'light' : 'dark'
-    setTheme(next)
-    localStorage.setItem('da-theme', next)
-    document.documentElement.setAttribute('data-theme', next)
-  }
+  const ResolvedIcon = resolvedTheme === "dark" ? Moon : Sun
 
   return (
-    <button className="theme-toggle" id="themeToggle" onClick={toggle} aria-label="Toggle theme">
-      {theme === 'dark' ? '☀' : '☾'}
-    </button>
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button
+          variant="ghost"
+          size="icon"
+          className="h-8 w-8 rounded-md"
+          aria-label="Toggle theme"
+        >
+          <ResolvedIcon className="size-4" />
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end">
+        {themes.map(({ value, label, icon: Icon }) => (
+          <DropdownMenuItem
+            key={value}
+            onClick={() => setTheme(value)}
+            className="flex items-center gap-2"
+          >
+            <Icon className="size-4" />
+            <span>{label}</span>
+            {theme === value && <Check className="size-3 ml-auto" />}
+          </DropdownMenuItem>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
   )
 }
