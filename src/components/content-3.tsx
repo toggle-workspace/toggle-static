@@ -36,7 +36,7 @@ export default function Content() {
               <div
                 data-grid-content="true"
                 data-slot="feature-card-content"
-                className="@4xl:px-12 @4xl:pt-12 space-y-4 p-6"
+                className="@4xl:px-12 @4xl:pt-12 space-y-4 p-6 @5xl:min-h-44"
               >
                 <h3
                   data-slot="feature-card-title"
@@ -49,10 +49,10 @@ export default function Content() {
                   className="text-muted-foreground text-xl font-medium"
                 >
                   <span className="text-foreground">
-                    We start by understanding your business.
+                    We audit your business.
                   </span>{" "}
-                  A strategy call and marketing audit identifies gaps, quick
-                  wins, and the biggest growth levers for your brand.
+                  A strategy call uncovers gaps, quick wins, and which channels
+                  deserve your budget.
                 </p>
               </div>
 
@@ -133,7 +133,7 @@ export default function Content() {
               <div
                 data-grid-content="true"
                 data-slot="feature-card-content"
-                className="@4xl:px-12 @4xl:pt-12 space-y-4 p-6"
+                className="@4xl:px-12 @4xl:pt-12 space-y-4 p-6 @5xl:min-h-44"
               >
                 <h3
                   data-slot="feature-card-title"
@@ -208,7 +208,7 @@ export default function Content() {
               <div
                 data-grid-content="true"
                 data-slot="feature-card-content"
-                className="@4xl:px-12 @4xl:pt-12 space-y-4 p-6"
+                className="@4xl:px-12 @4xl:pt-12 space-y-4 p-6 @5xl:min-h-44"
               >
                 <h3
                   data-slot="feature-card-title"
@@ -223,8 +223,8 @@ export default function Content() {
                   <span className="text-foreground">
                     Results build over time.
                   </span>{" "}
-                  Every week we test, refine, and scale what&apos;s working, so
-                  performance improves the longer we work together.
+                  We test and scale what works each week, improving performance
+                  the longer we run together.
                 </p>
               </div>
 
