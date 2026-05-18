@@ -1904,7 +1904,7 @@
 [data-theme="dark"] {
   --background: #000000;
   --foreground: oklch(0.985 0 0);
-  --card: #000000;
+  --card: #111111;
   --card-foreground: oklch(0.985 0 0);
   --popover: #000000;
   --popover-foreground: oklch(0.985 0 0);
