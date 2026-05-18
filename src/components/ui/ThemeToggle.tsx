@@ -2,7 +2,6 @@
 
 import { useTheme } from "next-themes"
 import { Sun, Moon, Monitor, Check } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -23,15 +22,11 @@ export function ThemeToggle() {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button
-          variant="ghost"
-          size="icon"
-          className="h-8 w-8 rounded-md"
-          aria-label="Toggle theme"
-        >
-          <ResolvedIcon className="size-4" />
-        </Button>
+      <DropdownMenuTrigger
+        className="inline-flex h-8 w-8 items-center justify-center rounded-md hover:bg-foreground/5 transition-colors"
+        aria-label="Toggle theme"
+      >
+        <ResolvedIcon className="size-4" />
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         {themes.map(({ value, label, icon: Icon }) => (
