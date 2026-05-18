@@ -26,9 +26,9 @@ const logos = [
 
 export default function CustomerLogos() {
   return (
-    <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] bg-border">
+    <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr]">
       <div className="max-w-276 lg:min-w-276 mx-auto w-full">
-        <div className="**:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded grid *:p-[0.5px]">
+        <div className="**:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded grid *:p-[0.5px] bg-border">
           <div>
             <div data-grid-content="true" className="p-12 text-center">
               <p className="text-muted-foreground mx-auto max-w-xl text-balance md:text-lg">

@@ -12,54 +12,77 @@ import { PostCard } from "@/components/ui/project-card";
 const mockPosts = [
   {
     id: 1,
-    title: "How We Cut CPL by 47% While Generating 32,000 Leads for a Malaysian University",
+    title:
+      "How We Cut CPL by 47% While Generating 32,000 Leads for a Malaysian University",
     slug: "cut-cpl-47-percent-scaling-ad-spend",
-    excerpt: "UNITAR needed to scale student acquisition without inflating costs. We ran a full-funnel campaign across TikTok, Meta, and Google, capturing 77% of total impressions in the Education category in Malaysia.",
+    excerpt:
+      "UNITAR needed to scale student acquisition without inflating costs. We ran a full-funnel campaign across TikTok, Meta, and Google, capturing 77% of total impressions in the Education category in Malaysia.",
     author: "Toggle Team",
     publishedAt: "2024-11-15T08:00:00.000Z",
-    featuredImage: { url: "https://picsum.photos/seed/blog1/700/400", alt: "Performance marketing campaign analytics" },
+    featuredImage: {
+      url: "https://picsum.photos/seed/blog1/700/400",
+      alt: "Performance marketing campaign analytics",
+    },
   },
   {
     id: 2,
-    title: "52.6% More Organic Impressions in 12 Months: CIMB Bank's SEO Rebuild",
+    title:
+      "52.6% More Organic Impressions in 12 Months: CIMB Bank's SEO Rebuild",
     slug: "seo-for-banks-high-competition",
-    excerpt: "CIMB's product pages lacked keyword depth and their blog had content that diluted quality signals. We rebuilt their content strategy from the ground up. Organic clicks grew 34.5% within a year.",
+    excerpt:
+      "CIMB's product pages lacked keyword depth and their blog had content that diluted quality signals. We rebuilt their content strategy from the ground up. Organic clicks grew 34.5% within a year.",
     author: "Toggle Team",
     publishedAt: "2024-10-03T08:00:00.000Z",
-    featuredImage: { url: "https://picsum.photos/seed/blog2/700/400", alt: "SEO strategy for banking" },
+    featuredImage: {
+      url: "https://picsum.photos/seed/blog2/700/400",
+      alt: "SEO strategy for banking",
+    },
   },
   {
     id: 3,
     title: "392% More Leads at RM35 CPL: A Real Estate Performance Playbook",
     slug: "real-estate-lead-gen-why-campaigns-fail",
-    excerpt: "Kith & Kin had never run paid advertising before. They relied entirely on organic referrals and cold-calling. Three months of targeted Meta campaigns later: 392% more leads, RM35 CPL, and a 10% conversion rate from lead to closed deal.",
+    excerpt:
+      "Kith & Kin had never run paid advertising before. They relied entirely on organic referrals and cold-calling. Three months of targeted Meta campaigns later: 392% more leads, RM35 CPL, and a 10% conversion rate from lead to closed deal.",
     author: "Toggle Team",
     publishedAt: "2024-09-20T08:00:00.000Z",
-    featuredImage: { url: "https://picsum.photos/seed/blog3/700/400", alt: "Real estate lead generation" },
+    featuredImage: {
+      url: "https://picsum.photos/seed/blog3/700/400",
+      alt: "Real estate lead generation",
+    },
   },
   {
     id: 4,
     title: "Position Three to Position One in 90 Days: The Singlife SEO Case",
     slug: "ranking-1-in-90-days-insurance-seo",
-    excerpt: "Singlife's core insurance keywords sat at position three. Close to the top, but far enough to lose meaningful traffic every month. We rebuilt their on-page content and organic clicks grew 23%.",
+    excerpt:
+      "Singlife's core insurance keywords sat at position three. Close to the top, but far enough to lose meaningful traffic every month. We rebuilt their on-page content and organic clicks grew 23%.",
     author: "Toggle Team",
     publishedAt: "2024-08-11T08:00:00.000Z",
-    featuredImage: { url: "https://picsum.photos/seed/blog4/700/400", alt: "Insurance SEO keyword ranking" },
+    featuredImage: {
+      url: "https://picsum.photos/seed/blog4/700/400",
+      alt: "Insurance SEO keyword ranking",
+    },
   },
   {
     id: 5,
-    title: "#1 for Core Insurance Keywords in Two Months: Great Eastern Singapore",
+    title:
+      "#1 for Core Insurance Keywords in Two Months: Great Eastern Singapore",
     slug: "great-eastern-seo-insurance-keywords",
-    excerpt: "Great Eastern's key insurance pages were stuck at position four. A targeted metadata refresh and content restructure moved them to position one in two months, with a 75% increase in search visibility.",
+    excerpt:
+      "Great Eastern's key insurance pages were stuck at position four. A targeted metadata refresh and content restructure moved them to position one in two months, with a 75% increase in search visibility.",
     author: "Toggle Team",
     publishedAt: "2024-07-05T08:00:00.000Z",
-    featuredImage: { url: "https://picsum.photos/seed/blog5/700/400", alt: "Great Eastern insurance SEO" },
+    featuredImage: {
+      url: "https://picsum.photos/seed/blog5/700/400",
+      alt: "Great Eastern insurance SEO",
+    },
   },
 ];
 
 export default function FeatureCarousel() {
   return (
-    <section className="bg-background @container overflow-hidden">
+    <section className="bg-card/90 @container overflow-hidden">
       <Carousel
         className="relative mx-auto"
         opts={{ align: "start", loop: true }}
@@ -89,7 +112,12 @@ export default function FeatureCarousel() {
                     title={post.title}
                     excerpt={post.excerpt}
                     href={`/blog/${post.slug}`}
-                    authors={[{ name: post.author, avatar: `https://picsum.photos/seed/author${post.id}/46/46` }]}
+                    authors={[
+                      {
+                        name: post.author,
+                        avatar: `https://picsum.photos/seed/author${post.id}/46/46`,
+                      },
+                    ]}
                   />
                 </CarouselItem>
               ))}
