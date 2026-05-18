@@ -24,14 +24,14 @@ export const caseStudies: CaseStudy[] = [
     ],
     headline: "From Moonshot to Milestone",
     overview:
-      "UNITAR International University needed to scale student acquisition during Malaysia's most competitive intake period — without letting acquisition costs run. By mid-2024, TikTok CPL had reached RM525 and Facebook RM291. Top agencies had tried and stepped away.",
+      "UNITAR International University needed to scale student acquisition during Malaysia's most competitive intake period, without inflating costs. By mid-2024, TikTok CPL had reached RM525 and Facebook RM291. Top agencies had tried and stepped away.",
     image: "https://picsum.photos/seed/unitar-edu/1200/675",
     logoUrl: "https://placehold.co/96x96/1a3a6b/ffffff?text=UNI",
     content: `<h2 id="the-challenge">The Challenge</h2>
-<p>UNITAR needed to increase student enrolment during Malaysia's most competitive intake period. Acquisition costs had climbed fast — TikTok CPL reached RM525 and Facebook hit RM291 before we started. Several agencies had tried to crack this brief and walked away.</p>
+<p>UNITAR needed to increase student enrolment during Malaysia's most competitive intake period. Acquisition costs had climbed fast. TikTok CPL reached RM525 and Facebook hit RM291 before we started. Several agencies had tried to crack this brief and walked away.</p>
 <h2 id="what-we-did">What We Did</h2>
 <p>We built a full-funnel messaging matrix across TikTok, Meta, and Google, assigning each platform a distinct role. TikTok handled myth-busting and awareness. Meta drove consideration with course-specific content. Google captured high-intent searches with urgency-led ad copy.</p>
-<p>We integrated Facebook CAPI for cleaner conversion data and used weekly CPL signals to shift budget in real time. Creative was tested at volume — different hooks, formats, and audiences running simultaneously so we could drop what wasn't working fast.</p>
+<p>We integrated Facebook CAPI for cleaner conversion data and used weekly CPL signals to shift budget in real time. Creative was tested at volume: different hooks, formats, and audiences running simultaneously so we could drop what wasn't working fast.</p>
 <h2 id="the-results">The Results</h2>
 <p>From June to September 2025, the campaign generated 32,000+ qualified leads. CPL dropped 47% year-on-year while ad spend scaled to RM4 million. UNITAR captured 77% of total impressions in the Education and Training category in Malaysia.</p>
 <ul>
@@ -48,11 +48,11 @@ export const caseStudies: CaseStudy[] = [
     services: ["Search Engine Optimization"],
     headline: "From Authority Gap to Search Dominance",
     overview:
-      "CIMB Bank has strong brand recognition across Malaysia, but their organic search performance wasn't keeping pace. Product pages lacked keyword depth, content quality signals were diluted by redundant blog posts, and internal approval cycles slowed publishing.",
+      "CIMB Bank's organic search performance had stalled despite strong brand recognition across Malaysia. Product pages lacked keyword depth, redundant blog posts diluted content quality signals, and internal approval cycles slowed publishing.",
     image: "https://picsum.photos/seed/cimb-bank/1200/675",
     logoUrl: "https://logo.clearbit.com/cimb.com",
     content: `<h2 id="the-challenge">The Challenge</h2>
-<p>CIMB's product and category pages lacked keyword depth and semantic coverage. Their blog had content redundancies that diluted quality signals across the site. Internal approval processes slowed the publishing cycle significantly — making it hard to move quickly on content opportunities.</p>
+<p>CIMB's product and category pages lacked keyword depth and semantic coverage. Their blog had content redundancies that diluted quality signals across the site. Internal approval processes slowed the publishing cycle, making it hard to move on content opportunities.</p>
 <h2 id="what-we-did">What We Did</h2>
 <p>We ran a comprehensive content audit and identified keyword gaps across CIMB's core product pillars. A structured internal linking framework improved how authority flowed across the site. We rebuilt their content strategy around topical authority rather than isolated keywords, and streamlined the internal approval workflow to unblock publishing.</p>
 <h2 id="the-results">The Results</h2>
@@ -78,7 +78,7 @@ export const caseStudies: CaseStudy[] = [
     image: "https://picsum.photos/seed/kith-kin-realty/1200/675",
     logoUrl: "https://placehold.co/96x96/2d5016/ffffff?text=K%26K",
     content: `<h2 id="the-challenge">The Challenge</h2>
-<p>Kith & Kin needed a reliable, repeatable way to generate qualified enquiries for a new development in Dutamas, near Mont Kiara. Their existing channels — referrals and cold-calling — were hard to scale and inconsistent month to month.</p>
+<p>Kith & Kin needed a reliable, repeatable way to generate qualified enquiries for a new development in Dutamas, near Mont Kiara. Their existing channels, referrals and cold-calling, were hard to scale and inconsistent month to month.</p>
 <h2 id="what-we-did">What We Did</h2>
 <p>We spotted a gap: paid advertising competition around their Dutamas development was thin. We deployed targeted Meta campaigns using lead generation and message-specific objectives, with creative mixing GIFs, images, and video across ad sets. Audience targeting focused on buyers in the right income bracket and geographic area.</p>
 <h2 id="the-results">The Results</h2>
@@ -103,9 +103,9 @@ export const caseStudies: CaseStudy[] = [
     content: `<h2 id="the-challenge">The Challenge</h2>
 <p>Eco-fashion carries a perception problem. Most consumers assume sustainable means dull, poorly fitted, or overpriced. Kualesa needed to earn attention in a category dominated by brands with much larger budgets and no concern for impact.</p>
 <h2 id="what-we-did">What We Did</h2>
-<p>We repositioned Kualesa away from the environmental guilt angle and toward aspiration. Sustainability became the natural outcome of buying well-designed clothing, not the reason to buy. Creative focused on how the product looked on real people, and messaging treated Kualesa as a marker of taste and values rather than a sacrifice.</p>
+<p>We moved Kualesa's positioning to aspiration. Sustainability became the natural outcome of buying well-designed clothing. Creative focused on how the product looked on real people, and messaging framed Kualesa as a marker of taste and values.</p>
 <h2 id="the-results">The Results</h2>
-<p>Kualesa built a loyal customer base that returns on identity, not just price. Conversion rates improved as the brand positioning sharpened, and repeat purchase rates grew as customers began to identify with the brand's point of view in the Malaysian market.</p>`,
+<p>Kualesa built a loyal customer base driven by brand identity. Conversion rates improved as the brand positioning sharpened, and repeat purchase rates grew as customers began to identify with the brand's point of view in the Malaysian market.</p>`,
   },
   {
     client: "Singlife PTE LTD",
@@ -115,7 +115,7 @@ export const caseStudies: CaseStudy[] = [
     services: ["Search Engine Optimization"],
     headline: "From Third to First in 90 Days",
     overview:
-      "Singlife is a digital-first insurance provider in Singapore. Their core insurance keywords were sitting at position three — close to the top, but far enough to feel the traffic gap every month.",
+      "Singlife is a digital-first insurance provider in Singapore. Their core insurance keywords were sitting at position three, close to the top but far enough to feel the traffic gap every month.",
     image: "https://picsum.photos/seed/singlife-sg/1200/675",
     logoUrl: "https://logo.clearbit.com/singlife.com",
     content: `<h2 id="the-challenge">The Challenge</h2>
@@ -141,9 +141,9 @@ export const caseStudies: CaseStudy[] = [
     image: "https://picsum.photos/seed/great-eastern-sg/1200/675",
     logoUrl: "https://logo.clearbit.com/greateasternlife.com",
     content: `<h2 id="the-challenge">The Challenge</h2>
-<p>Great Eastern's priority insurance pages had plateaued at position four. Their meta titles lacked keyword targeting, on-page content didn't match what searchers were looking for, and click-through rates were low because the search snippets weren't compelling. Competitors were refining their SEO continuously.</p>
+<p>Great Eastern's priority insurance pages had plateaued at position four. Their meta titles lacked keyword targeting, on-page content didn't match what searchers were looking for, and low click-through rates reflected search snippets that weren't compelling enough to earn the click. Competitors were refining their SEO at pace.</p>
 <h2 id="what-we-did">What We Did</h2>
-<p>We rewrote title tags and meta descriptions to sharpen keyword prominence and improve CTR. On-page content was restructured for better semantic alignment, with heading hierarchies and internal keyword signals tightened across priority landing pages.</p>
+<p>We rewrote title tags and meta descriptions to sharpen keyword prominence and improve CTR. We restructured on-page content for better semantic alignment, tightening heading hierarchies and internal keyword signals across priority landing pages.</p>
 <h2 id="the-results">The Results</h2>
 <p>In two months, Great Eastern moved from position four to position one for core insurance keywords. Organic clicks grew 16% and search visibility increased 75%.</p>
 <ul>
@@ -162,7 +162,7 @@ export const caseStudies: CaseStudy[] = [
       "Creative Production",
       "Conversion Optimisation",
     ],
-    headline: "Online Delivery & Catering Growth",
+    headline: "From Loyal Walk-ins to RM2.6M in Online Revenue",
     overview:
       "Restoran Mahbub had a strong walk-in customer base and a well-known name in their area. Online delivery revenue was minimal, and catering enquiries were inconsistent with no system behind them.",
     image: "https://picsum.photos/seed/mahbub-restaurant/1200/675",
@@ -194,7 +194,7 @@ export const caseStudies: CaseStudy[] = [
 <h2 id="what-we-did">What We Did</h2>
 <p>We ran Meta and Google ads using TPL's own social content as creative, keeping costs low. Targeting focused on buyers within reach of their store locations. Campaigns were structured to track revenue directly, not just traffic or engagement, so we could optimise toward what actually mattered.</p>
 <h2 id="the-results">The Results</h2>
-<p>From October 2021 to 2024, the campaigns generated RM172K+ in online revenue at a 20x return on ad spend — a consistent digital sales channel running alongside the physical stores.</p>
+<p>From October 2021 to 2024, the campaigns generated RM172K+ in online revenue at a 20x return on ad spend, building a consistent digital sales channel alongside the physical stores.</p>
 <ul>
   <li><strong>RM172K+</strong> Revenue from Meta Ads</li>
   <li><strong>20x</strong> Return on Ad Spend (ROAS)</li>
