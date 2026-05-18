@@ -7,8 +7,8 @@ import { SectionOverview } from "@/components/ui/section-overview";
 import { SectionItemsGrid } from "@/components/ui/section-items-grid";
 import CallToAction from "@/components/call-to-action";
 import FAQ2 from "@/components/faq-2";
-import { SERVICES } from "@/data/services";
 import FeaturesThree from "@/components/features-3";
+import { SERVICES } from "@/data/services";
 
 export async function generateMetadata({
   params,
@@ -68,7 +68,7 @@ export default async function ServicePage({
         </p>
       </SectionOverview>
       <Spacer />
-      <FeaturesThree />
+      <FeaturesThree approach={service.approach} />
       <Spacer />
       {/* What's included */}
       <SectionItemsGrid heading="What's included" items={service.whatWeDo} />

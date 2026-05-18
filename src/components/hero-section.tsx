@@ -129,7 +129,7 @@ export default function HeroSection() {
         <div className="bg-background rounded">
           <div className="max-w-lg p-6">
             <span className="text-muted-foreground font-mono text-sm uppercase">
-              Performance Marketing
+              Your Digital Growth Partner
             </span>
           </div>
         </div>
@@ -140,12 +140,12 @@ export default function HeroSection() {
           <div className="col-span-3">
             <div className="bg-background flex h-full flex-col justify-center rounded px-8 py-16">
               <h1 className="text-balance text-5xl font-semibold lg:text-6xl">
-                Growth Marketing. Real Results. Measurable Impact.
+                The Agency Behind 50+ Growing Brands
               </h1>
               <p className="text-muted-foreground mx-auto mb-8 mt-6 text-balance text-lg">
-                Toggle Solutions helps ambitious brands scale with data-driven
-                performance marketing, creative strategy, and AI-powered growth
-                systems.
+                We run paid media, creative, and lifecycle marketing as one
+                system. Every channel points at the same goal: more revenue,
+                less wasted spend.
               </p>
               <div className="flex gap-3 max-lg:justify-center">
                 <Link
@@ -158,7 +158,7 @@ export default function HeroSection() {
                   href="/work"
                   className="cursor-pointer inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 shadow-sm shadow-black/10 border border-transparent bg-card ring-1 ring-foreground/10 duration-200 hover:bg-muted/50 dark:ring-foreground/15 dark:hover:bg-muted/50 h-9 px-4 py-2"
                 >
-                  View Our Work
+                  See Our Work
                 </Link>
               </div>
             </div>

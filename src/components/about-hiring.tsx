@@ -73,7 +73,7 @@ export default function AboutHiring() {
                     >
                       Send us a note
                     </Link>{" "}
-                    — we&apos;re always looking for exceptional people.
+                    We&apos;re always looking for exceptional people.
                   </p>
                 </div>
               </div>

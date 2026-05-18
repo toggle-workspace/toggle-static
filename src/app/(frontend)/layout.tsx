@@ -25,7 +25,7 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "Toggle Solutions — Your Digital Growth Partner",
   description:
-    "A strategic growth partner for ambitious brands. We combine high-end design with data-driven performance to build systems that scale effortlessly.",
+    "Performance marketing and growth systems for brands across Southeast Asia. Paid media, SEO, creative, and CRM under one strategy.",
 };
 
 export default function RootLayout({

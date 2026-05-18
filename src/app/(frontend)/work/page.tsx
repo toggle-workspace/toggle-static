@@ -1,22 +1,24 @@
-import Link from "next/link";
 import CallToAction from "@/components/call-to-action";
 import { PageHeader } from "@/components/ui/page-header";
 import { Spacer } from "@/components/ui/grid";
 import BlogSection from "@/components/blog-section";
 import { featuredPost, posts, categories } from "@/data/blog-posts";
-import { caseStudies } from "@/data/case-studies";
 
 export default function WorkPage() {
   return (
     <>
       <section>
         <PageHeader
-          title="Real results for real businesses."
-          subtitle="our work"
-          description="Here's how we've helped brands grow across Malaysia and Southeast Asia."
+          title="Results across every industry."
+          subtitle="Our Work"
+          description="How we've helped brands around the world."
         />
       </section>
-      <BlogSection featuredPost={featuredPost} posts={posts} categories={categories} />
+      <BlogSection
+        featuredPost={featuredPost}
+        posts={posts}
+        categories={categories}
+      />
       <Spacer />
       <CallToAction />
     </>

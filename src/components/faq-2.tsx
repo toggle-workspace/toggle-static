@@ -22,7 +22,7 @@ const faqGroups = [
         value: "general-2",
         question: "How long does it take to receive the audit?",
         answer:
-          "We value speed without compromising quality. Typically, we will respond to your initial request within 24 hours and deliver the completed audit within 3–5 business days, depending on the complexity of your current setup and data availability.",
+          "We respond within 24 hours and deliver the completed audit within 3–5 business days, depending on your current setup and data availability.",
       },
       {
         value: "general-3",
@@ -45,13 +45,13 @@ const faqGroups = [
         value: "services-2",
         question: "Do you do performance marketing only?",
         answer:
-          "Performance marketing is one part of what we do but sustainable growth requires more. We build growth systems that span Paid Media, Creative Strategy, SEO & CRO, Content, Email and Lifecycle Marketing, CRM and sales integration, and AI-powered automation — all working together under one strategy.",
+          "Performance marketing is one part of what we do. Sustainable growth needs more. We run paid media, creative strategy, SEO, content, email, lifecycle marketing, and CRM under one strategy.",
       },
       {
         value: "services-3",
         question: "What results can I expect and how fast?",
         answer:
-          "While every business is unique, our framework is designed for rapid impact. Leads and sales can start coming in immediately upon campaign launch (Day 1). Early performance improvements often become visible within Weeks 2–4. More meaningful, compounding growth typically builds over Days 60–90 as we test, optimise and scale what's working.",
+          "Leads and sales can start coming in on Day 1 of campaign launch. Early improvements often show within weeks 2–4. Stronger, sustained growth builds over days 60–90 as we test, optimise, and scale what's working.",
       },
     ],
   },
@@ -81,8 +81,8 @@ export default function FAQ2() {
                     Frequently Asked Questions
                   </h2>
                   <p className="text-muted-foreground mt-4 text-balance text-lg">
-                    Discover quick and comprehensive answers to common questions
-                    about our platform, services, and features.
+                    Common questions about how we work, what we do, and what to
+                    expect.
                   </p>
                 </div>
 

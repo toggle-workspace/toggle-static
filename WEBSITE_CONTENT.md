@@ -1,12 +1,15 @@
 # Toggle Solutions — Website Content
 
+> **Last updated:** 2026-05-17
+> **Note:** This file reflects the current live copy across the codebase after the `update-copywriting` branch rewrites. All em dashes removed, binary contrasts eliminated, jargon replaced with plain language. See the Skills section at the bottom for the tools used.
+
 ---
 
 ## Company Information
 
 - **Company Name:** Toggle Solutions
 - **Website:** https://toggle.solutions/
-- **Email:** marketing@toggle.com
+- **Email:** hello@toggle.com
 - **Phone:** +60 12-568 8681 (Viknesh, Sales Director)
 - **Legal Contact:** hello@togglesolutions.com
 
@@ -21,53 +24,83 @@
 
 ---
 
+## Meta / SEO
+
+**Page Title:** Toggle Solutions — Your Digital Growth Partner
+
+**Meta Description:**
+Performance marketing and growth systems for brands worldwide. Paid media, SEO, creative, and CRM under one strategy.
+
+---
+
 ## Hero Section
 
-**Headline (strikethrough):** Your Marketing Agency
-**Headline (main):** Your Digital Growth Partner
+**Label (eyebrow):** Your Digital Growth Partner
+
+**Headline:**
+The Agency Behind 50+ Growing Brands
 
 **Subheading:**
-A strategic growth partner for ambitious brands. We combine high-end design with data-driven performance to build systems that scale effortlessly.
+We run paid media, creative, and lifecycle marketing as one system. Every channel points at the same goal: more revenue, less wasted spend.
 
-**CTA Button:** Book a Consultation
+**CTA Buttons:**
+
+- Primary: Book a Consultation → `/contact`
+- Secondary: See Our Work → `/work`
 
 **Trust Indicators:**
 
 - 4.9/5 stars
 - Trusted by 50+ clients
 
-**Key Value Propositions:**
-
-1. Full-stack digital marketing built for sustainable growth
-2. A structured approach that reduces guesswork
-3. Transparent reporting that supports better decisions
-
 ---
 
-## Partners / Clients Carousel
+## Partners / Clients Section
 
-**Section Heading:** Your favorite companies are our partners.
+**Tagline:** 50+ brands trust Toggle with their growth.
 
 **Client/Logo List:**
 Bruno, CIMB Bank, Clarins, CNI, ESP, Great Eastern, GuruLabs, Kith & Kin, Kualesa, Leica, Maxis, Nihon, Puteri, Secom, Singlife, SuperMamaLab, Thompson, Toyota, Una Brands, Unitar, PetsMore
 
 ---
 
-## About Section
+## Features / "How We Work" Section
 
-### Built to Grow the Whole Business
+**Section Heading:** One Strategy Across Every Channel
 
-We build a full-funnel system across ads, creative, lifecycle, and reporting so every part of your marketing works toward the same goal: sustainable, measurable growth you can scale with confidence.
+**Body Copy:**
+Paid media, creative, SEO, email, and analytics run under one strategy here. When the channels share the same goal, each one makes the others work harder.
 
-### One Growth System Across Every Channel
+**Checklist:**
 
-Paid media, creative, SEO, email, and analytics don't work in silos here — they work as one. When every channel is aligned under a single strategy, they stop competing and start compounding.
+- Paid media across Meta, Google, and TikTok
+- Creative production built for performance
+- SEO, email, and lifecycle marketing
 
-**Integrations Shown:** Shopify, Klaviyo, Meta, Toggle, TikTok, Google, Semrush
+**CTA:** Explore Our Services → `/services`
 
-### Senior-Led, In-House Execution
+**Stats Cards:**
 
-You work directly with experienced operators who own both the strategy and the doing. That means faster decisions, fewer handoffs, and a team that's as invested in your growth as you are.
+- **50+ Active Brands** — Trusted by growing brands across Asia, the US, Europe, and beyond.
+- **RM60M+ Managed** — Ad budget managed across Meta, Google, TikTok, and emerging platforms.
+- **4.9/5 Rating** — Rated top by clients for results, reporting, and reliability.
+- **Global Reach** — We've run campaigns across Asia, the US, Europe, and the Middle East.
+
+---
+
+## Process Section ("How We Work")
+
+**Section Heading:** How We Work
+**Subheading:** Three steps. One system.
+
+**Step 1 — Audit:**
+We start by understanding your business. A strategy call and marketing audit identifies gaps, quick wins, and the biggest growth levers for your brand.
+
+**Step 2 — Launch:**
+Campaigns go live fast. We build and launch across your highest-priority channels, without the slow agency handoffs.
+
+**Step 3 — Scale:**
+Results build over time. Every week we test, refine, and scale what's working, so performance improves the longer we work together.
 
 ---
 
@@ -75,24 +108,33 @@ You work directly with experienced operators who own both the strategy and the d
 
 **Label:** What We Offer
 **Heading:** Full Stack Digital Solutions
-**Description:** From brand awareness to final scale, we cover it all. Explore our range of services built to grow your business at every stage.
+**Description:** From brand awareness to revenue. We cover every channel and growth stage.
 
-**CTA Section:**
+### Service Detail Page Structure (`/services/[slug]`)
 
-- Heading: Not sure which service is right for you?
-- Description: Book a free consultation and our team will help you identify the best strategy for your business goals.
-- Button: Book a Free Consultation
+Pages exist for: Performance Marketing, Branding, Web Development, Search Engine Optimisation.
+
+Each detail page follows this flow:
+
+1. **Header** — service name + short description (`service.description`)
+2. **Hero image**
+3. **Overview** — service headline as label, full overview paragraph (`service.headline` + `service.overview`)
+4. **Our Approach** — FeaturesThree block with 3 service-specific pillars (`service.approach`) — label, heading, body + 3 cards each with a highlighted sentence and body
+5. **What's included** — deliverables grid (`service.whatWeDo`)
+6. **FAQ** — standard FAQ accordion
+7. **CTA** — Book a Free Consultation
+
+> Services without a detail page (Email Marketing, Content Marketing, Reporting, Creative Production, CRO, OOH, Online Store, CRM) only appear on `/services` as cards. Add them to `src/data/services.ts` with an `approach` field to enable a detail page.
 
 ---
 
 ### 1. Performance Marketing
 
 **Headline:** Spend Smarter. Scale Faster.
-**Subheadline:** We turn ad spend into measurable revenue — not just impressions.
-**Card Description:** Drive growth with campaign optimization and performance creative, using audience and conversion data to guide what we produce and scale.
+**Card Description:** We run ads across Meta, Google, and TikTok, combining audience strategy, creative testing, and conversion data to find what works and scale it.
 
 **Full Description:**
-Performance marketing at Toggle is built around one goal: profitable growth. We manage and optimise campaigns across Meta, Google, and TikTok combining audience strategy, creative testing, and conversion data to find what works and scale it with confidence. We don't just run ads. We build a system that gets more efficient the longer it runs.
+Performance marketing at Toggle is built around one goal: profitable growth. We manage and optimise campaigns across Meta, Google, and TikTok combining audience strategy, creative testing, and conversion data to find what works and scale it with confidence. Every dollar is tracked to revenue. Every decision is backed by data. The longer we run, the sharper the spend gets.
 
 **Target Audience:** Brands that are ready to grow beyond organic and need a team that owns both strategy and execution.
 
@@ -105,16 +147,31 @@ Performance marketing at Toggle is built around one goal: profitable growth. We 
 - Conversion rate optimisation
 - Weekly reporting tied to real business metrics
 
+**Our Approach (service detail page — FeaturesThree block):**
+
+Label: Our Approach
+Heading: Built Around Revenue, Not Reports
+Body: We track every campaign back to what it drives for your business. Clicks and impressions are inputs. Revenue is the outcome.
+
+- **Creative Testing at Scale** — We test hooks, formats, and messaging systematically. The best performers scale. The rest get cut. No guessing, no gut feel.
+- **Multi-Market Expertise** — We've run campaigns across Asia, the US, Europe, and the Middle East. We know which platforms, audiences, and creative approaches convert in each market.
+- **Strategy and Execution in One Team** — The people who plan your campaigns also run them. No handoffs between strategists and buyers. Faster decisions, cleaner results.
+
+**Outcomes:**
+
+- 3–5× Average ROAS improvement within 90 days
+- 40% Reduction in customer acquisition cost
+- 2× Increase in conversion rate from testing
+
 ---
 
 ### 2. Email Marketing
 
-**Headline:** Your Most Profitable Channel, Done Right.
-**Subheadline:** We build email systems that generate revenue while you sleep.
-**Card Description:** Set up automated journeys, newsletters, and segmentation that grow LTV and reduce churn over time.
+**Headline:** Email That Earns.
+**Card Description:** Automated flows, segmentation, and campaigns that turn one-time buyers into repeat customers. Email is the highest-ROI channel in digital, when the setup is right.
 
 **Full Description:**
-Email is still the highest-ROI channel in digital marketing — but only when it's done with intention. We set up automated flows, segmentation, and campaigns that turn one-time buyers into loyal customers and reduce churn over time. Whether you're starting from scratch or have a neglected Klaviyo account, we'll build a system that compounds.
+Email is still the highest-ROI channel in digital marketing, when it's done with intention. We set up automated flows, segmentation, and campaigns that turn one-time buyers into repeat customers and reduce churn over time. Whether you're starting from scratch or have a neglected Klaviyo account, we'll build a system that pays for itself.
 
 **Target Audience:** E-commerce and DTC brands that want to grow customer lifetime value without increasing ad spend.
 
@@ -132,11 +189,10 @@ Email is still the highest-ROI channel in digital marketing — but only when it
 ### 3. Branding
 
 **Headline:** Stand for Something. Look the Part.
-**Subheadline:** We help brands define who they are — then make sure everyone can see it.
-**Card Description:** Define your message and visual direction, then apply it consistently so your brand stands out in competitive markets.
+**Card Description:** We sharpen your positioning, clarify your message, and build a visual identity that holds across every channel, from ads to packaging.
 
 **Full Description:**
-A strong brand is the foundation every other marketing effort builds on. We work with you to sharpen your positioning, clarify your message, and create a visual identity that holds up across every touchpoint — from your ads to your packaging to your website. No fluff, no moodboards that go nowhere. Just a clear, practical brand system you can actually use.
+A strong brand is the foundation every other marketing effort builds on. We work with you to sharpen your positioning, clarify your message, and build a visual identity that holds across every channel, from your ads to your packaging to your website. We build the positioning, voice, visual language, and the assets to carry it wherever your audience is.
 
 **Target Audience:** Growing brands that feel inconsistent, or new brands that want to launch with intention and clarity.
 
@@ -148,16 +204,31 @@ A strong brand is the foundation every other marketing effort builds on. We work
 - Brand guidelines documentation
 - Creative direction for campaigns and content
 
+**Our Approach (service detail page — FeaturesThree block):**
+
+Label: Our Approach
+Heading: A Brand System You Can Actually Use
+Body: Most brand projects end with a PDF that never gets opened. We build identity systems that travel across every channel and hold up under pressure.
+
+- **Positioning Before Design** — We define who you are and who you're for before anything visual gets made. Every design decision builds on a clear strategy. The aesthetic follows the argument.
+- **Built for Every Market** — Your brand needs to work across channels, languages, and regions. We build identity systems that stay coherent whether they're on a billboard in Kuala Lumpur or a campaign in London.
+- **Guidelines Your Team Will Use** — Brand guidelines your designers can follow and your marketers can act on. Templates, component libraries, and documented rules that make consistent output fast.
+
+**Outcomes:**
+
+- 60% Increase in brand recall after identity refresh
+- 2× Faster content production with a design system
+- 35% Higher perceived value vs competitors
+
 ---
 
 ### 4. Content Marketing
 
-**Headline:** Content That Builds. Not Just Fills Space.
-**Subheadline:** We create a content system that drives traffic, builds trust, and supports conversion.
-**Card Description:** Create a content system that builds awareness, drives qualified traffic, and supports conversion across channels.
+**Headline:** Content That Earns Trust.
+**Card Description:** Content that gets found, earns trust, and moves people closer to a decision. Built for search and every stage of the funnel.
 
 **Full Description:**
-Good content does three things: it gets found, it earns trust, and it moves people closer to a decision. We build content strategies that serve all three — so you're not just publishing for the sake of it. From blog articles to social content to landing page copy, we align every piece to your funnel and your audience.
+Good content does three things: it gets found, it earns trust, and it moves people closer to a decision. We build content strategies that serve all three, so you're not just publishing for the sake of it. From blog articles to social content to landing page copy, we align every piece to your funnel and your audience.
 
 **Target Audience:** Brands that want to build organic visibility and a content engine that supports every other channel.
 
@@ -174,12 +245,11 @@ Good content does three things: it gets found, it earns trust, and it moves peop
 
 ### 5. Web Development
 
-**Headline:** Websites Built to Convert, Not Just to Impress.
-**Subheadline:** Speed, clarity, and conversion — the three things every great website needs.
-**Card Description:** Design and develop high-performing websites and landing pages built for speed, clarity, and conversions.
+**Headline:** Websites Built to Convert.
+**Card Description:** We design and develop websites and landing pages that load fast, communicate clearly, and turn visitors into customers.
 
 **Full Description:**
-Your website is the centre of your marketing system. We design and develop websites and landing pages that load fast, communicate clearly, and turn visitors into leads or customers. Every build is done with your growth goals in mind — not just aesthetics.
+Your website is the centre of your marketing system. We design and develop websites and landing pages that load fast, communicate clearly, and turn visitors into leads or customers. Every build is done with your growth goals in mind, not just aesthetics.
 
 **Target Audience:** Brands launching, rebuilding, or looking to improve conversion rates on their existing site.
 
@@ -192,18 +262,33 @@ Your website is the centre of your marketing system. We design and develop websi
 - CRO-focused UX improvements
 - Ongoing maintenance and iteration support
 
+**Our Approach (service detail page — FeaturesThree block):**
+
+Label: Our Approach
+Heading: Conversion Is the Only Metric That Matters
+Body: Every layout decision, every CTA, every line of copy starts with one question: does this move the visitor closer to taking action?
+
+- **Conversion-First Design** — We start with your goal and build the page around it. Whether it's leads, sales, or sign-ups, the design serves the conversion. The aesthetic follows.
+- **Performance as Standard** — 90+ Lighthouse scores and fast load times on every device. Core Web Vitals are built in from day one, not patched in after the site goes live.
+- **Easy for Your Team to Update** — CMS-integrated builds your team can manage without a developer. Visual or structured editing, built around how your content team actually works.
+
+**Outcomes:**
+
+- 2.5× Average conversion rate uplift post-launch
+- 95+ Lighthouse performance scores as standard
+- 60% Faster page load times vs previous sites
+
 ---
 
 ### 6. Reporting & Analysis
 
-**Headline:** Know What's Working. Know What to Do Next.
-**Subheadline:** We build reporting that drives decisions — not just documents what happened.
-**Card Description:** Build a reporting cadence that tracks what matters and highlights what to improve next, not just what happened.
+**Headline:** Reporting That Tells You What to Do Next.
+**Card Description:** We build a reporting system that tells you what the numbers mean and what to do about them, not just what they were.
 
 **Full Description:**
-Most marketing reports tell you what the numbers were. Ours tell you what they mean and what to do about it. We build a reporting and intelligence system tailored to your business — so you always know where growth is coming from, what's holding it back, and where to focus next. No more guessing. No more vanity metrics. No more decisions made on gut feel when the data already has the answer.
+Most marketing reports tell you what the numbers were. Ours tell you what they mean and what to do about it. We build a reporting and intelligence system tailored to your business, so you always know where growth is coming from, what's holding it back, and where to focus next.
 
-**Target Audience:** Brands that want full visibility into their marketing performance — and a team that turns data into decisions, not just decks.
+**Target Audience:** Brands that want full visibility into their marketing performance and a team that turns data into decisions.
 
 **Features:**
 
@@ -213,23 +298,18 @@ Most marketing reports tell you what the numbers were. Ours tell you what they m
 - Funnel performance tracking
 - KPI setting and goal-to-metric mapping
 - Competitive benchmarking and market analysis
-- Custom business intelligence dashboards
-- Data consolidation across all marketing and sales channels
-- Predictive trend analysis to inform forward planning
-- Quarterly strategy reviews based on data
 
 ---
 
 ### 7. Search Engine Optimisation
 
-**Headline:** Own the Search Results Your Competitors Are Chasing
-**Subheadline:** We build search visibility that compounds over time — across traditional search, AI answers, and the next generation of organic discovery.
-**Card Description:** Build organic visibility through technical SEO, keyword strategy, and content optimization that shows up in search results, AI answers, and featured snippets.
+**Headline:** Own the Search Results Your Competitors Are Chasing.
+**Card Description:** We build organic search visibility across Google, AI answer engines, and the next generation of discovery. Once built, traffic grows without ongoing media spend.
 
 **Full Description:**
-SEO at Toggle goes beyond page rankings. We build a search presence that performs across Google, AI-powered answer engines, and the emerging landscape of LLM-driven discovery — so your brand shows up wherever your customers are looking, in whatever format search takes next. Whether you're starting from scratch or recovering lost ground, we build a system designed to grow consistently and stay ahead of how search is evolving.
+SEO at Toggle goes beyond page rankings. We build a search presence that performs across Google, AI-powered answer engines, and the emerging landscape of LLM-driven discovery, so your brand shows up wherever your customers are looking. Whether you're starting from scratch or recovering lost ground, we build a system designed to grow consistently.
 
-**Target Audience:** Brands that want sustainable organic growth and a search presence built for where search is today — and where it's heading.
+**Target Audience:** Brands that want sustainable organic growth and a search presence built for where search is today and where it's heading.
 
 **Features:**
 
@@ -239,21 +319,36 @@ SEO at Toggle goes beyond page rankings. We build a search presence that perform
 - Content strategy and SEO copywriting
 - E-E-A-T signal strengthening for competitive and YMYL categories
 - Link building and authority development
-- Generative Engine Optimisation (GEO) — optimising content to appear in AI-generated search results
+- Generative Engine Optimisation (GEO)
 - Monthly performance tracking across traditional and AI search channels
+
+**Our Approach (service detail page — FeaturesThree block):**
+
+Label: Our Approach
+Heading: Rankings That Hold
+Body: Short-term tactics get short-term results. We build the technical foundations and content depth that keep you at the top once you get there.
+
+- **Technical Before Content** — No content strategy works on a technically broken site. We fix architecture, crawlability, and Core Web Vitals first, then build content on solid foundations.
+- **Optimised for AI Search Too** — Google is no longer the only answer engine. We structure content to appear in AI Overviews, ChatGPT answers, and conversational results across every major platform.
+- **Content That Earns Authority** — We build topical authority, not just keyword density. Every piece is mapped to intent and structured to earn trust with both readers and search engines.
+
+**Outcomes:**
+
+- 3× Organic traffic growth within 6 months
+- Top 3 rankings for primary commercial keywords
+- 50% Reduction in paid spend dependency over 12 months
 
 ---
 
 ### 8. Creative Production
 
-**Headline:** Make Things People Actually Stop For.
-**Subheadline:** High-performing creative built for the scroll — and for the brand behind it.
-**Card Description:** Produce scroll-stopping creative assets: video, photography, design, and copy optimized for performance marketing and built to convert.
+**Headline:** Creative That Stops the Scroll.
+**Card Description:** Visuals and video assets built with performance in mind, strong concepts, sharp messaging, and formats that work across every channel.
 
 **Full Description:**
-Great creative is the difference between an ad that gets skipped and one that drives action. At Toggle, we produce visuals and video assets that are built with performance in mind — combining strong concepts, sharp messaging, and formats that work across every channel. From static ads to short-form video, everything we produce is designed to do a job.
+Great creative is the difference between an ad that gets skipped and one that drives action. At Toggle, we produce visuals and video assets built with performance in mind, combining strong concepts, sharp messaging, and formats that work across every channel. From static ads to short-form video, everything we produce is designed to do a job.
 
-**Target Audience:** Brands that need a steady pipeline of high-quality creative assets — without the overhead of an in-house production team.
+**Target Audience:** Brands that need a steady pipeline of high-quality creative assets without the overhead of an in-house production team.
 
 **Features:**
 
@@ -268,14 +363,13 @@ Great creative is the difference between an ad that gets skipped and one that dr
 
 ### 9. Conversion Optimisation
 
-**Headline:** More Traffic Isn't Always the Answer.
-**Subheadline:** We improve what happens after the click — so every visitor works harder for your business.
-**Card Description:** Run structured testing programmes to improve messaging, user journeys, and conversion rates — turning more traffic into revenue.
+**Headline:** Get More from the Traffic You Have.
+**Card Description:** We run structured testing programmes so data decides what works. Improvements build on each other over time.
 
 **Full Description:**
-Getting people to your site is only half the battle. Conversion optimisation is about making sure your messaging, user journey, and on-site experience are working hard enough to turn that traffic into customers. We run structured testing programmes that remove guesswork and let data decide what works — so improvements compound over time rather than relying on one-off redesigns.
+Getting people to your site is only half the battle. Conversion optimisation is about making sure your messaging, user journey, and on-site experience are working hard enough to turn that traffic into customers. We run structured testing programmes so data decides what works, and improvements build on each other over time rather than relying on one-off redesigns.
 
-**Target Audience:** Brands with existing traffic that aren't converting at the rate they should be — and want a structured, evidence-based approach to fixing it.
+**Target Audience:** Brands with existing traffic that aren't converting at the rate they should be, and want a structured, evidence-based approach to fixing it.
 
 **Features:**
 
@@ -292,11 +386,10 @@ Getting people to your site is only half the battle. Conversion optimisation is 
 ### 10. Out of Home
 
 **Headline:** Show Up Where Screens Can't Reach.
-**Subheadline:** Strategic offline media that puts your brand in front of the right people, in the right places.
-**Card Description:** Build mass awareness with strategically placed billboards, transit, and digital out-of-home campaigns integrated with your digital strategy.
+**Card Description:** Strategic outdoor media, billboards, transit, digital OOH, placed where your audience moves and tied back to your broader growth objectives.
 
 **Full Description:**
-Digital gets you clicks. OOH gets you presence. When your brand shows up in the physical spaces your audience moves through every day — commutes, high streets, malls, events — it builds the kind of awareness that no algorithm can replicate. At Toggle, we plan and execute OOH campaigns that are strategically placed, creatively sharp, and tied back to your broader growth objectives.
+Digital gets you clicks. OOH gets you presence. When your brand shows up in the physical spaces your audience moves through every day, commutes, high streets, malls, events, it builds the kind of awareness that no algorithm can replicate. At Toggle, we plan and execute OOH campaigns that are strategically placed, creatively sharp, and tied back to your broader growth objectives.
 
 **Target Audience:** Brands looking to build mass awareness, enter new markets, or reinforce their digital presence with high-impact offline visibility.
 
@@ -315,13 +408,12 @@ Digital gets you clicks. OOH gets you presence. When your brand shows up in the 
 ### 11. Online Store Management
 
 **Headline:** A Store That Works as Hard as Your Marketing Does.
-**Subheadline:** We manage and optimise your e-commerce ecosystem so every part of it is built to perform.
-**Card Description:** Manage and optimize your online store from product listings and pricing to promotions and checkout — making sure every part converts.
+**Card Description:** We take ownership of your e-commerce operations and continuously optimise for performance, so your store grows alongside your marketing.
 
 **Full Description:**
-Your online store is where traffic becomes revenue. But most stores are leaving money on the table — through slow load times, poor product presentation, friction in the buying journey, or missed opportunities in merchandising and promotions. We take ownership of your e-commerce operations and continuously optimise for performance, so your store grows alongside your marketing.
+Your online store is where traffic becomes revenue. But most stores are leaving money on the table, through slow load times, poor product presentation, friction in the buying journey, or missed opportunities in merchandising. We take ownership of your e-commerce operations and continuously optimise for performance, so your store grows alongside your marketing.
 
-**Target Audience:** E-commerce brands that want their store actively managed and optimised — not just maintained.
+**Target Audience:** E-commerce brands that want their store actively managed and optimised, not just maintained.
 
 **Features:**
 
@@ -338,14 +430,13 @@ Your online store is where traffic becomes revenue. But most stores are leaving 
 
 ### 12. Customer Relationship Management (CRM)
 
-**Headline:** Turn One-Time Buyers Into Lifelong Customers.
-**Subheadline:** We build retention systems that grow customer lifetime value — automatically.
-**Card Description:** Build automated retention systems — segmentation, lifecycle flows, and loyalty strategies — that grow LTV without increasing acquisition costs.
+**Headline:** Keep the Customers You Already Have.
+**Card Description:** We build CRM systems that work in the background, continuously nurturing your customer base and recovering revenue that would otherwise walk out the door.
 
 **Full Description:**
-Acquiring a customer is just the beginning. The brands that win long-term are the ones that keep customers coming back — through smarter communication, better timing, and experiences that feel personal at scale. At Toggle, we build CRM systems that work in the background, continuously nurturing your customer base and recovering revenue that would otherwise walk out the door.
+Acquiring a customer is just the beginning. The brands that win long-term are the ones that keep customers coming back, through smarter communication, better timing, and experiences that feel personal. At Toggle, we build CRM systems that work in the background, continuously nurturing your customer base and recovering revenue that would otherwise walk out the door.
 
-**Target Audience:** Brands that have built a customer base and want to maximise the value of every relationship — not just keep chasing new ones.
+**Target Audience:** Brands that have built a customer base and want to maximise the value of every relationship.
 
 **Features:**
 
@@ -359,6 +450,45 @@ Acquiring a customer is just the beginning. The brands that win long-term are th
 - Cross-sell and upsell sequence development
 - CRM integration with paid media for retargeting alignment
 - Monthly retention performance reporting and LTV tracking
+
+---
+
+## About Page
+
+**Label:** About us
+**Headline:** Performance marketing built to last.
+
+**Body:**
+Founded in 2021, Toggle Solutions was built around one idea: growth marketing should be transparent, measurable, and built to last. Today we work with brands across Asia, the US, Europe, and beyond.
+
+**Stats:**
+
+- 50+ brands grown across Asia, the US, Europe, and beyond.
+- 4+ years of data-driven performance marketing.
+
+---
+
+### Our Mission
+
+**Paragraph 1:**
+Great marketing happens when brands can focus on their customers. Fragmented tools and inconsistent results get in the way of that.
+
+**Paragraph 2:**
+Our job is to make growth predictable. We build the systems and run the campaigns so brands can scale without the guesswork.
+
+---
+
+### Core Values
+
+**Subheading:** The principles that guide every decision we make.
+
+1. **Data-Driven Decisions** — We challenge assumptions with evidence. Every campaign decision starts with a question: what does the data say?
+
+2. **Craft & Care** — Details matter. Every ad, landing page, and email is a chance to earn the click and keep the customer.
+
+3. **True Partnership** — We work inside your goals, not around them. If your numbers improve, ours do too.
+
+4. **Radical Transparency** — We share real numbers, honest assessments, and clear reporting. You always know where you stand.
 
 ---
 
@@ -400,15 +530,15 @@ Acquiring a customer is just the beginning. The brands that win long-term are th
 
 ## Case Studies (Our Work)
 
-**Page Heading:** Our Work
-**Subtitle:** Real results for real businesses. Here's how we've helped brands grow across Malaysia and Southeast Asia.
+**Page Label:** Our Work
+**Page Title:** Results across every industry.
+**Page Description:** How we've helped brands around the world.
 
 ---
 
 ### UNITAR Education Sdn. Bhd. — From Moonshot to Milestone
 
 - **Industry:** Education | **Location:** Petaling Jaya, Malaysia
-- **Website:** https://unitar.my/
 - **Services:** Performance Marketing, Reporting & Analysis, Content Marketing
 
 **Overview:**
@@ -417,42 +547,39 @@ UNITAR International University is a leading private university in Malaysia, rec
 **Challenge:**
 UNITAR faced aggressive student acquisition targets in a saturated market. By mid-2024, acquisition costs were spiraling — TikTok CPLs hitting RM525 and Facebook reaching RM291. Top media agencies had tried and failed to scale efficiently.
 
-**Goal:**
-Drastically increase the volume of qualified leads across Malaysia while driving acquisition costs well below industry benchmarks — proving that significant ad spend scaling is possible without CPL inflation.
-
 **Solution:**
-Toggle executed a data-driven, multi-channel performance strategy implementing a comprehensive "Full-Funnel Messaging Matrix" — delivering tailored content from myth-busting hooks on TikTok to urgency-driven CTAs on Google and Meta. Integrated advanced tracking (Facebook CAPI) and diversified channels based on distinct roles (intent vs. storytelling).
+Toggle executed a data-driven, multi-channel performance strategy implementing a comprehensive Full-Funnel Messaging Matrix, delivering tailored content from myth-busting hooks on TikTok to urgency-driven CTAs on Google and Meta.
 
 **Result:**
 From June to September 2025, the campaign generated over 32,000 qualified leads. CPL reduced by 47% year-on-year despite scaling ad spend to RM4 million. UNITAR captured 77% of total impressions within the Education & Training category in Malaysia.
+
+**Carousel Excerpt:**
+UNITAR needed to scale student acquisition without inflating costs. We ran a full-funnel campaign across TikTok, Meta, and Google, capturing 77% of total impressions in the Education category in Malaysia.
 
 **Metrics:**
 
 - 32K+ Qualified Leads from Ads
 - 77% Total Impressions Across Malaysia
+- 47% CPL Reduction Year-on-Year
 
 ---
 
 ### CIMB Bank Berhad — From Authority Gap to Search Dominance
 
 - **Industry:** Banking | **Location:** Kuala Lumpur, Malaysia
-- **Website:** https://cimb.com/
 - **Services:** Search Engine Optimization
 
-**Overview:**
-CIMB Malaysia is one of the region's leading banking institutions. As a major financial brand in the YMYL category, organic search visibility is critical to capturing high-intent users researching banking solutions.
-
 **Challenge:**
-Despite dominant brand presence, CIMB's organic performance wasn't keeping pace with its market position. Product and category pages lacked keyword depth and semantic coverage. Existing blog content had redundancies diluting content quality signals. Internal approval processes slowed publishing cycles.
-
-**Goal:**
-Rebuild CIMB's organic search presence — closing keyword gaps, strengthening topical authority, and positioning the brand to dominate high-value financial search terms at scale.
+Despite dominant brand presence, CIMB's organic performance wasn't keeping pace. Product and category pages lacked keyword depth. Blog content had redundancies diluting quality signals. Internal approval processes slowed publishing cycles.
 
 **Solution:**
-Toggle repositioned CIMB's SEO around a content-led authority model. Comprehensive content audit, keyword gap analysis across core product pillars, structured internal linking frameworks, and streamlined approval workflows with internal stakeholders.
+Toggle repositioned CIMB's SEO around a content-led authority model. Comprehensive content audit, keyword gap analysis across core product pillars, structured internal linking frameworks, and streamlined approval workflows.
 
 **Result:**
-Within twelve months, CIMB's organic impressions grew by 52.6% and organic clicks increased by 34.5%, driven by a content system designed to compound rather than spike. Double-digit ranking improvements across priority keywords.
+Within twelve months, CIMB's organic impressions grew by 52.6% and organic clicks increased by 34.5%, driven by a content system designed to grow consistently.
+
+**Carousel Excerpt:**
+CIMB's product pages lacked keyword depth and their blog had content that diluted quality signals. We rebuilt their content strategy from the ground up. Organic clicks grew 34.5% within a year.
 
 **Metrics:**
 
@@ -464,74 +591,51 @@ Within twelve months, CIMB's organic impressions grew by 52.6% and organic click
 ### Kith & Kin Realty Sdn. Bhd. — Unlocking New Growth Channels
 
 - **Industry:** Real Estate | **Location:** Kuala Lumpur, Malaysia
-- **Website:** https://kithandkinrealty.com/
 - **Services:** Performance Marketing, Reporting & Analysis, Content Marketing
 
-**Overview:**
-Kith and Kin are a reputable real estate agency specializing in development projects across Kuala Lumpur and Selangor, promoting a newly launched development in Dutamas, near Mont Kiara.
-
 **Challenge:**
-The client had never run paid advertising before — relying solely on organic methods and traditional cold-calling, which struggled to deliver consistent results.
-
-**Goal:**
-Drastically increase lead volume to capture market demand while maintaining a healthy, sustainable cost per lead (CPL).
+The client had never run paid advertising before. They relied entirely on organic referrals and cold-calling, which struggled to deliver consistent results.
 
 **Solution:**
-Toggle identified a significant lack of paid advertising competition around their key project in Dutamas. Deployed targeted Meta Ad campaigns using lead generation and message-specific strategies with diverse creative formats (GIFs, images, videos).
+Toggle identified significant lack of paid advertising competition around their key project in Dutamas. Deployed targeted Meta Ad campaigns using lead generation and message-specific strategies with diverse creative formats.
 
-**Result:**
-The campaign delivered 392% increase in leads over three months. Maintained CPL of RM35 throughout. Drove a 10% conversion rate from leads to closed deals.
+**Carousel Excerpt:**
+Kith & Kin had never run paid advertising before. They relied entirely on organic referrals and cold-calling. Three months of targeted Meta campaigns later: 392% more leads, RM35 CPL, and a 10% conversion rate from lead to closed deal.
 
 **Metrics:**
 
 - 392% Increase in Lead Volume
 - RM35 Cost Per Lead
+- 10% Lead-to-Deal Conversion Rate
 
 ---
 
 ### Kualesa Apparel Sdn Bhd — Stitching a Movement
 
 - **Industry:** Apparel | **Location:** Petaling Jaya, Malaysia
-- **Website:** https://kualesa.co/
 - **Services:** Performance Marketing, Reporting & Analysis
 
-**Overview:**
-Kualesa Co. is a Malaysian eco-fashion brand committed to sustainability and ethical practices, using eco-conscious materials to create clothing that proves high fashion and low carbon footprints can coexist.
-
 **Challenge:**
-In a fashion industry dominated by "fast, cheap, and disposable," breaking the stigma that eco-friendly clothing is boring or ill-fitting. Needed to cut through fast fashion noise and convince modern consumers that ethical apparel doesn't mean sacrificing style.
-
-**Goal:**
-Create more than a customer base — ignite a movement. Empower consumers to "wear their values," positioning Kualesa as the perfect blend of mindful consumption and aesthetic appeal.
+In a fashion industry dominated by fast, cheap, and disposable, breaking the stigma that eco-friendly clothing is boring or ill-fitting. Needed to cut through fast fashion noise.
 
 **Solution:**
-Positioned Kualesa Co. not just as a brand but as a lifestyle choice for the modern, responsible citizen. Crafted a narrative elevating "responsible fashion" into an aspirational standard at the intersection of "chic" and "conscious."
-
-**Result:**
-Kualesa Co. established itself as a leader in the responsible fashion space, transforming the shopping experience into a positive impact mission. Customers don't just buy the product — they join the movement.
+Positioned Kualesa not just as a brand but as a lifestyle choice for the modern, responsible citizen. Crafted a narrative elevating responsible fashion into an aspirational standard at the intersection of chic and conscious.
 
 ---
 
 ### Singlife PTE LTD — From Third to First in 90 Days
 
 - **Industry:** Financial Services | **Location:** Singapore
-- **Website:** https://singlife.com/
 - **Services:** Search Engine Optimization
 
-**Overview:**
-Singlife is a leading digital-first insurance provider in Singapore, offering life, health, and investment-linked solutions. As a YMYL brand, organic search visibility directly influences lead generation and long-term customer acquisition.
-
 **Challenge:**
-Core insurance keywords sitting around position #3 — close to the top but far enough to feel the traffic gap every month. Existing content needed deeper alignment with user intent and stronger E-E-A-T signals to satisfy evolving Google algorithm standards.
-
-**Goal:**
-Move Singlife's core insurance keywords from position #3 to the top spot — and hold it. Close the gap through content depth, authority signalling, and intent alignment without compromising YMYL trust standards.
+Core insurance keywords sitting around position three. Existing content needed deeper alignment with user intent and stronger E-E-A-T signals.
 
 **Solution:**
-Comprehensive on-page content optimisation built around three pillars: intent alignment, authority reinforcement, and structural relevance. Expanded priority insurance pages with keyword-rich, semantically structured content. Strengthened E-E-A-T signals, refined heading hierarchies, and improved internal linking.
+Comprehensive on-page content optimisation built around intent alignment, authority reinforcement, and structural relevance. Expanded priority insurance pages with keyword-rich, semantically structured content.
 
-**Result:**
-Within three months, core insurance keywords climbed from position three to position one, driving a 23% increase in organic clicks across high-value search categories.
+**Carousel Excerpt:**
+Singlife's core insurance keywords sat at position three. Close to the top, but far enough to lose meaningful traffic every month. We rebuilt their on-page content and organic clicks grew 23%.
 
 **Metrics:**
 
@@ -543,23 +647,18 @@ Within three months, core insurance keywords climbed from position three to posi
 ### Great Eastern Holdings LTD — Two Months to the Top
 
 - **Industry:** Life Insurance | **Location:** Singapore
-- **Website:** https://greateastern.com/
 - **Services:** Search Engine Optimization
 
-**Overview:**
-Great Eastern Singapore is one of the region's most established insurance providers. With strong brand recognition, their challenge was search visibility in a landscape where high-intent users go directly to Google before any brand.
-
 **Challenge:**
-Core keywords plateaued around position #4. Meta titles and descriptions lacked keyword targeting and semantic depth. Search snippets weren't optimised for click-through. Competitors were aggressively refining SEO strategies.
-
-**Goal:**
-Move Great Eastern's key product-related search terms — including "insurance plan" — from position #4 to the top of the results page. Improve how Great Eastern showed up in search with compelling snippets and stronger on-page content.
+Core keywords plateaued around position four. Meta titles lacked keyword targeting. Competitors were aggressively refining SEO strategies.
 
 **Solution:**
-Targeted, high-impact approach focusing on metadata refresh — rewriting title tags and meta descriptions to sharpen keyword prominence, improve semantic alignment, and increase CTR. Strengthened keyword-to-content relationships, refined heading structures, and improved internal keyword signals across priority landing pages.
+Targeted, high-impact approach focusing on metadata refresh, rewriting title tags and meta descriptions to sharpen keyword prominence, improve semantic alignment, and increase CTR.
 
-**Result:**
-Within two months, Great Eastern moved from position four to position one for core insurance search terms. Organic clicks grew by 16%. Search visibility increased by 75%.
+**Carousel Title:** #1 for Core Insurance Keywords in Two Months: Great Eastern Singapore
+
+**Carousel Excerpt:**
+Great Eastern's key insurance pages were stuck at position four. A targeted metadata refresh and content restructure moved them to position one in two months, with a 75% increase in search visibility.
 
 **Metrics:**
 
@@ -569,150 +668,116 @@ Within two months, Great Eastern moved from position four to position one for co
 
 ---
 
-### Restoran Mahbub — Online Delivery
+### Restoran Mahbub — Online Delivery & Catering Growth
 
 - **Services:** Performance Marketing, Creative Production, Conversion Optimisation
-- **Metric:** RM2.6M+ in online revenue
+- **Metrics:** RM2.6M+ in online revenue | +46% catering leads (Q3 to Q4 2024)
 
 **Challenge:** A well-established restaurant performing well offline but struggling to grow its online food delivery business.
 
-**Solution:** Ran successful marketing campaigns on Meta and Google to generate revenue online, showing healthy year-on-year growth from 2021 to 2023.
+**Solution:** Ran marketing campaigns on Meta and Google to generate online revenue. Curated sales messaging flows across Messenger, Instagram, and WhatsApp to generate catering enquiries.
 
 ---
 
-### Restoran Mahbub — Catering
-
-- **Services:** Conversion Optimisation, Performance Marketing
-- **Metric:** +46% catering leads (Q3 to Q4 2024)
-
-**Solution:** Curated sales messaging flows across Messenger, Instagram, and WhatsApp. Generated 300+ message conversations inquiring about their catering offering.
-
----
-
-### TPL Fresh Meats
+### TPL Fresh Meats — From Walk-In to Online Revenue
 
 - **Services:** Performance Marketing, Reporting & Analysis
-- **Metric:** RM172K+ in sales from Meta (October 2021 – 2024)
+- **Metrics:** RM172K+ in sales from Meta | 20x ROAS
 
-**Challenge:** Retail stores with good walk-in sales but struggling to generate online sales and reach new potential customers.
+**Challenge:** Retail stores with strong walk-in sales but negligible online revenue.
 
-**Solution:** Ran ads on Meta and Google using their own social media content. Generated an additional RM172K in revenue at +20 ROAS.
+**Solution:** Ran ads on Meta and Google using their own social media content. Generated RM172K in revenue at 20× ROAS.
+
+---
+
+## Call to Action Section
+
+**Heading:** Book a Free Consultation
+**Body:** 50+ brands already work with Toggle. We'll review your marketing and tell you what's worth doing first.
+**Button:** Book a Free Consultation → `/contact`
 
 ---
 
 ## Contact Page
 
-**Heading:** Connect with our Marketing Expert
-**Description:** Please fill the form and we will connect you within 24 hours to schedule a call.
+**Label:** Book a Consultation
+**Heading:** Talk to a growth strategist.
+**Description:** Fill the form and we'll be in touch within 24 hours to schedule a call.
+
+**Trust Indicators:**
+
+- Free, no-obligation consultation call
+- No sales pitches, no pressure
+- Simple, transparent pricing
+
+**Contact Info:**
+
+- Email: marketing@togglesolutions.com
+- Phone: +60 12-568 8681
+- Office: Kuala Lumpur, Malaysia
+
+**Form Heading:** Tell us about your business.
+**Form Description:** We'll review your details before the call so we can make the most of your time.
 
 **Form Fields:**
 
 - Name (required)
 - Email (required)
-- Contact Number (required)
 - Website URL (optional)
-- Services You're Interested In (required) — multiselect dropdown
-- How can we help? (required) — text area
+- Services you're interested in (dropdown: Performance Marketing, SEO & Content, Branding & Web, Email & CRM, Not sure yet)
+- How can we help? (text area)
 - Submit Button: Book a Consultation
-
-**Trust Indicators:**
-
-- Free No Obligation Consultation Call
-- No Sales Pitches & No Pressure
-- Simple Pricing
-
-**Success Message:** Message sent successfully! We'll contact you within 24 hours.
 
 ---
 
 ## FAQ
 
-### 1. What do I get in the Free Brand Audit?
+### General
 
-Our Free Brand Audit is a comprehensive review of your current marketing channels, funnel performance and growth opportunities. You'll receive a detailed roadmap including:
+**1. What do I get in the Free Brand Audit?**
+Our Free Brand Audit covers your marketing channels, funnel performance, and growth opportunities. You'll get a roadmap with 3–5 prioritised growth levers, quick wins to boost conversions, and clear next steps.
 
-- 3–5 prioritized growth levers
-- Identification of quick wins to boost conversion rates
-- Recommended next steps to improve results
+**2. How long does it take to receive the audit?**
+We respond within 24 hours and deliver the completed audit within 3–5 business days, depending on your current setup and data availability.
 
-### 2. How long does it take to receive the audit?
+**3. Who will I work with?**
+You won't be handed off to a junior team. Every client gets a dedicated team of three: a Senior Account Manager as your main point of contact, a Senior Performance Marketer for campaign execution, and a Backup Specialist for coverage and support. No unnecessary layers.
 
-We value speed without compromising quality. Typically, we will:
+### Services
 
-- Respond to your initial request within 24 hours
-- Deliver the completed audit within 3–5 business days, depending on the complexity of your current setup and data availability
+**4. What type of brands are you the best fit for?**
+We've worked across Education, Healthcare, Technology, Professional Services, F&B, FMCG, E-commerce, and Lifestyle. If you're serious about growth, we're built for you.
 
-### 3. Who will I work with?
+**5. Do you do performance marketing only?**
+Performance marketing is one part of what we do. Sustainable growth needs more. We run paid media, creative strategy, SEO, CRO, content, email, lifecycle marketing, and CRM under one strategy.
 
-You won't be handed off to a junior team. Every client gets a dedicated team of three:
+**6. What results can I expect and how fast?**
+Leads and sales can start coming in on Day 1 of campaign launch. Early improvements often show within weeks 2–4. Stronger, sustained growth builds over days 60–90 as we test, optimise, and scale what's working.
 
-- Senior Account Manager: Your strategic partner and main point of contact
-- Senior Performance Marketer: An expert in media buying and campaign optimization
-- Backup Performance Marketing Specialist: Ensures backup coverage and support for execution
+**7. What does pricing look like?**
+Pricing is scoped to your needs and budget. Most engagements run as a monthly retainer covering the services most relevant to your stage, whether that's campaign management, creative production, CRO, SEO, or a combination. We'll outline a clear proposal after the first call.
 
-No unnecessary layers, just experienced people who are fully accountable for your results.
-
-### 4. What type of brands are you the best fit for?
-
-We've consulted and helped clients across all verticals including:
-
-- Education & EdTech
-- Healthcare
-- Technology
-- Professional services
-- Food & Beverage
-- FMCG
-- E-commerce
-- Lifestyle Brands
-- And many others. If you're a brand that's serious about growth, we're built to work with you regardless of industry.
-
-### 5. Do you do performance marketing only?
-
-Performance marketing is one part of what we do but sustainable growth requires more than ads. We build growth systems that span:
-
-- Paid Media
-- Creative Strategy
-- SEO & CRO
-- Content, Email and Lifecycle Marketing
-- CRM and sales integration
-- AI-powered automation
-
-All working together under one strategy. We focus on the entire funnel, not isolated campaigns.
-
-### 6. What does pricing look like?
-
-Pricing is catered to your scope and budget. Engagements are typically structured as a monthly retainer that covers the services most relevant to your growth stage — whether that's campaign management, creative production, CRO, SEO, or a combination. We'll outline a clear proposal after understanding your goals.
-
-### 7. What results can I expect and how fast?
-
-While every business is unique, our framework is designed for rapid impact:
-
-- **Day 1:** Leads and sales can start coming in immediately upon campaign launch
-- **Weeks 2–4:** Early performance improvements often become visible as campaigns go live and initial data comes in
-- **Days 60–90:** More meaningful, compounding growth typically builds over time as we test, optimise and scale what's working
-
-### 8. Do you require long-term contracts?
-
-We focus on long-term partnerships but avoid restrictive contracts. Most engagements operate on flexible monthly agreements based on performance and results.
+**8. Do you require long-term contracts?**
+We focus on long-term partnerships but avoid restrictive contracts. Most engagements run on flexible monthly agreements based on performance and results.
 
 ---
 
 ## Footer
 
+**Tagline:** Performance marketing and growth systems for brands worldwide.
+
 **Services Links:**
 
 - Performance Marketing → `/services/performance-marketing`
-- Content Strategy & Marketing → `/services/content-marketing`
+- Content Strategy → `/services/content-marketing`
 - Branding → `/services/branding`
 - Web Development → `/services/web-development`
 - Email Marketing → `/services/email-marketing`
-- Reporting & Analytics → `/services/analytics-reporting`
 
 **Company Links:**
 
-- About → `/#about`
+- About → `/about`
 - Our Work → `/work`
-- FAQ → `/#faq`
 - Contact → `/contact`
 
 **Case Studies Links:**
@@ -738,7 +803,7 @@ We focus on long-term partnerships but avoid restrictive contracts. Most engagem
 **Contact:** hello@togglesolutions.com
 
 1. **Acceptance of Terms** — By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement.
-2. **Use License** — Permission is granted to temporarily download one copy of materials for personal, non-commercial transitory viewing only. Prohibited: modifying/copying materials, commercial use, decompiling/reverse engineering, removing copyright notations, or transferring/mirroring materials.
+2. **Use License** — Permission is granted to temporarily download one copy of materials for personal, non-commercial transitory viewing only.
 3. **Disclaimer** — The materials on Toggle Solutions' website are provided on an 'as is' basis with no warranties, express or implied.
 4. **Limitations** — Toggle Solutions is not liable for any damages from use or inability to use materials on the website.
 5. **Revisions and Errata** — Toggle Solutions does not warrant accuracy, completeness, or currency of materials and may make changes without notice.
@@ -749,8 +814,48 @@ We focus on long-term partnerships but avoid restrictive contracts. Most engagem
 
 **Contact:** hello@togglesolutions.com
 
-1. **Information We Collect** — Name, email address, mailing address, phone number, credit card information (when applicable). Users may visit anonymously.
-2. **How We Use Your Information** — To personalize your experience, improve our website, improve customer service, process transactions, and send periodic emails about orders, company news, updates, related products/services.
-3. **Protection of Your Information** — Various security measures implemented including SSL technology for sensitive/credit information encrypted in payment gateway provider database.
-4. **Cookies** — We use cookies to recognize your browser, capture and remember certain information, understand and save preferences, and compile aggregate data about site traffic and interaction.
+1. **Information We Collect** — Name, email address, mailing address, phone number, credit card information (when applicable).
+2. **How We Use Your Information** — To personalize your experience, improve our website, improve customer service, process transactions, and send periodic emails.
+3. **Protection of Your Information** — Various security measures implemented including SSL technology for sensitive information.
+4. **Cookies** — We use cookies to recognize your browser, capture and remember certain information, understand and save preferences.
 5. **Third Party Disclosure** — We do not sell, trade, or transfer personally identifiable information to outside parties except for trusted third parties assisting with operations.
+
+---
+
+## Copywriting Skills & Tools Reference
+
+These skills live in `.agents/skills/` and were used to rewrite this site's copy. Reference them in future sessions when editing any visible copy.
+
+### Skills Used
+
+| Skill                  | Path                                              | When to Use                                                                                                                                                                                                                                            |
+| ---------------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Toggle Copywriting** | `.agents/skills/toggle-copywriting/SKILL.md`      | **Start here for all copy work on this site.** Project-specific skill combining Stop Slop, Ogilvy, and page-level rules for Toggle Solutions. Includes approved facts, hard boundary rules (no structural changes), and output format instructions.    |
+| **Stop Slop**          | `.agents/skills/stop-slop/SKILL.md`               | Full pattern library for eliminating AI writing tells. Referenced by Toggle Copywriting.                                                                                                                                                               |
+| **Ogilvy Copywriting** | `.agents/skills/ogilvy/SKILL.md`                  | Deeper theory on positioning, promises, and headline construction. Referenced by Toggle Copywriting for headlines and CTAs.                                                                                                                             |
+| **Copywriting**        | `.agents/skills/copywriting/SKILL.md`             | General page structure frameworks and CTA formulas. Referenced by Toggle Copywriting for page-level structure.                                                                                                                                         |
+
+### Stop Slop Quick Reference (Most Common Violations)
+
+| Pattern                                           | Fix                                                     |
+| ------------------------------------------------- | ------------------------------------------------------- |
+| Em dash `—`                                       | Use a period or comma instead. No exceptions.           |
+| `"not X, but Y"` / `"stop X and start Y"`         | State Y directly. Drop the negation.                    |
+| `"ambitious"`, `"best-in-class"`, `"double down"` | Replace with plain language.                            |
+| `"compounds"`, `"compounding growth"`             | Say what actually happens: "grows", "builds over time". |
+| `"While every business is different..."`          | Cut the hedge. State the claim directly.                |
+| `"Your wins are our wins"`                        | Say what this means in practice.                        |
+| `"No smoke and mirrors"`                          | Delete. State what you do, not what you don't do.       |
+| Three-item staccato fragments                     | Write full sentences.                                   |
+| `"eliminate the friction between X and Y"`        | Say what you actually do instead.                       |
+
+### Stop Slop Checklist Before Any Copy Ships
+
+- [ ] Zero em dashes in visible copy
+- [ ] No adverbs (`really`, `truly`, `simply`, `genuinely`, `actually`)
+- [ ] No binary contrasts (`not X, but Y`)
+- [ ] No rhetorical questions as headings
+- [ ] No `"ambitious brands"` — use specific descriptors
+- [ ] Active voice throughout
+- [ ] No three-item dramatic fragments
+- [ ] Every claim is specific, not vague

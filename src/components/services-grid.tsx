@@ -13,7 +13,7 @@ const SERVICES = [
     Icon: TrendingUp,
     title: "Performance Marketing",
     description:
-      "Drive measurable results across Meta, Google, and TikTok — managed from a single growth dashboard.",
+      "Drive measurable results across Meta, Google, and TikTok, managed from a single growth dashboard.",
   },
   {
     Icon: PieChart,
@@ -37,7 +37,7 @@ const SERVICES = [
     Icon: BarChart3,
     title: "Analytics & Reporting",
     description:
-      "Live dashboards and weekly insights that go beyond vanity metrics — built to support better decisions.",
+      "Live dashboards and weekly insights that go beyond vanity metrics, built to support better decisions.",
   },
   {
     Icon: Layers,

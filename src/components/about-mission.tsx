@@ -6,19 +6,16 @@ export default function AboutMission() {
       <div className="text-muted-foreground mt-6 space-y-4 text-xl font-medium *:text-balance *:leading-relaxed">
         <p>
           <span className="text-foreground">
-            We believe great marketing is built when brands can focus on
-            what matters
+            Great marketing happens when brands can focus on their customers.
           </span>{" "}
-          — serving their customers — instead of wrestling with
-          fragmented tools and inconsistent results.
+          Fragmented tools and inconsistent results get in the way of that.
         </p>
         <p>
           <span className="text-foreground">
-            Our mission is to eliminate the friction between ambition
-            and growth.
+            Our job is to make growth predictable.
           </span>{" "}
-          We build systems, strategies, and campaigns that let brands
-          scale predictably — in weeks, not years.
+          We build the systems and run the campaigns so brands can scale
+          without the guesswork.
         </p>
       </div>
     </SectionOverview>
