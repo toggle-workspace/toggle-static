@@ -68,7 +68,7 @@
 [data-theme="dark"] {
   --bg:         #000000;
   --fg:         #F0EDE5;
-  --border:     #222220;
+  --border:     #333333;
   --text:       #F0EDE5;
   --text-muted: #6A6762;
 }
@@ -1917,8 +1917,8 @@
   --accent: oklch(0.15 0 0);
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
+  --border: oklch(1 0 0 / 20%);
+  --input: oklch(1 0 0 / 20%);
   --ring: oklch(0.556 0 0);
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
