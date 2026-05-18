@@ -103,7 +103,7 @@
 .dark-region {
   background: var(--fg);
 }
-[data-theme="dark"] .dark-region { background: #111110; }
+[data-theme="dark"] .dark-region { background: var(--card); }
 
 /* ─── NAVBAR ─────────────────────────────────────────────────────── */
 .navbar {
@@ -453,7 +453,7 @@
   position: relative;
   overflow: hidden;
   aspect-ratio: 16 / 6;
-  background: #0d0d0c;
+  background: var(--card);
 }
 .video-wrapper img {
   position: absolute;
@@ -664,7 +664,7 @@
 .experiences-card {
   position: relative;
   overflow: hidden;
-  background: #0d0d0b;
+  background: var(--card);
   background-image: url('https://picsum.photos/seed/texture1/800/600');
   background-size: cover;
   background-position: center;
@@ -721,7 +721,7 @@
   cursor: pointer;
 }
 .service-row:last-child { border-bottom: none; }
-.service-row:hover { background: #0d0d0b; }
+.service-row:hover { background: var(--muted); }
 .service-row:hover .service-row__num,
 .service-row:hover .service-row__name,
 .service-row:hover .service-row__desc { color: #F0EDE5; }
@@ -852,7 +852,7 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  background: #0d0d0b url('https://picsum.photos/seed/texture1/800/600') center/cover;
+  background: var(--card) url('https://picsum.photos/seed/texture1/800/600') center/cover;
   padding: 2.5rem;
   display: flex;
   flex-direction: column;
@@ -1111,7 +1111,7 @@
   cursor: pointer;
   transition: background var(--t);
 }
-.faq-question:hover { background: #0d0d0b; }
+.faq-question:hover { background: var(--muted); }
 .faq-question:hover .faq-q-text,
 .faq-question:hover .faq-icon,
 .faq-question:hover .faq-q-num { color: #F0EDE5; }
@@ -1338,7 +1338,7 @@
 .form-input:focus, .form-textarea:focus { border-color: var(--text); }
 .form-textarea { height: 140px; }
 .contact-info-card {
-  background: #0d0d0b;
+  background: var(--card);
   border-radius: 12px;
   padding: 2.5rem;
   color: #F0EDE5;
@@ -1543,7 +1543,7 @@
   flex: 1;
   position: relative;
   overflow: hidden;
-  background: #0d0d0b;
+  background: var(--card);
   background-image: url('https://picsum.photos/seed/texture1/1000/700');
   background-size: cover;
   background-position: center;
@@ -1667,7 +1667,7 @@
   transition: background var(--t);
 }
 .svc-item:last-child { border-bottom: none; }
-.svc-item:hover { background: #0d0d0b; }
+.svc-item:hover { background: var(--muted); }
 .svc-item:hover .svc-item__num,
 .svc-item:hover .svc-item__name,
 .svc-item:hover .svc-item__desc { color: #F0EDE5; }
