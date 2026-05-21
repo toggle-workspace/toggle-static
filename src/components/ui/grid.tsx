@@ -1,7 +1,7 @@
 export function SideCol({ wide }: { wide?: boolean }) {
   return (
     <div
-      className="grid"
+      className="grid bg-border"
       style={{ gridTemplateColumns: "repeat(1, minmax(0, 1fr))" }}
     >
       <div aria-hidden="true" className={`p-[0.5px]${wide ? " w-full" : ""}`}>

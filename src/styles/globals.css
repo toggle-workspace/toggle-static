@@ -57,6 +57,23 @@
   --text: #F0EDE5;
 }
 
+/* ─── HERO DIAGONAL GRID OVERLAY ────────────────────────────────── */
+.hero-grid-overlay {
+  background-image:
+    repeating-linear-gradient(22.5deg,  transparent, transparent 1px, rgba(75,85,99,0.06)  1px, rgba(75,85,99,0.06)  2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(67.5deg,  transparent, transparent 1px, rgba(107,114,128,0.05) 1px, rgba(107,114,128,0.05) 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(112.5deg, transparent, transparent 1px, rgba(55,65,81,0.04)  1px, rgba(55,65,81,0.04)  2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(157.5deg, transparent, transparent 1px, rgba(31,41,55,0.03)  1px, rgba(31,41,55,0.03)  2px, transparent 2px, transparent 4px);
+}
+[data-theme="dark"] .hero-grid-overlay {
+  background-image:
+    repeating-linear-gradient(22.5deg,  transparent, transparent 1px, rgba(255,255,255,0.18) 1px, rgba(255,255,255,0.18) 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(67.5deg,  transparent, transparent 1px, rgba(255,255,255,0.14) 1px, rgba(255,255,255,0.14) 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(112.5deg, transparent, transparent 1px, rgba(255,255,255,0.10) 1px, rgba(255,255,255,0.10) 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(157.5deg, transparent, transparent 1px, rgba(255,255,255,0.08) 1px, rgba(255,255,255,0.08) 2px, transparent 2px, transparent 4px);
+  opacity: 1 !important;
+}
+
 /* ─── ARROW BUTTON ───────────────────────────────────────────────── */
 .arrow-btn {
   width: 44px;
@@ -221,7 +238,7 @@
   --accent: oklch(0.15 0 0);
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: #222222;
+  --border: #444444;
   --input: oklch(1 0 0 / 20%);
   --ring: oklch(0.556 0 0);
   --chart-1: oklch(0.87 0 0);
