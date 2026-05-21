@@ -17,15 +17,6 @@ export default function HeroSection() {
   return (
     <section className="bg-card">
       <div className="bg-foreground/8 @container">
-        {/* Label row */}
-        <div className="bg-card/90 rounded">
-          <div className="max-w-lg p-6">
-            <span className="text-muted-foreground font-mono text-sm uppercase">
-              Your Digital Growth Partner
-            </span>
-          </div>
-        </div>
-
         {/* Hero content row */}
         <div className="grid grid-cols-2 *:p-[0.5px] lg:grid-cols-6">
           {/* Left: copy + CTAs */}
