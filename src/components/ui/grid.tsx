@@ -24,7 +24,7 @@ export function GridRow({
     return (
       <div
         aria-hidden={ariaHidden}
-        className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr]"
+        className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] bg-border"
       >
         <SideCol wide />
         <div className="max-w-276 lg:min-w-276 mx-auto w-full p-[0.5px]">
