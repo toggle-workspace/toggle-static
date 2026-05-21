@@ -100,8 +100,8 @@ export default function FeatureCarousel() {
         </div>
 
         <div className="lg:grid lg:grid-cols-[1fr_auto_1fr]">
-          <div aria-hidden="true" className="border-y max-lg:hidden" />
-          <div className="mx-auto overflow-hidden border lg:max-w-6xl">
+          <div aria-hidden="true" className="border-y-[0.5px] max-lg:hidden" />
+          <div className="mx-auto overflow-hidden border-[0.5px] lg:max-w-6xl">
             <CarouselContent className="ml-0 md:*:basis-1/2 lg:*:basis-1/3">
               {mockPosts.map((post) => (
                 <CarouselItem key={post.id} className="flex flex-col pl-0">
@@ -126,7 +126,7 @@ export default function FeatureCarousel() {
           <div aria-hidden="true" className="max-lg:hidden" />
         </div>
 
-        <div className="mx-auto w-full max-w-6xl border-x border-dashed" />
+        <div className="mx-auto w-full max-w-6xl border-x-[0.5px]" />
       </Carousel>
     </section>
   );
