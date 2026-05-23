@@ -14,7 +14,7 @@ const mockPosts = [
     id: 1,
     title:
       "How We Cut CPL by 47% While Generating 32,000 Leads for a Malaysian University",
-    slug: "cut-cpl-47-percent-scaling-ad-spend",
+    slug: "unitar",
     excerpt:
       "UNITAR needed to scale student acquisition without inflating costs. We ran a full-funnel campaign across TikTok, Meta, and Google, capturing 77% of total impressions in the Education category in Malaysia.",
     author: "Toggle Team",
@@ -28,7 +28,7 @@ const mockPosts = [
     id: 2,
     title:
       "52.6% More Organic Impressions in 12 Months: CIMB Bank's SEO Rebuild",
-    slug: "seo-for-banks-high-competition",
+    slug: "cimb",
     excerpt:
       "CIMB's product pages lacked keyword depth and their blog had content that diluted quality signals. We rebuilt their content strategy from the ground up. Organic clicks grew 34.5% within a year.",
     author: "Toggle Team",
@@ -41,7 +41,7 @@ const mockPosts = [
   {
     id: 3,
     title: "392% More Leads at RM35 CPL: A Real Estate Performance Playbook",
-    slug: "real-estate-lead-gen-why-campaigns-fail",
+    slug: "kith-and-kin",
     excerpt:
       "Kith & Kin had never run paid advertising before. They relied entirely on organic referrals and cold-calling. Three months of targeted Meta campaigns later: 392% more leads, RM35 CPL, and a 10% conversion rate from lead to closed deal.",
     author: "Toggle Team",
@@ -54,7 +54,7 @@ const mockPosts = [
   {
     id: 4,
     title: "Position Three to Position One in 90 Days: The Singlife SEO Case",
-    slug: "ranking-1-in-90-days-insurance-seo",
+    slug: "singlife",
     excerpt:
       "Singlife's core insurance keywords sat at position three. Close to the top, but far enough to lose meaningful traffic every month. We rebuilt their on-page content and organic clicks grew 23%.",
     author: "Toggle Team",
@@ -68,7 +68,7 @@ const mockPosts = [
     id: 5,
     title:
       "#1 for Core Insurance Keywords in Two Months: Great Eastern Singapore",
-    slug: "great-eastern-seo-insurance-keywords",
+    slug: "great-eastern",
     excerpt:
       "Great Eastern's key insurance pages were stuck at position four. A targeted metadata refresh and content restructure moved them to position one in two months, with a 75% increase in search visibility.",
     author: "Toggle Team",
@@ -111,7 +111,7 @@ export default function FeatureCarousel() {
                     date={post.publishedAt}
                     title={post.title}
                     excerpt={post.excerpt}
-                    href={`/blog/${post.slug}`}
+                    href={`/work/${post.slug}`}
                     authors={[
                       {
                         name: post.author,
