@@ -4,10 +4,10 @@ const decorativeCells = Array.from({ length: 10 });
 
 export default function HeroSecondary() {
   return (
-    <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] bg-border">
+    <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr]">
       <SideCol wide />
       <div className="max-w-276 lg:min-w-276 mx-auto w-full">
-        <div className="**:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded grid *:p-[0.5px] relative">
+        <div className="**:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded grid *:p-[0.5px] bg-border relative">
           {/* Top decorative dot row */}
           <div aria-hidden="true" className="col-span-full grid grid-cols-10 gap-px">
             {decorativeCells.map((_, i) => (

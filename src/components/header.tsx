@@ -6,6 +6,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import { useScroll, useMotionValueEvent } from "motion/react";
 import { GridRow } from "@/components/ui/grid";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
 const menuItems = [
   { name: "Our Work", href: "/work" },
@@ -17,6 +18,13 @@ export const Header = () => {
   const [menuState, setMenuState] = React.useState(false);
   const [isScrolled, setIsScrolled] = React.useState(false);
   const { scrollY } = useScroll();
+
+  React.useEffect(() => {
+    document.body.style.overflow = menuState ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [menuState]);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     setIsScrolled(latest > 75);
@@ -44,7 +52,7 @@ export const Header = () => {
             data-slot="content"
             className="bg-card/90 h-full rounded backdrop-blur"
           >
-            <div className="relative flex flex-wrap items-center justify-between px-6 lg:px-12 lg:py-5">
+            <div className="relative flex flex-wrap items-center justify-between px-6 lg:px-12 lg:py-5 max-lg:in-data-[state=active]:flex-col max-lg:in-data-[state=active]:min-h-[calc(100dvh-1.5rem)]">
               <div className="z-51 relative flex justify-between gap-8 max-lg:h-14 max-lg:w-full">
                 <Link aria-label="home" className="flex items-center" href="/">
                   <Image
@@ -92,7 +100,7 @@ export const Header = () => {
                   </ul>
                 </nav>
               </div>
-              <div className="w-full lg:hidden">
+              <div className="w-full lg:hidden flex flex-col flex-1">
                 <nav role="navigation" className="w-full pt-6">
                   <div className="-mx-4 space-y-0.5">
                     {menuItems.map((item, index) => (
@@ -107,9 +115,18 @@ export const Header = () => {
                     ))}
                   </div>
                 </nav>
+                <div className="mt-auto pt-4 pb-6 flex flex-col gap-3">
+                  <ThemeToggle />
+                  <Link
+                    className="cursor-pointer inline-flex w-full items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 shadow-md shadow-black/15 border-[0.5px] border-transparent bg-primary ring-1 ring-(--ring-color) [--ring-color:color-mix(in_oklab,var(--color-foreground)15%,var(--color-primary))] text-primary-foreground hover:bg-primary/90 h-10 rounded-md px-3 text-sm"
+                    href="/contact"
+                  >
+                    <span>Book a Consultation</span>
+                  </Link>
+                </div>
               </div>
-              <div className="z-51 max-lg:in-data-[state=active]:mt-6 in-data-[state=active]:flex relative mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent">
-                <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
+              <div className="z-51 relative mb-6 hidden lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent">
+                <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit items-center">
                   <Link
                     className="cursor-pointer inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 shadow-md shadow-black/15 border-[0.5px] border-transparent bg-primary ring-1 ring-(--ring-color) [--ring-color:color-mix(in_oklab,var(--color-foreground)15%,var(--color-primary))] text-primary-foreground hover:bg-primary/90 h-8 rounded-md px-3 text-xs"
                     href="/contact"

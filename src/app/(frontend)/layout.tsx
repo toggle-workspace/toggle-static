@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, DM_Sans } from "next/font/google";
-import { ThemeScript } from "@/components/ui/ThemeScript";
+import { ThemeProvider } from "@/components/ui/theme-provider";
 import { Header } from "@/components/header";
 import { ScrollToTop } from "@/components/ui/ScrollToTop";
 import Footer from "@/components/footer";
@@ -36,19 +36,23 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      data-theme="light"
+      suppressHydrationWarning
       className={`${geistMono.variable} ${geist.variable} ${dmSans.variable}`}
     >
-      <head>
-        <ThemeScript />
-      </head>
       <body className="font-body overflow-x-clip">
-        <Header />
-        <main className="bg-zinc-950/10">
-          <GridRow plain>{children}</GridRow>
-        </main>
-        <ScrollToTop />
-        <Footer />
+        <ThemeProvider
+          attribute="data-theme"
+          defaultTheme="system"
+          enableSystem
+          storageKey="da-theme"
+        >
+          <Header />
+          <main className="bg-zinc-950/10">
+            <GridRow plain>{children}</GridRow>
+          </main>
+          <ScrollToTop />
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

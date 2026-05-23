@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function CallToAction() {
   return (
-    <div className="bg-zinc-950/10">
-      <div className="@3xl:p-20 @lg:p-8 relative overflow-hidden p-6 bg-background rounded">
+    <div className="bg-border p-[0.5px]">
+      <div className="@3xl:p-20 @lg:p-8 relative overflow-hidden p-6 bg-card/90 rounded">
         <div className="mx-auto max-w-xl text-center">
           <h2 className="text-foreground text-balance text-4xl font-semibold lg:text-5xl">
             Book a Free Consultation

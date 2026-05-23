@@ -18,9 +18,9 @@ const AVATARS = [
 
 export default function Content() {
   return (
-    <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] bg-border">
+    <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr]">
       <div className="max-w-276 lg:min-w-276 mx-auto w-full">
-        <div className="**:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded grid *:p-[0.5px] @2xl:grid-cols-4 @5xl:grid-cols-3 @5xl:grid">
+        <div className="**:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded grid *:p-[0.5px] bg-border @2xl:grid-cols-4 @5xl:grid-cols-3 @5xl:grid">
           {/* Left spacer — visible only between @2xl and @5xl */}
           <div className="@max-2xl:hidden @5xl:hidden">
             <div data-grid-content="true" />

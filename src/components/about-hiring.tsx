@@ -16,10 +16,10 @@ const jobs = [
 export default function AboutHiring() {
   return (
     <section>
-      <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] bg-border">
+      <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr]">
         <SideCol wide />
         <div className="max-w-276 lg:min-w-276 mx-auto w-full">
-          <div className="**:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded grid *:p-[0.5px] @4xl:grid-cols-10">
+          <div className="**:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded grid *:p-[0.5px] bg-border @4xl:grid-cols-10">
             <div aria-hidden="true" className="@max-4xl:hidden">
               <div data-grid-content="true" />
             </div>

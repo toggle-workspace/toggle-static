@@ -54,30 +54,32 @@ import { SideCol } from "@/components/ui/grid";
 
 ### Plain single-cell row (header, label bar, etc.)
 
+`GridRow plain` renders this pattern directly — use it whenever you need a single-card row outside the layout's centre column:
+
 ```tsx
-<div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] bg-border">
-  <SideCol wide />
-  <div className="max-w-276 lg:min-w-276 mx-auto w-full p-[0.5px]">
-    <div data-slot="content" className="bg-card/90 h-full rounded p-6 lg:p-12">
-      {children}
-    </div>
+import { GridRow } from "@/components/ui/grid";
+
+<GridRow plain>
+  <div data-slot="content" className="bg-card/90 h-full rounded p-6 lg:p-12">
+    {children}
   </div>
-  <SideCol />
-</div>
+</GridRow>
 ```
 
-Use `p-[0.5px]` directly on the centre wrapper (instead of the inner `**:data-grid-content:` pattern) for rows that contain a single card.
+`GridRow plain` sets `bg-border` on its outer container, so the 0.5 px gap around the centre wrapper is always visible (both light and dark mode). Use the raw three-column structure only if you need to customise the centre wrapper beyond what `GridRow plain` exposes.
 
 ---
 
 ## When to use `GridRow`
 
-`GridRow` is safe **only** in page files that own their own `<main>` with `bg-zinc-950/10` as a direct parent (not inside the layout's `GridRow plain`). Inner pages (e.g. `about/page.tsx`) render their own `<main>` and call `GridRow` directly.
+`GridRow` (non-plain) is safe **only** in page files that own their own `<main>` with `bg-zinc-950/10` as a direct parent. It has no `bg-border` on its outermost container, so nesting it inside the layout's `bg-card/90` centre column makes all grid lines invisible.
+
+`GridRow plain` has `bg-border` on its outer container and is safe in the same standalone-page contexts. Do not nest either variant inside the layout's `GridRow plain`.
 
 | Context | Use |
 |---|---|
 | Section component inside `layout.tsx` children | Raw three-column structure + `bg-border` |
-| Stand-alone page with its own `<main>` | `GridRow` / `GridRow plain` |
+| Stand-alone page / component with its own background | `GridRow` or `GridRow plain` |
 
 ---
 

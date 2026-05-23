@@ -66,9 +66,9 @@ type ServicesGridProps = {
 
 export default function ServicesGrid() {
   return (
-    <div className="bg-border">
+    <div>
       <div className="max-w-276 lg:min-w-276 mx-auto w-full">
-        <div className="@container **:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded @md:grid-cols-2 @2xl:grid-cols-3 grid *:p-[0.5px]">
+        <div className="@container **:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded @md:grid-cols-2 @2xl:grid-cols-3 grid *:p-[0.5px] bg-border">
           {SERVICES.map(({ Icon, title, description }: IconService) => (
             <div key={title}>
               <div data-grid-content="true" className="space-y-2 p-6 lg:p-12">

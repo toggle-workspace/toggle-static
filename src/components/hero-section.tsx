@@ -15,22 +15,13 @@ const logos = [
 
 export default function HeroSection() {
   return (
-    <section className="bg-background">
+    <section className="bg-card">
       <div className="bg-foreground/8 @container">
-        {/* Label row */}
-        <div className="bg-background rounded">
-          <div className="max-w-lg p-6">
-            <span className="text-muted-foreground font-mono text-sm uppercase">
-              Your Digital Growth Partner
-            </span>
-          </div>
-        </div>
-
         {/* Hero content row */}
         <div className="grid grid-cols-2 *:p-[0.5px] lg:grid-cols-6">
           {/* Left: copy + CTAs */}
           <div className="col-span-3">
-            <div className="bg-background flex h-full flex-col justify-center rounded px-8 py-16">
+            <div className="bg-card/90 flex h-full flex-col justify-center rounded px-8 py-16">
               <h1 className="text-balance text-5xl font-semibold lg:text-6xl">
                 The Agency Behind 50+ Growing Brands
               </h1>
@@ -58,7 +49,7 @@ export default function HeroSection() {
 
           {/* Right: screenshots */}
           <div className="col-span-3">
-            <div className="bg-background relative h-full overflow-hidden rounded">
+            <div className="bg-card/90 relative h-full overflow-hidden rounded">
               <div
                 aria-hidden="true"
                 className="pointer-events-none absolute inset-0 opacity-50"
@@ -72,7 +63,7 @@ export default function HeroSection() {
               <div className="mask-radial-at-left mask-radial-[115%_100%] mask-radial-from-45% pointer-events-none h-full">
                 <div className="min-w-md relative max-w-lg px-6 pb-12 pt-12 lg:px-12 lg:pt-16">
                   {/* Foreground screenshot */}
-                  <div className="bg-background min-w-3xl ring-foreground/10 absolute -right-36 bottom-8 left-36 top-8 z-10 overflow-hidden rounded-2xl p-1 shadow-2xl shadow-indigo-900/35 ring-1 backdrop-blur md:-right-56 lg:bottom-6 lg:left-44 lg:top-12 lg:max-w-6xl">
+                  <div className="bg-card min-w-3xl ring-foreground/10 absolute -right-36 bottom-8 left-36 top-8 z-10 overflow-hidden rounded-2xl p-1 shadow-2xl shadow-indigo-900/35 ring-1 backdrop-blur md:-right-56 lg:bottom-6 lg:left-44 lg:top-12 lg:max-w-6xl">
                     <div className="relative aspect-video origin-top rounded-xl">
                       <Image
                         alt="app screenshot"
@@ -93,7 +84,7 @@ export default function HeroSection() {
                     </div>
                   </div>
                   {/* Background screenshot */}
-                  <div className="min-w-2xl bg-linear-to-b dark:from-card dark:bg-card via-background from-muted to-background ring-foreground/10 border-background rounded-xl border p-1 shadow-2xl shadow-black/5 ring-1 lg:max-w-6xl">
+                  <div className="min-w-2xl bg-linear-to-b dark:from-card dark:bg-card via-card from-muted to-card ring-foreground/10 border-card rounded-xl border p-1 shadow-2xl shadow-black/5 ring-1 lg:max-w-6xl">
                     <div className="relative aspect-video origin-top overflow-hidden rounded-lg">
                       <Image
                         alt="app screenshot"
@@ -123,7 +114,7 @@ export default function HeroSection() {
         <div className="grid grid-cols-2 *:p-[0.5px] lg:grid-cols-6">
           {logos.map((logo) => (
             <div key={logo.alt}>
-              <div className="bg-background flex h-16 items-center justify-center rounded md:h-20">
+              <div className="bg-card/90 flex h-16 items-center justify-center rounded md:h-20">
                 <Image
                   src={logo.src}
                   alt={logo.alt}

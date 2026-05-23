@@ -1,7 +1,7 @@
 export function SideCol({ wide }: { wide?: boolean }) {
   return (
     <div
-      className="grid"
+      className="grid bg-border"
       style={{ gridTemplateColumns: "repeat(1, minmax(0, 1fr))" }}
     >
       <div aria-hidden="true" className={`p-[0.5px]${wide ? " w-full" : ""}`}>
@@ -24,7 +24,7 @@ export function GridRow({
     return (
       <div
         aria-hidden={ariaHidden}
-        className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr]"
+        className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] bg-border"
       >
         <SideCol wide />
         <div className="max-w-276 lg:min-w-276 mx-auto w-full p-[0.5px]">
@@ -43,7 +43,7 @@ export function GridRow({
     >
       <SideCol wide />
       <div className="max-w-276 lg:min-w-276 mx-auto w-full">
-        <div className="**:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded grid *:p-[0.5px]">
+        <div className="**:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded grid *:p-[0.5px] bg-border">
           {children}
         </div>
       </div>
@@ -56,7 +56,7 @@ export function Spacer() {
   return (
     <div
       aria-hidden="true"
-      className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] bg-border"
+      className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr]"
     >
       <SideCol wide />
       <div className="max-w-276 lg:min-w-276 mx-auto w-full p-[0.5px]">

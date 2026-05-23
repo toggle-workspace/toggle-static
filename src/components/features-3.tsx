@@ -276,10 +276,10 @@ export default function FeaturesThree({ approach }: { approach?: ServiceApproach
     : FEATURES;
 
   return (
-    <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] bg-border">
+    <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr]">
       <SideCol wide />
       <div className="max-w-276 lg:min-w-276 mx-auto w-full">
-        <div className="**:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded grid *:p-[0.5px] @2xl:grid-cols-5 @5xl:grid-cols-10">
+        <div className="**:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded grid *:p-[0.5px] bg-border @2xl:grid-cols-5 @5xl:grid-cols-10">
           <div aria-hidden="true" className="@max-2xl:hidden @max-5xl:row-start-2">
             <div data-grid-content="true" />
           </div>

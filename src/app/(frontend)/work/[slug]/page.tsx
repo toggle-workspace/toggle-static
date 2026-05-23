@@ -24,9 +24,9 @@ export default async function CaseStudyPage({
       />
 
       {/* Row 2: Two-column content + sidebar */}
-      <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] bg-border">
+      <div className="@container grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr]">
         <div className="max-w-276 lg:min-w-276 mx-auto w-full">
-          <div className="**:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded grid *:p-[0.5px] lg:grid-cols-[auto_1fr]">
+          <div className="**:data-grid-content:bg-card/90 **:data-grid-content:h-full **:data-grid-content:rounded grid *:p-[0.5px] bg-border lg:grid-cols-[auto_1fr]">
             {/* Main content column */}
             <div>
               <div data-grid-content="true" className="max-w-3xl p-6 lg:p-12">
@@ -49,12 +49,12 @@ export default async function CaseStudyPage({
 
                 <div
                   className="prose dark:prose-invert max-w-none
-                    [&_h2]:mt-14 [&_h2]:mb-4 [&_h2]:border-t [&_h2]:border-border [&_h2]:pt-6
+                    [&_h2]:mt-14 [&_h2]:mb-4 [&_h2]:border-t-[0.5px] [&_h2]:border-border [&_h2]:pt-6
                     [&_h2]:text-xs [&_h2]:font-semibold [&_h2]:uppercase [&_h2]:tracking-[0.15em]
                     [&_h2]:text-muted-foreground [&_h2]:not-italic
                     [&_p]:text-foreground/80 [&_p]:leading-relaxed
                     [&_ul]:mt-8 [&_ul]:list-none [&_ul]:p-0 [&_ul]:grid [&_ul]:gap-3 [&_ul]:sm:grid-cols-2
-                    [&_li]:rounded-xl [&_li]:border [&_li]:border-border [&_li]:bg-muted/40 [&_li]:p-5
+                    [&_li]:rounded-xl [&_li]:border-[0.5px] [&_li]:border-border [&_li]:bg-muted/40 [&_li]:p-5
                     [&_li]:before:hidden
                     [&_li_strong]:block [&_li_strong]:text-2xl [&_li_strong]:font-bold [&_li_strong]:text-foreground [&_li_strong]:mb-1"
                   dangerouslySetInnerHTML={{ __html: study.content }}
